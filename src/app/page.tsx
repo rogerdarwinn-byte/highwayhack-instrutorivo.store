@@ -1,3 +1,5 @@
+"use client";
+
 import HeroSection from "@/components/sections/hero";
 import ReviewsCarousel from "@/components/sections/reviews-carousel";
 import SegredoRevelado from "@/components/sections/segredo-revelado";
