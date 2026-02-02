@@ -12,14 +12,14 @@ const HeroSection = () => {
       </div>
 
       {/* Main Headline */}
-      <h1 className="max-w-[800px] text-center text-[#f5f5f5] text-[32px] md:text-[54.4px] font-extrabold leading-[1.1] tracking-[-0.02em] mb-[12px] text-balance">
-        Aprovado no Código à Primeira — Ou <span className="text-[#ffde7a]">Seu Dinheiro de Volta</span>
-      </h1>
+        <h1 className="max-w-[800px] text-center text-[#f5f5f5] text-[32px] md:text-[54.4px] font-extrabold leading-[1.1] tracking-[-0.02em] mb-[12px] text-balance">
+          Aprovado no Código à Primeira — Ou <span className="text-[#ffde7a]">o Seu Dinheiro de Volta</span>
+        </h1>
 
-      {/* Sub-headline */}
-      <p className="max-w-[480px] text-center text-[#a2a2b8] text-[16px] leading-[1.5] mb-[24px]">
-        O método <span className="text-[#f5f5f5] font-semibold">passo a passo</span> que mais de <span className="text-[#f5f5f5] font-semibold">1747 portugueses</span> usaram para passar no <span className="text-[#f5f5f5] font-semibold">IMT em até 14 dias</span> (sem stress, sem decorar sinais e nem pagar mensalidades intermináveis)
-      </p>
+        {/* Sub-headline */}
+        <p className="max-w-[480px] text-center text-[#a2a2b8] text-[16px] leading-[1.5] mb-[24px]">
+          O método <span className="text-[#f5f5f5] font-semibold">passo a passo</span> que mais de <span className="text-[#f5f5f5] font-semibold">1747 portugueses</span> usaram para passar no <span className="text-[#f5f5f5] font-semibold">IMT em até 14 dias</span> (sem stress, sem decorar sinais nem pagar mensalidades intermináveis)
+        </p>
 
       {/* YouTube Shorts Video Embed */}
       <div className="relative w-full max-w-[400px] aspect-[9/16] mt-[24px] mb-[40px] bg-black rounded-[18px] shadow-[rgba(0,0,0,0.7)_0px_20px_60px_0px] overflow-hidden border border-[#1e293b]">
