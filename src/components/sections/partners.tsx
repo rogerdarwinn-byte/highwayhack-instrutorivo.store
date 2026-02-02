@@ -49,13 +49,13 @@ const Partners = () => {
 
         {/* CTA Button */}
         <div className="flex justify-center">
-          <a
-            href="#pricing"
-            className="group relative flex items-center justify-center gap-2 bg-[#22c55e] text-[#05070a] text-sm md:text-base font-bold uppercase tracking-wide px-8 md:px-12 py-4 rounded-full transition-all duration-300 hover:shadow-[0_0_20px_rgba(34,197,94,0.4)] hover:-translate-y-1"
-          >
-            <span>QUERO GARANTIR MEU ACESSO COM DESCONTO</span>
-            <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
-          </a>
+            <a
+              href="#pricing"
+              className="group relative flex items-center justify-center gap-2 bg-[#22c55e] text-[#05070a] text-sm md:text-base font-bold uppercase tracking-wide px-8 md:px-12 py-4 rounded-full transition-all duration-300 hover:shadow-[0_0_20px_rgba(34,197,94,0.4)] hover:-translate-y-1"
+            >
+              <span>QUERO GARANTIR O MEU ACESSO COM DESCONTO</span>
+              <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+            </a>
         </div>
       </div>
 
