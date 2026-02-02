@@ -48,17 +48,17 @@ const HeroSection = () => {
           9,96€
         </p>
 
-        <p className="text-[#22c55e] text-[14px] font-bold mb-[24px]">
-          💰 Economize 245,10€
-        </p>
+          <p className="text-[#22c55e] text-[14px] font-bold mb-[24px]">
+            💰 Poupe 245,10€
+          </p>
 
-        <a 
-          href="#checkout"
-          className="w-full h-[56px] inline-flex items-center justify-center gap-2 bg-[#22c55e] hover:bg-[#1eb354] text-[#0507a] text-[15px] font-extrabold uppercase rounded-full shadow-[0_0_20px_rgba(34,197,94,0.4)] transition-all transform hover:-translate-y-1 mb-[20px] px-4"
-        >
-          <span>QUERO COMEÇAR HOJE - ÚLTIMAS VAGAS</span>
-          <ArrowRight className="w-5 h-5" />
-        </a>
+          <a 
+            href="#checkout"
+            className="w-full h-[56px] inline-flex items-center justify-center gap-2 bg-[#22c55e] hover:bg-[#1eb354] text-[#0507a] text-[15px] font-extrabold uppercase rounded-full shadow-[0_0_20px_rgba(34,197,94,0.4)] transition-all transform hover:-translate-y-1 mb-[20px] px-4"
+          >
+            <span>QUERO COMEÇAR HOJE — ÚLTIMAS VAGAS</span>
+            <ArrowRight className="w-5 h-5" />
+          </a>
 
         <ul className="flex items-center justify-center gap-[24px] text-[12px] text-[#a2a2b8]">
           <li className="flex items-center gap-1.5">
