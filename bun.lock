@@ -109,7 +109,10 @@
     },
   },
   "trustedDependencies": [
+    "bcrypt",
     "@tsparticles/engine",
+    "esbuild",
+    "sharp",
     "unrs-resolver",
   ],
   "packages": {
