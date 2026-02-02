@@ -19,12 +19,17 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  turbopack: {
-    rules: {
-      "*.{jsx,tsx}": {
-        loaders: [LOADER],
+  experimental: {
+    turbopack: {
+      rules: {
+        "*.{jsx,tsx}": {
+          loaders: [LOADER],
+        },
       },
     },
+  },
+  devIndicators: {
+    appIsrStatus: false,
   },
 };
 
