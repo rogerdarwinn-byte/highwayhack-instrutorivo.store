@@ -1,4 +1,7 @@
+import next from 'eslint-config-next/flat';
+
 const eslintConfig = [
+  ...next,
   {
     ignores: ["**/.next/**", "**/node_modules/**"],
   },
