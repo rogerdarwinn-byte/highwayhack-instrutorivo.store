@@ -15,15 +15,16 @@ This project is a pixel-perfect clone of the "Highway Hack" landing page, a high
 ## User Preferences
 - The user requested a perfect copy of the provided website URL.
 - Specific instruction to use the YouTube video `https://youtube.com/shorts/KR-Vg_cTtk0` below the headline.
-- Turbopack and Webpack flags were removed to let Next.js 15 manage the compiler automatically.
-- Clean redeploy (Redeploy with "Clear Cache" in Vercel) is required to resolve the "React2Shell" security alert and the `react-server-dom-webpack` conflict.
-- The project was standardized using Bun as the package manager to match the environment's pre-configuration.
+- Turbopack disabled manually to ensure stability in Next.js 15.
+- Images set to `unoptimized: true` in `next.config.ts` to prevent 401 errors on Vercel.
+- Project switched from Bun to NPM to ensure compatibility with Vercel's standard build pipeline.
 
 ## Project Guidelines
 - Keep the dark theme consistent across all components.
 - Use neon green (#22c55e) for primary call-to-action buttons.
 - Ensure all sections are responsive and mobile-friendly.
-- Ignore build errors (TypeScript/ESLint) to facilitate rapid deployment. Next.js and eslint-config-next were updated to 15.1.11 to patch security vulnerabilities.
+- Ignore build errors (TypeScript/ESLint) to facilitate rapid deployment.
+- **IMPORTANT**: Always use NPM (delete `bun.lock` if it appears) to avoid deployment conflicts.
 
 ## Common Patterns
 - Reusable section components imported into `page.tsx`.
