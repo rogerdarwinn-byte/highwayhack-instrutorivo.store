@@ -15,11 +15,13 @@ This project is a pixel-perfect clone of the "Highway Hack" landing page, a high
 ## User Preferences
 - The user requested a perfect copy of the provided website URL.
 - Specific instruction to use the YouTube video `https://youtube.com/shorts/KR-Vg_cTtk0` below the headline.
+- Turbopack was disabled as per user request to avoid build errors.
 
 ## Project Guidelines
 - Keep the dark theme consistent across all components.
 - Use neon green (#22c55e) for primary call-to-action buttons.
 - Ensure all sections are responsive and mobile-friendly.
+- Ignore build errors (TypeScript/ESLint) in `next.config.ts` to facilitate rapid deployment on Vercel as requested.
 
 ## Common Patterns
 - Reusable section components imported into `page.tsx`.
