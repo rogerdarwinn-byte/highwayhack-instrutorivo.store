@@ -66,38 +66,38 @@ export default function SegredoRevelado() {
                 <span className="mt-1 flex-shrink-0">
                   <X className="w-[18px] h-[18px] text-[#ef4444]" strokeWidth={3} />
                 </span>
-                <span className="text-[1rem] text-[#94a3b8] leading-[1.4]">
-                  Queres atalhos ilegais ou “macetes” para enganar o exame.
-                </span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="mt-1 flex-shrink-0">
-                  <X className="w-[18px] h-[18px] text-[#ef4444]" strokeWidth={3} />
-                </span>
-                <span className="text-[1rem] text-[#94a3b8] leading-[1.4]">
-                  Não estás disposto a separar pelo menos 20–30 minutos por dia.
-                </span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="mt-1 flex-shrink-0">
-                  <X className="w-[18px] h-[18px] text-[#ef4444]" strokeWidth={3} />
-                </span>
-                <span className="text-[1rem] text-[#94a3b8] leading-[1.4]">
-                  Preferes continuar só a decorar testes sem entender as perguntas.
-                </span>
-              </li>
-            </ul>
+                  <span className="text-[1rem] text-[#94a3b8] leading-[1.4]">
+                    Queres atalhos ilegais ou “truques” para enganar o exame.
+                  </span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="mt-1 flex-shrink-0">
+                    <X className="w-[18px] h-[18px] text-[#ef4444]" strokeWidth={3} />
+                  </span>
+                  <span className="text-[1rem] text-[#94a3b8] leading-[1.4]">
+                    Não estás disposto a separar pelo menos 20–30 minutos por dia.
+                  </span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="mt-1 flex-shrink-0">
+                    <X className="w-[18px] h-[18px] text-[#ef4444]" strokeWidth={3} />
+                  </span>
+                  <span className="text-[1rem] text-[#94a3b8] leading-[1.4]">
+                    Preferes continuar só a decorar testes sem entender as perguntas.
+                  </span>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-
-        {/* CTA Button */}
-        <div className="flex justify-center">
-          <a 
-            href="#pricing"
-            className="group btn-primary bg-[#22c55e] text-[#05070a] text-[1rem] font-bold uppercase py-4 px-8 rounded-full flex items-center gap-3 transition-transform duration-200 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(34,197,94,0.4)]"
-          >
-            QUERO MEU ACESSO COM DESCONTO
-          </a>
+  
+          {/* CTA Button */}
+          <div className="flex justify-center">
+            <a 
+              href="#pricing"
+              className="group btn-primary bg-[#22c55e] text-[#05070a] text-[1rem] font-bold uppercase py-4 px-8 rounded-full flex items-center gap-3 transition-transform duration-200 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(34,197,94,0.4)]"
+            >
+              QUERO O MEU ACESSO COM DESCONTO
+            </a>
         </div>
       </div>
     </section>
