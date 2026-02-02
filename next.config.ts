@@ -9,12 +9,6 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  experimental: {
-    allowedDevOrigins: [
-      "*.orchids.cloud",
-      "localhost:3000"
-    ],
-  },
   typescript: {
     ignoreBuildErrors: true,
   },
