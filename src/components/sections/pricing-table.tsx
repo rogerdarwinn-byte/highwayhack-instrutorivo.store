@@ -111,6 +111,3 @@ const PricingTable = () => {
 };
 
 export default PricingTable;
-
-
-export default PricingTable;
