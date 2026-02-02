@@ -15,7 +15,8 @@ This project is a pixel-perfect clone of the "Highway Hack" landing page, a high
 ## User Preferences
 - The user requested a perfect copy of the provided website URL.
 - Specific instruction to use the YouTube video `https://youtube.com/shorts/KR-Vg_cTtk0` below the headline.
-- Turbopack was disabled as per user request to avoid build errors.
+- Turbopack and Webpack flags were removed to let Next.js 15 manage the compiler automatically.
+- Clean redeploy (without cache) on Vercel is required if "Module not found" errors persist.
 
 ## Project Guidelines
 - Keep the dark theme consistent across all components.
