@@ -20,6 +20,7 @@ const nextConfig: NextConfig = {
     ignoreBuildErrors: true,
   },
   experimental: {
+    allowedDevOrigins: ["3000-2422d887-76b9-466c-8ef5-5a60a53eb71e.orchids.cloud"],
     turbo: {
       rules: {
         "*.{jsx,tsx}": {
