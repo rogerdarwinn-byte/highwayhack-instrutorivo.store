@@ -1,7 +1,20 @@
+"use client";
+
 import React from 'react';
 import { ArrowRight, Bolt, ShieldCheck, Zap, Clock } from 'lucide-react';
+import { useMetaPixel } from "@adkit.so/meta-pixel-next";
 
 const HeroSection = () => {
+  const metaPixel = useMetaPixel();
+
+  const handleCTA = () => {
+    metaPixel.track("InitiateCheckout", {
+      content_name: "Highway Hack Method",
+      value: 29.88, // 3x 9.96
+      currency: "EUR",
+    });
+  };
+
   return (
     <section className="relative flex flex-col items-center pt-[56px] pb-[56px] px-[20px] md:px-[40px] bg-[#05070a] overflow-hidden">
       {/* Top Promotional Badge */}
@@ -54,6 +67,7 @@ const HeroSection = () => {
 
           <a 
             href="#checkout"
+            onClick={handleCTA}
             className="w-full h-[56px] inline-flex items-center justify-center gap-2 bg-[#22c55e] hover:bg-[#1eb354] text-[#0507a] text-[15px] font-extrabold uppercase rounded-full shadow-[0_0_20px_rgba(34,197,94,0.4)] transition-all transform hover:-translate-y-1 mb-[20px] px-4"
           >
             <span>QUERO COMEÇAR HOJE — ÚLTIMAS VAGAS</span>
