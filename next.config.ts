@@ -12,12 +12,6 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  typescript: {
-    ignoreBuildErrors: true,
-  },
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
   experimental: {
     allowedDevOrigins: [
       "*.orchids.cloud",
@@ -28,6 +22,7 @@ const nextConfig: NextConfig = {
     rules: {
       "*.{jsx,tsx}": {
         loaders: [LOADER],
+        as: "*.js",
       },
     },
   },
