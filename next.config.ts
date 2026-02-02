@@ -20,7 +20,7 @@ const nextConfig: NextConfig = {
     ignoreBuildErrors: true,
   },
   experimental: {
-    turbopack: {
+    turbo: {
       rules: {
         "*.{jsx,tsx}": {
           loaders: [LOADER],
@@ -31,6 +31,7 @@ const nextConfig: NextConfig = {
   devIndicators: {
     appIsrStatus: false,
   },
+  serverExternalPackages: [],
 };
 
 export default nextConfig;
