@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@adkit.so/meta-pixel-next": "^1.0.1",
     "@babel/parser": "^7.28.5",
     "@headlessui/react": "^2.2.9",
     "@heroicons/react": "^2.2.0",
@@ -100,8 +101,8 @@
     "@eslint/eslintrc": "^3.3.1",
     "@tailwindcss/postcss": "^4.0.0",
     "@types/node": "^20.17.17",
-    "@types/react": "^19.0.8",
-    "@types/react-dom": "^19.0.3",
+    "@types/react": "^19.2.10",
+    "@types/react-dom": "^19.2.3",
     "@types/react-syntax-highlighter": "^15.5.13",
     "@types/three": "^0.178.0",
     "eslint": "^9.19.0",
