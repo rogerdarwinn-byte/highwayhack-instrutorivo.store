@@ -37,7 +37,7 @@ const HeroSection = () => {
       <div className="w-full max-w-[463.5px] p-[32px] md:pt-[32px] md:pb-[32px] md:px-[25.6px] bg-[#0c0f16] border border-[#1e293b] rounded-[24px] shadow-[rgba(0,0,0,0.7)_0px_20px_60px_0px] text-center">
         <div className="inline-flex items-center gap-2 mb-[16px] px-[12px] py-[4px] bg-[rgba(255,255,255,0.03)] rounded-full border border-[#1e293b]">
           <Bolt className="w-[12px] h-[12px] text-[#a2a2b8]" />
-          <span className="text-[12.48px] text-[#ffde7a] font-semibold">OFERTA LIMITADA -89,12% OFF.</span>
+            <span className="text-[12.48px] text-[#ffde7a] font-semibold">OFERTA LIMITADA -89,12% DE DESCONTO.</span>
         </div>
 
         <p className="text-[#a2a2b8] text-[13.6px] mb-[4.8px]">
