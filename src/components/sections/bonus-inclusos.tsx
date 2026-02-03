@@ -42,21 +42,21 @@ const BonusInclusos: React.FC = () => {
     },
   ];
 
-  return (
-    <section className="py-[80px] px-5 bg-[#05070a]">
-      <div className="max-w-[1200px] mx-auto">
-        {/* Section Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-[32px] font-bold tracking-tight text-white mb-4">
-            Bónus Inclusos
-          </h2>
-          <p className="text-[18px] text-[#94a3b8] max-w-[800px] mx-auto leading-relaxed">
-            Para além do Método passo a passo principal, recebes extras pensados para acelerar a revisão e organizar o teu plano até ao dia do exame.
-          </p>
-        </div>
+    return (
+      <section className="py-12 md:py-[80px] px-4 md:px-5 bg-[#05070a]">
+        <div className="max-w-[1200px] mx-auto">
+          {/* Section Header */}
+          <div className="text-center mb-8 md:mb-12">
+            <h2 className="text-[26px] md:text-[32px] font-bold tracking-tight text-white mb-3 md:mb-4">
+              Bónus Inclusos
+            </h2>
+            <p className="text-[14px] md:text-[18px] text-[#94a3b8] max-w-[800px] mx-auto leading-relaxed px-2">
+              Para além do Método passo a passo principal, recebes extras pensados para acelerar a revisão e organizar o teu plano até ao dia do exame.
+            </p>
+          </div>
 
-        {/* Bonus Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+          {/* Bonus Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-8 md:mb-12">
           {bonuses.map((bonus) => (
             <div 
               key={bonus.id}
@@ -65,10 +65,10 @@ const BonusInclusos: React.FC = () => {
               <span className="absolute -top-3 left-6 inline-flex items-center px-3 py-1 rounded-full bg-[#161b22] border border-[#facc15] text-[#facc15] text-[12px] font-bold">
                 {bonus.pill}
               </span>
-              <h3 className="text-[20px] font-semibold text-white mb-4 leading-tight">
+              <h3 className="text-[18px] md:text-[20px] font-semibold text-white mb-3 md:mb-4 leading-tight">
                 {bonus.title}
               </h3>
-              <p className="text-[16px] text-[#94a3b8] leading-relaxed">
+              <p className="text-[14px] md:text-[16px] text-[#94a3b8] leading-relaxed">
                 {bonus.description}
               </p>
             </div>
@@ -80,7 +80,7 @@ const BonusInclusos: React.FC = () => {
           <a 
             href="#pricing"
             onClick={handleCTA}
-            className="group relative flex items-center justify-center gap-2 bg-[#22c55e] text-[#05070a] text-[16px] font-bold uppercase tracking-wide py-4 px-10 rounded-full transition-all duration-200 hover:shadow-[0_0_20px_rgba(34,197,94,0.4)] hover:-translate-y-0.5"
+            className="group relative flex items-center justify-center gap-2 bg-[#22c55e] text-[#05070a] text-[14px] md:text-[16px] font-bold uppercase tracking-wide py-3.5 md:py-4 px-8 md:px-10 rounded-full transition-all duration-200 hover:shadow-[0_0_20px_rgba(34,197,94,0.4)] hover:-translate-y-0.5"
           >
             GARANTIR A MINHA VAGA AGORA
             <svg 

@@ -39,15 +39,15 @@ const HistoriasSucesso = () => {
     "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/93132b6c-be24-4b47-b845-8fd7f6b9bdc2-highway-hack-exame-c-digo-vercel-app/assets/images/images_7.png"
   ];
 
-  return (
-    <section id="sec-prova-social-cards" className="py-20 px-5 bg-[#05070a]">
-      <div className="container max-width-[1200px] mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-[32px] font-bold text-white mb-4">Histórias de Sucesso</h2>
-          <p className="text-[#94a3b8] text-base">Pessoas comuns que passaram no IMT.</p>
-        </div>
+    return (
+      <section id="sec-prova-social-cards" className="py-12 md:py-20 px-4 md:px-5 bg-[#05070a]">
+        <div className="container max-width-[1200px] mx-auto">
+          <div className="text-center mb-8 md:mb-12">
+            <h2 className="text-[26px] md:text-[32px] font-bold text-white mb-3 md:mb-4">Histórias de Sucesso</h2>
+            <p className="text-[#94a3b8] text-[14px] md:text-base">Pessoas comuns que passaram no IMT.</p>
+          </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-8 md:mb-12">
           {reviews.map((review, index) => (
             <div 
               key={index} 
@@ -75,18 +75,18 @@ const HistoriasSucesso = () => {
                 ))}
               </div>
 
-              <p className="text-[#e2e8f0] text-sm leading-relaxed mb-6 italic">
+              <p className="text-[#e2e8f0] text-[13px] md:text-sm leading-relaxed mb-4 md:mb-6 italic">
                 {review.text}
               </p>
 
-              <div className="mt-auto pt-4 border-t border-[#1e293b]/50 text-[#64748b] text-[11px] uppercase tracking-wider">
+              <div className="mt-auto pt-3 md:pt-4 border-t border-[#1e293b]/50 text-[#64748b] text-[10px] md:text-[11px] uppercase tracking-wider">
                 Publicado recentemente
               </div>
             </div>
           ))}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-14">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4 mb-10 md:mb-14">
           {successPhotos.map((photo, index) => (
             <div 
               key={index} 

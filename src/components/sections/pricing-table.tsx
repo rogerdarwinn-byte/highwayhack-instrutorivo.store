@@ -24,29 +24,29 @@ const PricingTable = () => {
     { name: 'Garantia incondicional de 7 dias', price: '💰 Grátis', isFree: true },
   ];
 
-  return (
-    <section id="pricing" className="py-20 px-5 bg-[#05070a]">
-      <div className="max-w-[1200px] mx-auto text-center">
-        {/* Header Section */}
-        <div className="mb-10">
-          <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 px-3 py-1 rounded-full mb-4">
-            <span className="text-[#facc15] text-xs font-semibold tracking-wide">
-              🎁 OFERTA ESPECIAL -89,12%
-            </span>
+    return (
+      <section id="pricing" className="py-12 md:py-20 px-4 md:px-5 bg-[#05070a]">
+        <div className="max-w-[1200px] mx-auto text-center">
+          {/* Header Section */}
+          <div className="mb-8 md:mb-10">
+            <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 px-3 py-1 rounded-full mb-4">
+              <span className="text-[#facc15] text-[11px] md:text-xs font-semibold tracking-wide">
+                🎁 OFERTA ESPECIAL -89,12%
+              </span>
+            </div>
+            <h2 className="text-white text-[26px] md:text-[32px] font-bold leading-tight mb-4">
+              Oportunidade Única
+            </h2>
+            <p className="text-[#94a3b8] max-w-2xl mx-auto text-[14px] md:text-base leading-relaxed px-2">
+              Reprovar custa taxas, tempo e novas aulas. Ter um método claro custa menos e continua contigo mesmo depois de passares.
+            </p>
           </div>
-          <h2 className="text-white text-[32px] font-bold leading-tight mb-4">
-            Oportunidade Única
-          </h2>
-          <p className="text-[#94a3b8] max-w-2xl mx-auto text-base leading-relaxed">
-            Reprovar custa taxas, tempo e novas aulas. Ter um método claro custa menos e continua contigo mesmo depois de passares.
-          </p>
-        </div>
 
-        {/* Pricing Card */}
-        <div className="max-w-[500px] mx-auto bg-[#0c0f16] border border-[#1e293b] rounded-[24px] p-8 shadow-[0_20px_60px_rgba(0,0,0,0.5)]">
-          {/* Price Header */}
-          <div className="mb-8">
-            <p className="text-[#94a3b8] text-[13.6px] mb-1">
+          {/* Pricing Card */}
+          <div className="max-w-[500px] mx-auto bg-[#0c0f16] border border-[#1e293b] rounded-[24px] p-6 md:p-8 shadow-[0_20px_60px_rgba(0,0,0,0.5)]">
+            {/* Price Header */}
+            <div className="mb-6 md:mb-8">
+              <p className="text-[#94a3b8] text-[13px] md:text-[13.6px] mb-1">
               De <del className="text-[#77778a]">275,00€</del> por apenas 3x de
             </p>
             <p className="text-[#facc15] text-[42px] font-extrabold leading-none mb-2">
@@ -80,17 +80,17 @@ const PricingTable = () => {
             ))}
           </ul>
 
-          {/* CTA Button */}
-          <button 
-            onClick={handleCTA}
-            className="w-full bg-[#22c55e] hover:shadow-[0_0_20px_rgba(34,197,94,0.4)] transition-all duration-200 text-[#05070a] font-bold py-4 px-6 rounded-full flex items-center justify-center gap-2 text-sm uppercase mb-6 transform hover:-translate-y-0.5"
-          >
-            GARANTIR O MEU ACESSO COM DESCONTO AGORA
-            <ArrowRight className="w-4 h-4" />
-          </button>
+            {/* CTA Button */}
+            <button 
+              onClick={handleCTA}
+              className="w-full bg-[#22c55e] hover:shadow-[0_0_20px_rgba(34,197,94,0.4)] transition-all duration-200 text-[#05070a] font-bold py-3.5 md:py-4 px-6 rounded-full flex items-center justify-center gap-2 text-[13px] md:text-sm uppercase mb-5 md:mb-6 transform hover:-translate-y-0.5"
+            >
+              GARANTIR O MEU ACESSO COM DESCONTO AGORA
+              <ArrowRight className="w-4 h-4" />
+            </button>
 
-          {/* Trust Badges */}
-          <div className="flex items-center justify-center gap-6 text-[11px] text-[#94a3b8] uppercase font-bold tracking-wider">
+            {/* Trust Badges */}
+            <div className="flex items-center justify-center gap-4 md:gap-6 text-[10px] md:text-[11px] text-[#94a3b8] uppercase font-bold tracking-wider">
             <span className="flex items-center gap-1.5">
               <ShieldCheck className="w-3.5 h-3.5 text-white/40" />
               Seguro
