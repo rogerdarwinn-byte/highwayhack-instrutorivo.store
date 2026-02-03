@@ -26,7 +26,7 @@ const HeroSection = () => {
 
       {/* Main Headline */}
         <h1 className="max-w-[800px] text-center text-[#f5f5f5] text-[32px] md:text-[54.4px] font-extrabold leading-[1.1] tracking-[-0.02em] mb-[12px] text-balance">
-          Aprovado no Código à Primeira — Ou <span className="text-[#ffde7a]">o Seu Dinheiro de Volta</span>
+          Aprovado no Código à Primeira — Ou <span className="text-[#ffde7a]">o Teu Dinheiro de Volta</span>
         </h1>
 
         {/* Sub-headline */}
