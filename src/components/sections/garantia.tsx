@@ -5,18 +5,18 @@ const GarantiaSection: React.FC = () => {
   return (
     <section 
       id="sec-garantia" 
-      className="py-12 md:py-[80px] px-4 md:px-5 bg-[#05070a] border-t border-[#1e293b]"
+      className="py-[80px] px-5 bg-[#05070a] border-t border-[#1e293b]"
       style={{
         fontFamily: 'Inter, "Inter Fallback", sans-serif'
       }}
     >
       <div className="max-w-[1200px] mx-auto text-center">
         {/* Section Header */}
-        <div className="mb-8 md:mb-10 px-2 md:px-4">
-          <h2 className="text-[26px] md:text-[2rem] leading-[1.2] font-bold text-white mb-3 md:mb-4">
+        <div className="mb-10 px-4">
+          <h2 className="text-[2rem] leading-[1.2] font-bold text-white mb-4">
             Testa durante 7 dias, sem risco
           </h2>
-          <p className="text-[#94a3b8] text-[14px] md:text-[1rem] leading-[1.6] max-w-[600px] mx-auto">
+          <p className="text-[#94a3b8] text-[1rem] leading-[1.6] max-w-[600px] mx-auto">
             Se não fizer sentido para ti, se não sentires que estás a entender melhor as perguntas, 
             basta pedir reembolso dentro do prazo.
           </p>
@@ -42,13 +42,13 @@ const GarantiaSection: React.FC = () => {
           </div>
 
           {/* Guarantee Text Block */}
-          <div className="max-w-[700px] mb-8 md:mb-10 px-2 md:px-4">
-            <h3 className="text-[1.1rem] md:text-[1.25rem] font-semibold text-white mb-3 md:mb-4">
+          <div className="max-w-[700px] mb-10 px-4">
+            <h3 className="text-[1.25rem] font-semibold text-white mb-4">
               Garantia incondicional de 7 dias
             </h3>
-            <p className="text-[#94a3b8] text-[14px] md:text-[1rem] leading-[1.6]">
+            <p className="text-[#94a3b8] text-[1rem] leading-[1.6]">
               Usa o método, segue o plano, testa nas tuas questões reais. Se, por qualquer motivo, 
-              achares que não valeu a pena, devolvemos o teu dinheiro. Sem letras pequeninas, 
+              achares que não valeu a pena, enviamos o teu dinheiro de volta. Sem letras pequeninas, 
               sem interrogatório.
             </p>
           </div>
@@ -56,7 +56,7 @@ const GarantiaSection: React.FC = () => {
           {/* CTA Button */}
           <a 
             href="#pricing"
-            className="btn-primary group relative flex items-center justify-center gap-2 px-6 md:px-8 py-3.5 md:py-4 bg-[#22c55e] text-[#05070a] font-bold text-[13px] md:text-sm uppercase rounded-full transition-all duration-200 hover:scale-[1.02] hover:shadow-[0_0_20px_rgba(34,197,94,0.4)]"
+            className="btn-primary group relative flex items-center justify-center gap-2 px-8 py-4 bg-[#22c55e] text-[#05070a] font-bold text-sm uppercase rounded-full transition-all duration-200 hover:scale-[1.02] hover:shadow-[0_0_20px_rgba(34,197,94,0.4)]"
             style={{
               letterSpacing: '0.05em'
             }}

@@ -52,18 +52,18 @@ export default function ReviewsCarousel() {
     }
   };
 
-    return (
-      <section id="sec-prova-social-prints" className="py-12 md:py-[80px] bg-[#05070a]">
-        <div className="container overflow-hidden px-4">
-          {/* Section Header */}
-          <div className="mb-8 md:mb-12 text-center">
-            <h2 className="text-[26px] md:text-[32px] font-bold leading-[1.2] text-white tracking-tight mb-3 md:mb-4">
-              Avaliações dos Alunos
-            </h2>
-            <p className="max-w-[600px] mx-auto text-[14px] md:text-[16px] text-[#94a3b8] leading-relaxed px-2">
-              Deixa de imaginar o resultado e vê o que quem já usou o método diz depois de passar no exame.
-            </p>
-          </div>
+  return (
+    <section id="sec-prova-social-prints" className="py-20 md:py-[80px] bg-[#05070a]">
+      <div className="container overflow-hidden">
+        {/* Section Header */}
+        <div className="mb-12 text-center">
+          <h2 className="text-[32px] font-bold leading-[1.2] text-white tracking-tight mb-4">
+            Avaliações dos Alunos
+          </h2>
+          <p className="max-w-[600px] mx-auto text-[16px] text-[#94a3b8] leading-relaxed">
+            Deixa de imaginar o resultado e vê o que quem já usou o método diz depois de passar no exame.
+          </p>
+        </div>
 
         {/* Carousel Container */}
         <div className="relative group max-w-[1200px] mx-auto">
@@ -108,16 +108,16 @@ export default function ReviewsCarousel() {
           </div>
         </div>
 
-          {/* CTA Button */}
-          <div className="mt-8 md:mt-12 flex justify-center">
-            <a
-              href="#pricing"
-              className="inline-flex items-center justify-center px-8 md:px-10 py-4 md:py-5 bg-[#22c55e] text-[#05070a] text-[14px] md:text-[16px] font-bold rounded-full uppercase tracking-wide transition-all duration-200 hover:shadow-[0_0_20px_rgba(34,197,94,0.4)] hover:-translate-y-1 active:scale-95"
-            >
-              APROVEITAR OFERTA AGORA
-            </a>
-          </div>
+        {/* CTA Button */}
+        <div className="mt-12 flex justify-center">
+          <a
+            href="#pricing"
+            className="inline-flex items-center justify-center px-10 py-5 bg-[#22c55e] text-[#05070a] text-[16px] font-bold rounded-full uppercase tracking-wide transition-all duration-200 hover:shadow-[0_0_20px_rgba(34,197,94,0.4)] hover:-translate-y-1 active:scale-95"
+          >
+            APROVEITAR OFERTA AGORA
+          </a>
         </div>
+      </div>
 
       <style jsx global>{`
         .scrollbar-hide::-webkit-scrollbar {

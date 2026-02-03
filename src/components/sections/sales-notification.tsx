@@ -48,23 +48,23 @@ export default function SalesNotification() {
     };
   }, []);
 
-    return (
-      <div
-        className={cn(
-          "fixed bottom-4 left-4 md:bottom-6 md:left-6 z-[100] flex max-w-[290px] md:max-w-[320px] items-center gap-3 md:gap-4 rounded-2xl border border-[#1e293b] bg-[#0c0f16]/95 p-3 md:p-4 shadow-2xl backdrop-blur-sm transition-all duration-500 ease-in-out",
-          isVisible 
-            ? "translate-y-0 opacity-100" 
-            : "translate-y-12 opacity-0 pointer-events-none"
-        )}
-        style={{
-          boxShadow: "0 20px 50px rgba(0,0,0,0.5)"
-        }}
-      >
-        <div className="flex h-10 w-10 md:h-12 md:w-12 shrink-0 items-center justify-center rounded-xl bg-[#22c55e]/10 text-[#22c55e]">
-          <ShoppingBag className="h-5 w-5 md:h-6 md:w-6" />
-        </div>
-        
-        <div className="text-[12px] md:text-[14px] leading-snug text-[#94a3b8]">
+  return (
+    <div
+      className={cn(
+        "fixed bottom-6 left-6 z-[100] flex max-w-[320px] items-center gap-4 rounded-2xl border border-[#1e293b] bg-[#0c0f16]/95 p-4 shadow-2xl backdrop-blur-sm transition-all duration-500 ease-in-out sm:max-w-md",
+        isVisible 
+          ? "translate-y-0 opacity-100" 
+          : "translate-y-12 opacity-0 pointer-events-none"
+      )}
+      style={{
+        boxShadow: "0 20px 50px rgba(0,0,0,0.5)"
+      }}
+    >
+      <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#22c55e]/10 text-[#22c55e]">
+        <ShoppingBag className="h-6 w-6" />
+      </div>
+      
+      <div className="text-[14px] leading-snug text-[#94a3b8]">
         <span className="font-bold text-white">{currentSale.name}</span>
         {" de "}
         <span className="font-semibold text-white">{currentSale.city}</span>

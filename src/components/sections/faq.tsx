@@ -44,30 +44,30 @@ const FAQSection = () => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
-    return (
-      <section className="bg-[#05070a] py-12 md:py-[80px] px-4 md:px-[20px]">
-        <div className="container max-w-[1200px] mx-auto">
-          <div className="text-center mb-8 md:mb-12">
-            <h2 className="text-[26px] md:text-[32px] font-bold leading-[1.2] text-[#ffffff] mb-3 md:mb-4 font-display">
-              Ainda com dúvidas?
-            </h2>
-            <p className="text-[14px] md:text-[16px] leading-[1.6] text-[#94a3b8] max-w-[600px] mx-auto px-2">
-              Respostas diretas para as perguntas que mais aparecem antes de entrares.
-            </p>
-          </div>
+  return (
+    <section className="bg-[#05070a] py-[80px] px-[20px]">
+      <div className="container max-w-[1200px] mx-auto">
+        <div className="text-center mb-12">
+          <h2 className="text-[32px] font-bold leading-[1.2] text-[#ffffff] mb-4 font-display">
+            Ainda com dúvidas?
+          </h2>
+          <p className="text-[16px] leading-[1.6] text-[#94a3b8] max-w-[600px] mx-auto">
+            Respostas diretas para as perguntas que mais aparecem antes de entrares.
+          </p>
+        </div>
 
-          <div className="max-w-[800px] mx-auto space-y-3">
+        <div className="max-w-[800px] mx-auto space-y-3">
           {faqData.map((item, index) => (
             <div
               key={index}
               className="border border-[#1e293b] rounded-[12px] bg-[#0c0f16] overflow-hidden transition-all duration-200"
             >
-                <button
-                  onClick={() => toggleAccordion(index)}
-                  className="w-full flex items-center justify-between p-4 md:p-5 text-left transition-colors hover:bg-[#161b22]"
-                  aria-expanded={openIndex === index}
-                >
-                  <span className="text-[14px] md:text-[16px] font-medium text-white pr-4">
+              <button
+                onClick={() => toggleAccordion(index)}
+                className="w-full flex items-center justify-between p-5 text-left transition-colors hover:bg-[#161b22]"
+                aria-expanded={openIndex === index}
+              >
+                <span className="text-[16px] font-medium text-white pr-4">
                   {item.question}
                 </span>
                 <div className="flex-shrink-0">
