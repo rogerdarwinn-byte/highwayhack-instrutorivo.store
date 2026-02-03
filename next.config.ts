@@ -16,6 +16,12 @@ const nextConfig: NextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  experimental: {
+    forceSwcTransforms: false,
+  },
+  webpack: (config) => {
+    return config;
+  },
 };
 
 export default nextConfig;
