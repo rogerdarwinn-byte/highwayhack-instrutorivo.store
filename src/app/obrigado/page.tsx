@@ -159,12 +159,14 @@ function ObrigadoContent() {
           </p>
 
             <a 
-              href="#" 
-              className="flex items-center justify-center gap-3 w-full bg-gradient-to-r from-[#facc15] to-[#f59e0b] hover:from-[#f59e0b] hover:to-[#d97706] text-[#0c0f16] font-bold py-4 px-6 rounded-xl transition-all duration-300 hover:-translate-y-1 shadow-[0_10px_30px_rgba(250,204,21,0.3)] animate-pulse-slow"
-            >
-            <Download className="w-6 h-6" />
-            <span>Aceder às Vídeo Aulas no Google Drive</span>
-          </a>
+                href="https://drive.google.com/drive/folders/1yz_jfYGBVtD8wcMf4wc3j2qCqRrPznZP?usp=sharing" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-3 w-full bg-gradient-to-r from-[#facc15] to-[#f59e0b] hover:from-[#f59e0b] hover:to-[#d97706] text-[#0c0f16] font-bold py-4 px-6 rounded-xl transition-all duration-300 hover:-translate-y-1 shadow-[0_10px_30px_rgba(250,204,21,0.3)] animate-pulse-slow"
+              >
+              <Download className="w-6 h-6" />
+              <span>Aceder às Vídeo Aulas no Google Drive</span>
+            </a>
         </div>
 
         {/* Bonuses Grid */}
