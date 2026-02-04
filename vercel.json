@@ -1,0 +1,44 @@
+{
+  "rewrites": [
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "obrigado.highwayhack-instrutorivo.store"
+        }
+      ],
+      "destination": "/obrigado"
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "obrigado.highwayhack-instrutorivo.store"
+        }
+      ],
+      "destination": "/obrigado/:path*"
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "upsell.highwayhack-instrutorivo.store"
+        }
+      ],
+      "destination": "/upsell"
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "upsell.highwayhack-instrutorivo.store"
+        }
+      ],
+      "destination": "/upsell/:path*"
+    }
+  ]
+}
