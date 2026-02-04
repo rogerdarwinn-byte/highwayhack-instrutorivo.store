@@ -25,15 +25,29 @@ const nextConfig: NextConfig = {
   async rewrites() {
     return {
       beforeFiles: [
+        // Obrigado subdomain - root
         {
-          source: '/:path*',
+          source: '/',
           has: [{ type: 'host', value: 'obrigado.highwayhack-instrutorivo.store' }],
-          destination: '/obrigado/:path*',
+          destination: '/obrigado',
         },
+        // Obrigado subdomain - paths
         {
-          source: '/:path*',
+          source: '/:path+',
+          has: [{ type: 'host', value: 'obrigado.highwayhack-instrutorivo.store' }],
+          destination: '/obrigado/:path+',
+        },
+        // Upsell subdomain - root
+        {
+          source: '/',
           has: [{ type: 'host', value: 'upsell.highwayhack-instrutorivo.store' }],
-          destination: '/upsell/:path*',
+          destination: '/upsell',
+        },
+        // Upsell subdomain - paths
+        {
+          source: '/:path+',
+          has: [{ type: 'host', value: 'upsell.highwayhack-instrutorivo.store' }],
+          destination: '/upsell/:path+',
         },
       ],
     };
