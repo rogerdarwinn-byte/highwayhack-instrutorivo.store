@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, Suspense } from "react";
 import { useMetaPixel } from "@adkit.so/meta-pixel-next";
 import { 
   CheckCircle2, 
@@ -58,7 +58,7 @@ const Confetti = () => {
   );
 };
 
-export default function ObrigadoPage() {
+function ObrigadoContent() {
   const metaPixel = useMetaPixel();
 
   useEffect(() => {
@@ -296,7 +296,15 @@ export default function ObrigadoPage() {
         .animate-bounce-slow {
           animation: bounce-slow 2s ease-in-out infinite;
         }
-      `}</style>
+        `}</style>
     </main>
+  );
+}
+
+export default function ObrigadoPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-[#05070a]" />}>
+      <ObrigadoContent />
+    </Suspense>
   );
 }

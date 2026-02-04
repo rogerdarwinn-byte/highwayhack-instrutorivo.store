@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, Suspense } from "react";
 import { useMetaPixel } from "@adkit.so/meta-pixel-next";
 import HeroSection from "@/components/sections/hero";
 import ReviewsCarousel from "@/components/sections/reviews-carousel";
@@ -16,7 +16,7 @@ import Partners from "@/components/sections/partners";
 import Footer from "@/components/sections/footer";
 import SalesNotification from "@/components/sections/sales-notification";
 
-export default function Home() {
+function HomeContent() {
   const metaPixel = useMetaPixel();
 
   useEffect(() => {
@@ -42,5 +42,13 @@ export default function Home() {
       <Footer />
       <SalesNotification />
     </main>
+  );
+}
+
+export default function Home() {
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-[#05070a]" />}>
+      <HomeContent />
+    </Suspense>
   );
 }

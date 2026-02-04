@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, Suspense } from "react";
 import { useMetaPixel } from "@adkit.so/meta-pixel-next";
 import { 
   Play,
@@ -77,7 +77,7 @@ const TestimonialCard = ({ quote, author, location }: { quote: string; author: s
   </div>
 );
 
-export default function UpsellPage() {
+function UpsellContent() {
   const metaPixel = useMetaPixel();
 
   useEffect(() => {
@@ -419,5 +419,13 @@ export default function UpsellPage() {
         </footer>
       </div>
     </main>
+  );
+}
+
+export default function UpsellPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-[#05070a]" />}>
+      <UpsellContent />
+    </Suspense>
   );
 }
