@@ -80,11 +80,11 @@ const PricingTable = () => {
             ))}
           </ul>
 
-          {/* CTA Button */}
-          <button 
-            onClick={handleCTA}
-            className="w-full bg-[#22c55e] hover:shadow-[0_0_20px_rgba(34,197,94,0.4)] transition-all duration-200 text-[#05070a] font-bold py-4 px-6 rounded-full flex items-center justify-center gap-2 text-sm uppercase mb-6 transform hover:-translate-y-0.5"
-          >
+            {/* CTA Button */}
+            <button 
+              onClick={handleCTA}
+              className="w-full bg-[#22c55e] hover:shadow-[0_0_20px_rgba(34,197,94,0.4)] transition-all duration-200 text-[#05070a] font-bold py-4 px-6 rounded-full flex items-center justify-center gap-2 text-sm uppercase mb-6 transform hover:-translate-y-0.5 animate-pulse-slow"
+            >
             GARANTIR O MEU ACESSO COM DESCONTO AGORA
             <ArrowRight className="w-4 h-4" />
           </button>

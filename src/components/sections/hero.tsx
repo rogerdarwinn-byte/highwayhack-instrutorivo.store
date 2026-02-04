@@ -65,11 +65,11 @@ const HeroSection = () => {
             💰 Poupe 245,10€
           </p>
 
-          <a 
-            href="#checkout"
-            onClick={handleCTA}
-            className="w-full h-[56px] inline-flex items-center justify-center gap-2 bg-[#22c55e] hover:bg-[#1eb354] text-[#0507a] text-[15px] font-extrabold uppercase rounded-full shadow-[0_0_20px_rgba(34,197,94,0.4)] transition-all transform hover:-translate-y-1 mb-[20px] px-4"
-          >
+            <a 
+              href="#checkout"
+              onClick={handleCTA}
+              className="w-full h-[56px] inline-flex items-center justify-center gap-2 bg-[#22c55e] hover:bg-[#1eb354] text-[#0507a] text-[15px] font-extrabold uppercase rounded-full shadow-[0_0_20px_rgba(34,197,94,0.4)] transition-all transform hover:-translate-y-1 mb-[20px] px-4 animate-pulse-slow"
+            >
             <span>QUERO COMEÇAR HOJE — ÚLTIMAS VAGAS</span>
             <ArrowRight className="w-5 h-5" />
           </a>

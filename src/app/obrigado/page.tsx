@@ -111,20 +111,24 @@ export default function ObrigadoPage() {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-            <a 
-              href="#" 
-              className="flex items-center justify-center gap-3 bg-gradient-to-r from-[#22c55e] to-[#16a34a] hover:from-[#16a34a] hover:to-[#15803d] text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 hover:-translate-y-1 shadow-[0_10px_30px_rgba(34,197,94,0.3)]"
-            >
-              <Apple className="w-6 h-6" />
-              <span>Descarregar para iPhone</span>
-            </a>
-            <a 
-              href="#" 
-              className="flex items-center justify-center gap-3 bg-gradient-to-r from-[#6366f1] to-[#4f46e5] hover:from-[#4f46e5] hover:to-[#4338ca] text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 hover:-translate-y-1 shadow-[0_10px_30px_rgba(99,102,241,0.3)]"
-            >
-              <Smartphone className="w-6 h-6" />
-              <span>Descarregar para Android</span>
-            </a>
+              <a 
+                href="https://apps.apple.com/br/app/testes-c%C3%B3digo-da-estrada-imtt/id1451809836" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-3 bg-gradient-to-r from-[#22c55e] to-[#16a34a] hover:from-[#16a34a] hover:to-[#15803d] text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 hover:-translate-y-1 shadow-[0_10px_30px_rgba(34,197,94,0.3)] animate-pulse-slow"
+              >
+                <Apple className="w-6 h-6" />
+                <span>Descarregar para iPhone</span>
+              </a>
+              <a 
+                href="https://play.google.com/store/apps/details?id=tdc.testesdecodigo&hl=pt_BR&pli=1" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-3 bg-gradient-to-r from-[#6366f1] to-[#4f46e5] hover:from-[#4f46e5] hover:to-[#4338ca] text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 hover:-translate-y-1 shadow-[0_10px_30px_rgba(99,102,241,0.3)] animate-pulse-slow"
+              >
+                <Smartphone className="w-6 h-6" />
+                <span>Descarregar para Android</span>
+              </a>
           </div>
 
           <div className="bg-[#22c55e]/5 border-l-4 border-[#22c55e] rounded-r-xl p-4">
@@ -154,10 +158,10 @@ export default function ObrigadoPage() {
             Todas as aulas em vídeo estão disponíveis no Google Drive. Podes ver online ou descarregar para estudar offline!
           </p>
 
-          <a 
-            href="#" 
-            className="flex items-center justify-center gap-3 w-full bg-gradient-to-r from-[#facc15] to-[#f59e0b] hover:from-[#f59e0b] hover:to-[#d97706] text-[#0c0f16] font-bold py-4 px-6 rounded-xl transition-all duration-300 hover:-translate-y-1 shadow-[0_10px_30px_rgba(250,204,21,0.3)]"
-          >
+            <a 
+              href="#" 
+              className="flex items-center justify-center gap-3 w-full bg-gradient-to-r from-[#facc15] to-[#f59e0b] hover:from-[#f59e0b] hover:to-[#d97706] text-[#0c0f16] font-bold py-4 px-6 rounded-xl transition-all duration-300 hover:-translate-y-1 shadow-[0_10px_30px_rgba(250,204,21,0.3)] animate-pulse-slow"
+            >
             <Download className="w-6 h-6" />
             <span>Aceder às Vídeo Aulas no Google Drive</span>
           </a>
@@ -231,10 +235,10 @@ export default function ObrigadoPage() {
             Estratégias comprovadas, dicas práticas e segredos que as escolas de condução não contam!
           </p>
 
-          <a 
-            href="#" 
-            className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#ec4899] to-[#db2777] hover:from-[#db2777] hover:to-[#be185d] text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 hover:-translate-y-1 shadow-[0_10px_30px_rgba(236,72,153,0.4)]"
-          >
+            <a 
+              href="#" 
+              className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#ec4899] to-[#db2777] hover:from-[#db2777] hover:to-[#be185d] text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 hover:-translate-y-1 shadow-[0_10px_30px_rgba(236,72,153,0.4)] animate-pulse-slow"
+            >
             <BookOpen className="w-5 h-5" />
             <span>Ebook Bónus Boas Práticas no IMT</span>
             <ArrowRight className="w-5 h-5" />
@@ -262,32 +266,7 @@ export default function ObrigadoPage() {
           </div>
         </div>
 
-        {/* Upsell CTA */}
-        <div className="bg-gradient-to-r from-[#22c55e] to-[#16a34a] rounded-[24px] p-6 md:p-10 text-center shadow-[0_20px_60px_rgba(34,197,94,0.3)]">
-          <div className="flex items-center justify-center gap-2 mb-3">
-            <Star className="w-5 h-5 text-[#facc15] fill-[#facc15]" />
-            <Star className="w-5 h-5 text-[#facc15] fill-[#facc15]" />
-            <Star className="w-5 h-5 text-[#facc15] fill-[#facc15]" />
-          </div>
-          
-          <h3 className="text-white text-[20px] md:text-[24px] font-bold mb-3">
-            Queres Acelerar Ainda Mais os Teus Resultados?
-          </h3>
-          
-          <p className="text-white/90 mb-6 max-w-[500px] mx-auto">
-            Descobre como podes dominar TODO o código em metade do tempo com as nossas Vídeo Aulas Premium!
-          </p>
-
-          <Link 
-            href="/upsell"
-            className="inline-flex items-center justify-center gap-2 bg-white text-[#16a34a] font-bold py-4 px-8 rounded-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_15px_40px_rgba(0,0,0,0.3)]"
-          >
-            <span>Ver Oferta Especial</span>
-            <ArrowRight className="w-5 h-5" />
-          </Link>
-        </div>
-
-        {/* Footer */}
+          {/* Footer */}
         <footer className="text-center pt-12 mt-12 border-t border-[#1e293b]">
           <p className="text-[#77778a] text-[14px] mb-2">
             © 2026 Highway Hack Instrutor Ivo · Material de estudo independente, não afiliado ao IMT.
