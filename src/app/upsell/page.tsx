@@ -21,6 +21,7 @@ import {
   AlertTriangle
 } from "lucide-react";
 import Link from "next/link";
+import YouTubeFacade from "@/components/youtube-facade";
 
 // Countdown Timer Component
 const CountdownTimer = () => {
@@ -136,22 +137,20 @@ function UpsellContent() {
           </div>
         </div>
 
-        {/* Video Preview */}
-        <div className="bg-[#0c0f16] border border-[#22c55e] rounded-[24px] p-4 md:p-8 mb-10 shadow-[0_20px_60px_rgba(34,197,94,0.2)]">
-          <div className="relative aspect-video rounded-xl overflow-hidden mb-6 shadow-[0_10px_40px_rgba(0,0,0,0.5)]">
-            <iframe 
-              className="absolute inset-0 w-full h-full"
-              src="https://www.youtube.com/embed/IWUXFgDSI3c?rel=0&modestbranding=1" 
-              title="Preview das Vídeo Aulas"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-              allowFullScreen
-            />
+          {/* Video Preview - Lazy loaded for performance */}
+          <div className="bg-[#0c0f16] border border-[#22c55e] rounded-[24px] p-4 md:p-8 mb-10 shadow-[0_20px_60px_rgba(34,197,94,0.2)]">
+            <div className="rounded-xl overflow-hidden mb-6 shadow-[0_10px_40px_rgba(0,0,0,0.5)]">
+              <YouTubeFacade
+                videoId="IWUXFgDSI3c"
+                title="Preview das Vídeo Aulas"
+                aspectRatio="video"
+              />
+            </div>
+            <div className="text-center">
+              <h3 className="text-white text-[20px] md:text-[24px] font-bold mb-2">Vê como funciona o Método em Vídeo</h3>
+              <p className="text-[#a2a2b8]">Mais de <span className="text-[#22c55e] font-bold">300 alunos</span> já conseguiram passar estudando apenas com os vídeos</p>
+            </div>
           </div>
-          <div className="text-center">
-            <h3 className="text-white text-[20px] md:text-[24px] font-bold mb-2">Vê como funciona o Método em Vídeo</h3>
-            <p className="text-[#a2a2b8]">Mais de <span className="text-[#22c55e] font-bold">300 alunos</span> já conseguiram passar estudando apenas com os vídeos</p>
-          </div>
-        </div>
 
         {/* Benefits Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">

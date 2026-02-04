@@ -3,6 +3,7 @@
 import React from 'react';
 import { ArrowRight, Bolt, ShieldCheck, Zap, Clock } from 'lucide-react';
 import { useMetaPixel } from "@adkit.so/meta-pixel-next";
+import YouTubeFacade from "@/components/youtube-facade";
 
 const HeroSection = () => {
   const metaPixel = useMetaPixel();
@@ -34,17 +35,14 @@ const HeroSection = () => {
           O método <span className="text-[#f5f5f5] font-semibold">passo a passo</span> que mais de <span className="text-[#f5f5f5] font-semibold">1747 portugueses</span> usaram para passar no <span className="text-[#f5f5f5] font-semibold">IMT em até 14 dias</span> (sem stress, sem decorar sinais nem pagar mensalidades intermináveis)
         </p>
 
-      {/* YouTube Shorts Video Embed */}
-      <div className="relative w-full max-w-[400px] aspect-[9/16] mt-[24px] mb-[40px] bg-black rounded-[18px] shadow-[rgba(0,0,0,0.7)_0px_20px_60px_0px] overflow-hidden border border-[#1e293b]">
-        <iframe
-          id="youtube-player"
-          className="absolute inset-0 w-full h-full"
-          src="https://www.youtube.com/embed/KR-Vg_cTtk0?autoplay=1&mute=0&loop=1&playlist=KR-Vg_cTtk0&playsinline=1&modestbranding=1&rel=0&controls=1&enablejsapi=1"
-          title="Highway Hack Preview"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        />
-      </div>
+        {/* YouTube Shorts Video Embed - Lazy loaded for performance */}
+        <div className="w-full max-w-[400px] mt-[24px] mb-[40px] rounded-[18px] shadow-[rgba(0,0,0,0.7)_0px_20px_60px_0px] overflow-hidden border border-[#1e293b]">
+          <YouTubeFacade
+            videoId="KR-Vg_cTtk0"
+            title="Highway Hack Preview"
+            aspectRatio="shorts"
+          />
+        </div>
 
       {/* Pricing Block */}
       <div className="w-full max-w-[463.5px] p-[32px] md:pt-[32px] md:pb-[32px] md:px-[25.6px] bg-[#0c0f16] border border-[#1e293b] rounded-[24px] shadow-[rgba(0,0,0,0.7)_0px_20px_60px_0px] text-center">
