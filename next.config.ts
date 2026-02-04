@@ -22,6 +22,22 @@ const nextConfig: NextConfig = {
   webpack: (config) => {
     return config;
   },
+  async rewrites() {
+    return {
+      beforeFiles: [
+        {
+          source: '/:path*',
+          has: [{ type: 'host', value: 'obrigado.highwayhack-instrutorivo.store' }],
+          destination: '/obrigado/:path*',
+        },
+        {
+          source: '/:path*',
+          has: [{ type: 'host', value: 'upsell.highwayhack-instrutorivo.store' }],
+          destination: '/upsell/:path*',
+        },
+      ],
+    };
+  },
 };
 
 export default nextConfig;

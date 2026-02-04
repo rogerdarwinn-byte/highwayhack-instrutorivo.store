@@ -236,13 +236,15 @@ export default function ObrigadoPage() {
           </p>
 
             <a 
-              href="#" 
+              href="/obrigado/ebook"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#ec4899] to-[#db2777] hover:from-[#db2777] hover:to-[#be185d] text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 hover:-translate-y-1 shadow-[0_10px_30px_rgba(236,72,153,0.4)] animate-pulse-slow"
             >
-            <BookOpen className="w-5 h-5" />
-            <span>Ebook Bónus Boas Práticas no IMT</span>
-            <ArrowRight className="w-5 h-5" />
-          </a>
+              <BookOpen className="w-5 h-5" />
+              <span>Ebook Bónus Boas Práticas no IMT</span>
+              <ArrowRight className="w-5 h-5" />
+            </a>
         </div>
 
         {/* Next Steps */}
