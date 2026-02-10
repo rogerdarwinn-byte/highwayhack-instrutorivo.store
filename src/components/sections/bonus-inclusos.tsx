@@ -1,7 +1,6 @@
 "use client";
 
 import React from 'react';
-import { useMetaPixel } from "@adkit.so/meta-pixel-next";
 
 /**
  * BonusInclusos component
@@ -11,16 +10,6 @@ import { useMetaPixel } from "@adkit.so/meta-pixel-next";
  * It includes a large green primary CTA button at the bottom.
  */
 const BonusInclusos: React.FC = () => {
-  const metaPixel = useMetaPixel();
-
-  const handleCTA = () => {
-    metaPixel.track("InitiateCheckout", {
-      content_name: "Highway Hack Method",
-      value: 29.88,
-      currency: "EUR",
-    });
-  };
-
   const bonuses = [
     {
       id: 1,
@@ -79,7 +68,6 @@ const BonusInclusos: React.FC = () => {
         <div className="flex justify-center">
           <a 
             href="#pricing"
-            onClick={handleCTA}
             className="group relative flex items-center justify-center gap-2 bg-[#22c55e] text-[#05070a] text-[16px] font-bold uppercase tracking-wide py-4 px-10 rounded-full transition-all duration-200 hover:shadow-[0_0_20px_rgba(34,197,94,0.4)] hover:-translate-y-0.5"
           >
             GARANTIR A MINHA VAGA AGORA

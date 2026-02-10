@@ -2,19 +2,8 @@
 
 import React from 'react';
 import { Check, ArrowRight, ShieldCheck, Zap, Clock } from 'lucide-react';
-import { useMetaPixel } from "@adkit.so/meta-pixel-next";
 
 const PricingTable = () => {
-  const metaPixel = useMetaPixel();
-
-  const handleCTA = () => {
-    metaPixel.track("InitiateCheckout", {
-      content_name: "Highway Hack Method",
-      value: 29.88,
-      currency: "EUR",
-    });
-  };
-
   const includes = [
     { name: 'Material de Estudo Completo', price: '97,00€' },
     { name: 'Plano de Treino de 30 dias', price: '67,00€' },
@@ -82,7 +71,6 @@ const PricingTable = () => {
 
             {/* CTA Button */}
             <button 
-              onClick={handleCTA}
               className="w-full bg-[#22c55e] hover:shadow-[0_0_20px_rgba(34,197,94,0.4)] transition-all duration-200 text-[#05070a] font-bold py-4 px-6 rounded-full flex items-center justify-center gap-2 text-sm uppercase mb-6 transform hover:-translate-y-0.5 animate-pulse-slow"
             >
             GARANTIR O MEU ACESSO COM DESCONTO AGORA

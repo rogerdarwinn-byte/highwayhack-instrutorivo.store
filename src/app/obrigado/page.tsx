@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState, Suspense } from "react";
-import { useMetaPixel } from "@adkit.so/meta-pixel-next";
 import { 
   CheckCircle2, 
   Download, 
@@ -59,16 +58,6 @@ const Confetti = () => {
 };
 
 function ObrigadoContent() {
-  const metaPixel = useMetaPixel();
-
-  useEffect(() => {
-    metaPixel.track("Purchase", {
-      content_name: "Highway Hack Method",
-      value: 29.88,
-      currency: "EUR",
-    });
-  }, [metaPixel]);
-
   return (
     <main className="min-h-screen bg-[#05070a] relative overflow-hidden">
       <Confetti />

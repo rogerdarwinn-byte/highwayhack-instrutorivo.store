@@ -3,7 +3,6 @@ import "./globals.css";
 import VisualEditsMessenger from "../visual-edits/VisualEditsMessenger";
 import ErrorReporter from "@/components/ErrorReporter";
 import Script from "next/script";
-import { PixelProvider } from "@/components/pixel-provider";
 
 export const metadata: Metadata = {
   title: "Highway Hack - Aprovado no Código à Primeira",
@@ -18,6 +17,13 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <head>
+        {/* Google Tag Manager */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s);j.async=true;j.src="https://gtm.highwayhack-instrutorivo.store/7czsumvizcb.js?"+i;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','8=CwdHLiIgWCMkO0w%2BOzUmVRReSEdHSxEdXwsTDh4aFAoKAhkCWwQbABYRDx0ZHxwFDU0JHRkfEA%3D%3D');`,
+          }}
+        />
+        {/* End Google Tag Manager */}
         {/* Preconnect to YouTube for faster video loading when user clicks play */}
         <link rel="preconnect" href="https://www.youtube.com" />
         <link rel="preconnect" href="https://www.google.com" />
@@ -27,7 +33,6 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://i.ytimg.com" />
       </head>
       <body className="antialiased">
-        <PixelProvider>
           <Script
             id="orchids-browser-logs"
             src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/scripts/orchids-browser-logs.js"
@@ -47,7 +52,6 @@ export default function RootLayout({
           />
           {children}
           <VisualEditsMessenger />
-        </PixelProvider>
       </body>
     </html>
   );

@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState, Suspense } from "react";
-import { useMetaPixel } from "@adkit.so/meta-pixel-next";
 import { 
   Play,
   CheckCircle2, 
@@ -78,24 +77,6 @@ const TestimonialCard = ({ quote, author, location }: { quote: string; author: s
 );
 
 function UpsellContent() {
-  const metaPixel = useMetaPixel();
-
-  useEffect(() => {
-    metaPixel.track("ViewContent", {
-      content_name: "Upsell - Video Aulas Premium",
-      content_category: "Upsell",
-      value: 37,
-      currency: "EUR",
-    });
-  }, [metaPixel]);
-
-  const handleCTA = () => {
-    metaPixel.track("InitiateCheckout", {
-      content_name: "Video Aulas Premium",
-      value: 37,
-      currency: "EUR",
-    });
-  };
 
   return (
     <main className="min-h-screen bg-[#05070a] relative overflow-hidden">
@@ -364,7 +345,6 @@ function UpsellContent() {
 
             <a 
               href="#checkout"
-              onClick={handleCTA}
               className="inline-flex items-center justify-center gap-3 bg-white text-[#16a34a] font-black text-[16px] md:text-[18px] py-5 px-10 rounded-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_15px_50px_rgba(0,0,0,0.3)] uppercase animate-pulse-slow"
             >
             <span>SIM! QUERO AS VÍDEO AULAS AGORA</span>
