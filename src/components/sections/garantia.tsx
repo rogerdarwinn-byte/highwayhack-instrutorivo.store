@@ -14,7 +14,7 @@ const GarantiaSection: React.FC = () => {
         {/* Section Header */}
         <div className="mb-10 px-4">
           <h2 className="text-[2rem] leading-[1.2] font-bold text-white mb-4">
-            Testa durante 7 dias, sem risco
+            Testa durante 60 dias, sem risco
           </h2>
           <p className="text-[#94a3b8] text-[1rem] leading-[1.6] max-w-[600px] mx-auto">
             Se não fizer sentido para ti, se não sentires que estás a entender melhor as perguntas, 
@@ -33,18 +33,18 @@ const GarantiaSection: React.FC = () => {
               background: 'linear-gradient(135deg, #3b82f6, #1d4ed8)',
               borderRadius: '50%',
               boxShadow: '0 10px 25px rgba(59, 130, 246, 0.3)',
-              fontSize: '3rem',
+              fontSize: '2.2rem',
               fontWeight: '800',
               color: 'white'
             }}
           >
-            7
+            60
           </div>
 
           {/* Guarantee Text Block */}
           <div className="max-w-[700px] mb-10 px-4">
             <h3 className="text-[1.25rem] font-semibold text-white mb-4">
-              Garantia incondicional de 7 dias
+              Garantia incondicional de 60 dias
             </h3>
             <p className="text-[#94a3b8] text-[1rem] leading-[1.6]">
               Usa o método, segue o plano, testa nas tuas questões reais. Se, por qualquer motivo, 

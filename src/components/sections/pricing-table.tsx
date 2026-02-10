@@ -10,7 +10,7 @@ const PricingTable = () => {
     { name: 'Armadilhas do IMT (25 armadilhas)', price: '47,00€' },
     { name: 'Checklist "PASSO A PASSO IMT"', price: '27,00€' },
     { name: 'Atualizações gratuitas 2026', price: '37,00€' },
-    { name: 'Garantia incondicional de 7 dias', price: '💰 Grátis', isFree: true },
+    { name: 'Garantia incondicional de 60 dias', price: '💰 Grátis', isFree: true },
   ];
 
   return (

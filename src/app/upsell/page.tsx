@@ -363,7 +363,7 @@ function UpsellContent() {
           <div className="mt-8 bg-white/10 rounded-xl p-5 max-w-[500px] mx-auto">
             <div className="flex items-center justify-center gap-2 mb-2">
               <Shield className="w-5 h-5 text-white" />
-              <span className="text-white font-bold">Garantia Total de 7 Dias</span>
+              <span className="text-white font-bold">Garantia Total de 60 Dias</span>
             </div>
             <p className="text-white/80 text-[14px]">
               Se não achares que os vídeos valem cada cêntimo, devolvemos 100% do valor. Sem perguntas, sem stress.
