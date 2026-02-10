@@ -1,7 +1,3 @@
-"use client";
-
-import { useEffect, Suspense } from "react";
-import { useMetaPixel } from "@adkit.so/meta-pixel-next";
 import HeroSection from "@/components/sections/hero";
 import ReviewsCarousel from "@/components/sections/reviews-carousel";
 import SegredoRevelado from "@/components/sections/segredo-revelado";
@@ -16,16 +12,7 @@ import Partners from "@/components/sections/partners";
 import Footer from "@/components/sections/footer";
 import SalesNotification from "@/components/sections/sales-notification";
 
-function HomeContent() {
-  const metaPixel = useMetaPixel();
-
-  useEffect(() => {
-    metaPixel.track("ViewContent", {
-      content_name: "Highway Hack Landing Page",
-      content_category: "Course/Method",
-    });
-  }, [metaPixel]);
-
+export default function Home() {
   return (
     <main className="min-h-screen bg-[#05070a]">
       <HeroSection />
@@ -42,13 +29,5 @@ function HomeContent() {
       <Footer />
       <SalesNotification />
     </main>
-  );
-}
-
-export default function Home() {
-  return (
-    <Suspense fallback={<div className="min-h-screen bg-[#05070a]" />}>
-      <HomeContent />
-    </Suspense>
   );
 }
