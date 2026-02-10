@@ -87,16 +87,19 @@ export default function SegredoRevelado() {
             </div>
           </div>
   
-          {/* CTA Button */}
-          <div className="flex justify-center">
-            <a 
-              href="#pricing"
+            {/* CTA Button */}
+            <div className="flex flex-col items-center">
+              <a 
+                href="#pricing"
 
-              className="group btn-primary bg-[#22c55e] text-[#05070a] text-[1rem] font-bold uppercase py-4 px-8 rounded-full flex items-center gap-3 transition-transform duration-200 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(34,197,94,0.4)]"
-            >
-              QUERO O MEU ACESSO COM DESCONTO
-            </a>
-        </div>
+                className="group btn-primary bg-[#22c55e] text-[#05070a] text-[1rem] font-bold uppercase py-4 px-8 rounded-full flex items-center gap-3 transition-transform duration-200 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(34,197,94,0.4)]"
+              >
+                COMPRAR AGORA
+              </a>
+              <p className="text-[#94a3b8] text-[11px] mt-2 text-center">
+                A cobrança aparecerá na sua fatura como &quot;Digistore24&quot;
+              </p>
+          </div>
       </div>
     </section>
   );

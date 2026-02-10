@@ -18,11 +18,11 @@ const PricingTable = () => {
       <div className="max-w-[1200px] mx-auto text-center">
         {/* Header Section */}
         <div className="mb-10">
-          <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 px-3 py-1 rounded-full mb-4">
-            <span className="text-[#facc15] text-xs font-semibold tracking-wide">
-              🎁 OFERTA ESPECIAL -89,12%
-            </span>
-          </div>
+            <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 px-3 py-1 rounded-full mb-4">
+              <span className="text-[#facc15] text-xs font-semibold tracking-wide">
+                🎁 OFERTA ESPECIAL
+              </span>
+            </div>
           <h2 className="text-white text-[32px] font-bold leading-tight mb-4">
             Oportunidade Única
           </h2>
@@ -33,18 +33,15 @@ const PricingTable = () => {
 
         {/* Pricing Card */}
         <div className="max-w-[500px] mx-auto bg-[#0c0f16] border border-[#1e293b] rounded-[24px] p-8 shadow-[0_20px_60px_rgba(0,0,0,0.5)]">
-          {/* Price Header */}
-          <div className="mb-8">
-            <p className="text-[#94a3b8] text-[13.6px] mb-1">
-              De <del className="text-[#77778a]">275,00€</del> por apenas 3x de
-            </p>
-            <p className="text-[#facc15] text-[42px] font-extrabold leading-none mb-2">
-              9,96€
-            </p>
-            <p className="text-[#22c55e] text-sm font-semibold flex items-center justify-center gap-1">
-              💰 Poupe 245,10€
-            </p>
-          </div>
+            {/* Price Header */}
+            <div className="mb-8">
+              <p className="text-[#94a3b8] text-[13.6px] mb-1">
+                3x de
+              </p>
+              <p className="text-[#facc15] text-[42px] font-extrabold leading-none mb-2">
+                9,96€
+              </p>
+            </div>
 
           {/* Feature List */}
           <ul className="text-left space-y-4 mb-8">
@@ -69,13 +66,17 @@ const PricingTable = () => {
             ))}
           </ul>
 
-            {/* CTA Button */}
-            <button 
-              className="w-full bg-[#22c55e] hover:shadow-[0_0_20px_rgba(34,197,94,0.4)] transition-all duration-200 text-[#05070a] font-bold py-4 px-6 rounded-full flex items-center justify-center gap-2 text-sm uppercase mb-6 transform hover:-translate-y-0.5 animate-pulse-slow"
-            >
-            GARANTIR O MEU ACESSO COM DESCONTO AGORA
-            <ArrowRight className="w-4 h-4" />
-          </button>
+              {/* CTA Button */}
+              <button 
+                className="w-full bg-[#22c55e] hover:shadow-[0_0_20px_rgba(34,197,94,0.4)] transition-all duration-200 text-[#05070a] font-bold py-4 px-6 rounded-full flex items-center justify-center gap-2 text-sm uppercase mb-2 transform hover:-translate-y-0.5 animate-pulse-slow"
+              >
+              COMPRAR AGORA
+              <ArrowRight className="w-4 h-4" />
+            </button>
+
+            <p className="text-[#94a3b8] text-[11px] mb-6 text-center">
+              A cobrança aparecerá na sua fatura como &quot;Digistore24&quot;
+            </p>
 
           {/* Trust Badges */}
           <div className="flex items-center justify-center gap-6 text-[11px] text-[#94a3b8] uppercase font-bold tracking-wider">

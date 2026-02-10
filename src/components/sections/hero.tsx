@@ -36,30 +36,30 @@ const HeroSection = () => {
 
       {/* Pricing Block */}
       <div className="w-full max-w-[463.5px] p-[32px] md:pt-[32px] md:pb-[32px] md:px-[25.6px] bg-[#0c0f16] border border-[#1e293b] rounded-[24px] shadow-[rgba(0,0,0,0.7)_0px_20px_60px_0px] text-center">
-        <div className="inline-flex items-center gap-2 mb-[16px] px-[12px] py-[4px] bg-[rgba(255,255,255,0.03)] rounded-full border border-[#1e293b]">
-          <Bolt className="w-[12px] h-[12px] text-[#a2a2b8]" />
-            <span className="text-[12.48px] text-[#ffde7a] font-semibold">OFERTA LIMITADA -89,12% DE DESCONTO.</span>
-        </div>
+          <div className="inline-flex items-center gap-2 mb-[16px] px-[12px] py-[4px] bg-[rgba(255,255,255,0.03)] rounded-full border border-[#1e293b]">
+            <Bolt className="w-[12px] h-[12px] text-[#a2a2b8]" />
+              <span className="text-[12.48px] text-[#ffde7a] font-semibold">OFERTA LIMITADA</span>
+          </div>
 
-        <p className="text-[#a2a2b8] text-[13.6px] mb-[4.8px]">
-          De <del className="text-[#77778a]">275,00€</del> por apenas 3x de
-        </p>
-
-        <p className="text-[#ffde7a] text-[33.6px] md:text-[42px] font-extrabold mb-[3.2px]">
-          9,96€
-        </p>
-
-          <p className="text-[#22c55e] text-[14px] font-bold mb-[24px]">
-            💰 Poupe 245,10€
+          <p className="text-[#a2a2b8] text-[13.6px] mb-[4.8px]">
+            3x de
           </p>
 
-            <a 
-              href="#checkout"
-              className="w-full h-[56px] inline-flex items-center justify-center gap-2 bg-[#22c55e] hover:bg-[#1eb354] text-[#0507a] text-[15px] font-extrabold uppercase rounded-full shadow-[0_0_20px_rgba(34,197,94,0.4)] transition-all transform hover:-translate-y-1 mb-[20px] px-4 animate-pulse-slow"
-            >
-            <span>QUERO COMEÇAR HOJE — ÚLTIMAS VAGAS</span>
-            <ArrowRight className="w-5 h-5" />
-          </a>
+          <p className="text-[#ffde7a] text-[33.6px] md:text-[42px] font-extrabold mb-[24px]">
+            9,96€
+          </p>
+
+              <a 
+                href="#checkout"
+                className="w-full h-[56px] inline-flex items-center justify-center gap-2 bg-[#22c55e] hover:bg-[#1eb354] text-[#0507a] text-[15px] font-extrabold uppercase rounded-full shadow-[0_0_20px_rgba(34,197,94,0.4)] transition-all transform hover:-translate-y-1 mb-[8px] px-4 animate-pulse-slow"
+              >
+              <span>COMPRAR AGORA</span>
+              <ArrowRight className="w-5 h-5" />
+            </a>
+
+            <p className="text-[#94a3b8] text-[11px] mb-[20px] text-center">
+              A cobrança aparecerá na sua fatura como &quot;Digistore24&quot;
+            </p>
 
         <ul className="flex items-center justify-center gap-[24px] text-[12px] text-[#a2a2b8]">
           <li className="flex items-center gap-1.5">
