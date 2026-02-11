@@ -260,14 +260,17 @@ function ObrigadoContent() {
         </div>
 
           {/* Footer */}
-        <footer className="text-center pt-12 mt-12 border-t border-[#1e293b]">
-          <p className="text-[#77778a] text-[14px] mb-2">
-            © 2026 Highway Hack Instrutor Ivo · Material de estudo independente, não afiliado ao IMT.
-          </p>
-          <p className="text-[#77778a] text-[13px]">
-            Tens dúvidas? Envia email para: <a href="mailto:suporte@highwayhack.com" className="text-[#22c55e] hover:underline">suporte@highwayhack.com</a>
-          </p>
-        </footer>
+          <footer className="text-center pt-12 mt-12 border-t border-[#1e293b]">
+            <p className="text-[#77778a] text-[14px] mb-2">
+              © 2026 Highway Hack Instrutor Ivo · Material de estudo independente, não afiliado ao IMT.
+            </p>
+            <p className="text-[#77778a] text-[13px] mb-2">
+              Tens dúvidas? Envia email para: <a href="mailto:suporte@highwayhack.com" className="text-[#22c55e] hover:underline">suporte@highwayhack.com</a>
+            </p>
+            <p className="text-[#77778a] text-[12px]">
+              A cobrança aparecerá na sua fatura como &quot;Digistore24&quot;
+            </p>
+          </footer>
       </div>
 
       <style jsx>{`

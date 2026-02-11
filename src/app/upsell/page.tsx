@@ -21,33 +21,6 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 
-// Countdown Timer Component
-const CountdownTimer = () => {
-  const [time, setTime] = useState(15 * 60); // 15 minutes
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setTime((prev) => (prev > 0 ? prev - 1 : 0));
-    }, 1000);
-    return () => clearInterval(timer);
-  }, []);
-
-  const minutes = Math.floor(time / 60);
-  const seconds = time % 60;
-
-  return (
-    <div className="flex items-center justify-center gap-2 text-[24px] md:text-[32px] font-bold text-white">
-      <div className="bg-[#ef4444] px-4 py-2 rounded-lg">
-        {String(minutes).padStart(2, '0')}
-      </div>
-      <span className="text-[#ef4444]">:</span>
-      <div className="bg-[#ef4444] px-4 py-2 rounded-lg">
-        {String(seconds).padStart(2, '0')}
-      </div>
-    </div>
-  );
-};
-
 // Video Module Item
 const ModuleItem = ({ number, title, description }: { number: string; title: string; description: string }) => (
   <div className="bg-[#0c0f16] border border-[#1e293b] rounded-xl p-5 hover:border-[#22c55e]/50 transition-all duration-300">
@@ -63,21 +36,7 @@ const ModuleItem = ({ number, title, description }: { number: string; title: str
   </div>
 );
 
-// Testimonial Card
-const TestimonialCard = ({ quote, author, location }: { quote: string; author: string; location: string }) => (
-  <div className="bg-[#0c0f16] border border-[#1e293b] rounded-xl p-6 hover:border-[#22c55e]/30 transition-all duration-300">
-    <div className="flex gap-1 mb-3">
-      {[...Array(5)].map((_, i) => (
-        <Star key={i} className="w-4 h-4 text-[#facc15] fill-[#facc15]" />
-      ))}
-    </div>
-    <p className="text-[#a2a2b8] italic mb-4 text-[15px]">"{quote}"</p>
-    <p className="text-[#22c55e] font-bold text-[14px]">— {author}, {location}</p>
-  </div>
-);
-
 function UpsellContent() {
-
   return (
     <main className="min-h-screen bg-[#05070a] relative overflow-hidden">
       {/* Background decorations */}
@@ -297,31 +256,6 @@ function UpsellContent() {
           </div>
         </div>
 
-        {/* Testimonials */}
-        <div className="mb-10">
-          <h2 className="text-center text-white text-[24px] md:text-[32px] font-bold mb-8">
-            O Que os <span className="text-[#22c55e]">Alunos Dizem</span>
-          </h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-            <TestimonialCard 
-              quote="Os vídeos são INCRÍVEIS! Passei em 12 dias a ver apenas os vídeos. Muito melhor que ler aquele livro enorme."
-              author="Sofia Costa"
-              location="Lisboa"
-            />
-            <TestimonialCard 
-              quote="Reprovei 2x antes de comprar os vídeos. Com as explicações visuais finalmente entendi as ultrapassagens!"
-              author="Miguel Santos"
-              location="Porto"
-            />
-            <TestimonialCard 
-              quote="Trabalho o dia todo e só tinha tempo à noite. Via 1-2 vídeos por dia no telemóvel e passei com 1 errada!"
-              author="Ana Pereira"
-              location="Coimbra"
-            />
-          </div>
-        </div>
-
         {/* Pricing Section */}
         <div className="bg-gradient-to-br from-[#22c55e] to-[#16a34a] rounded-[24px] p-6 md:p-12 text-center mb-10 shadow-[0_20px_60px_rgba(34,197,94,0.4)]">
           <div className="inline-flex items-center gap-2 bg-white/20 rounded-full px-4 py-2 mb-6">
@@ -332,8 +266,6 @@ function UpsellContent() {
           <h2 className="text-white text-[28px] md:text-[36px] font-bold mb-4">
             Acesso Completo às Vídeo Aulas
           </h2>
-
-          <p className="text-white/70 text-[24px] line-through mb-2">Valor Normal: 147€</p>
           
           <div className="mb-2">
             <span className="text-white text-[18px]">HOJE APENAS:</span>
@@ -347,17 +279,11 @@ function UpsellContent() {
               href="#checkout"
               className="inline-flex items-center justify-center gap-3 bg-white text-[#16a34a] font-black text-[16px] md:text-[18px] py-5 px-10 rounded-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_15px_50px_rgba(0,0,0,0.3)] uppercase animate-pulse-slow"
             >
-            <span>SIM! QUERO AS VÍDEO AULAS AGORA</span>
+            <span>SIM! ADICIONAR AO MEU PEDIDO</span>
             <ArrowRight className="w-6 h-6" />
           </a>
 
-          {/* Countdown */}
-          <div className="mt-8 bg-black/20 rounded-xl p-4 inline-block">
-            <p className="text-white/80 text-[14px] mb-3 flex items-center justify-center gap-2">
-              <Clock className="w-4 h-4" /> Esta oferta expira em:
-            </p>
-            <CountdownTimer />
-          </div>
+          <p className="text-white/70 text-[13px] mt-4">A cobrança aparecerá na sua fatura como &quot;Digistore24&quot;</p>
 
           {/* Guarantee */}
           <div className="mt-8 bg-white/10 rounded-xl p-5 max-w-[500px] mx-auto">
@@ -376,7 +302,7 @@ function UpsellContent() {
           <AlertTriangle className="w-12 h-12 text-[#ef4444] mx-auto mb-4" />
           <h3 className="text-[#ef4444] text-[24px] md:text-[28px] font-bold mb-3">ATENÇÃO!</h3>
           <p className="text-[#a2a2b8] max-w-[600px] mx-auto">
-            Esta oferta especial de <span className="text-white font-bold">75% de desconto</span> é EXCLUSIVA para quem acabou de comprar o Highway Hack. 
+            Esta oferta especial é EXCLUSIVA para quem acabou de comprar o Highway Hack. 
             Se fechares esta página, <span className="text-[#ef4444] font-bold">perdes o acesso a este preço para sempre</span>.
           </p>
         </div>

@@ -2,8 +2,18 @@
 
 import React from 'react';
 import { MailOpen, CalendarCheck, ClipboardCheck, ShieldAlert } from 'lucide-react';
+import { useMetaPixel } from "@adkit.so/meta-pixel-next";
 
 export default function PraticaFuncional() {
+  const metaPixel = useMetaPixel();
+
+  const handleCTA = () => {
+    metaPixel.track("InitiateCheckout", {
+      content_name: "Highway Hack Method",
+      value: 29.88,
+      currency: "EUR",
+    });
+  };
 
   const steps = [
     {
@@ -87,18 +97,16 @@ export default function PraticaFuncional() {
           ))}
         </div>
 
-          <div className="flex flex-col items-center">
-            <a
-              href="#pricing"
-              className="group relative flex items-center justify-center gap-2 bg-[#22c55e] hover:bg-[#1eb054] text-[#05070a] font-bold text-sm tracking-wide uppercase px-8 py-4 rounded-full transition-all duration-200 hover:scale-[1.02] hover:shadow-[0_0_20px_rgba(34,197,94,0.4)]"
-            >
-              <ShieldAlert className="w-5 h-5 transition-transform group-hover:scale-110" />
-              <span>COMPRAR AGORA</span>
-            </a>
-            <p className="text-[#94a3b8] text-[11px] mt-2 text-center">
-              A cobrança aparecerá na sua fatura como &quot;Digistore24&quot;
-            </p>
-          </div>
+        <div className="flex justify-center">
+          <a
+            href="#pricing"
+            onClick={handleCTA}
+            className="group relative flex items-center justify-center gap-2 bg-[#22c55e] hover:bg-[#1eb054] text-[#05070a] font-bold text-sm tracking-wide uppercase px-8 py-4 rounded-full transition-all duration-200 hover:scale-[1.02] hover:shadow-[0_0_20px_rgba(34,197,94,0.4)]"
+          >
+            <ShieldAlert className="w-5 h-5 transition-transform group-hover:scale-110" />
+            <span>QUERO TESTAR AGORA - RISCO ZERO</span>
+          </a>
+        </div>
       </div>
     </section>
   );

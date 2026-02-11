@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+import { useMetaPixel } from "@adkit.so/meta-pixel-next";
 
 /**
  * BonusInclusos component
@@ -10,6 +11,16 @@ import React from 'react';
  * It includes a large green primary CTA button at the bottom.
  */
 const BonusInclusos: React.FC = () => {
+  const metaPixel = useMetaPixel();
+
+  const handleCTA = () => {
+    metaPixel.track("InitiateCheckout", {
+      content_name: "Highway Hack Method",
+      value: 29.88,
+      currency: "EUR",
+    });
+  };
+
   const bonuses = [
     {
       id: 1,
@@ -64,33 +75,31 @@ const BonusInclusos: React.FC = () => {
           ))}
         </div>
 
-          {/* Primary CTA */}
-          <div className="flex flex-col items-center">
-            <a 
-              href="#pricing"
-              className="group relative flex items-center justify-center gap-2 bg-[#22c55e] text-[#05070a] text-[16px] font-bold uppercase tracking-wide py-4 px-10 rounded-full transition-all duration-200 hover:shadow-[0_0_20px_rgba(34,197,94,0.4)] hover:-translate-y-0.5"
+        {/* Primary CTA */}
+        <div className="flex justify-center">
+          <a 
+            href="#pricing"
+            onClick={handleCTA}
+            className="group relative flex items-center justify-center gap-2 bg-[#22c55e] text-[#05070a] text-[16px] font-bold uppercase tracking-wide py-4 px-10 rounded-full transition-all duration-200 hover:shadow-[0_0_20px_rgba(34,197,94,0.4)] hover:-translate-y-0.5"
+          >
+            GARANTIR A MINHA VAGA AGORA
+            <svg 
+              xmlns="http://www.w3.org/2000/svg" 
+              width="20" 
+              height="20" 
+              viewBox="0 0 24 24" 
+              fill="none" 
+              stroke="currentColor" 
+              strokeWidth="3" 
+              strokeLinecap="round" 
+              strokeLinejoin="round" 
+              className="transition-transform duration-200 group-hover:translate-x-1"
             >
-              COMPRAR AGORA
-              <svg 
-                xmlns="http://www.w3.org/2000/svg" 
-                width="20" 
-                height="20" 
-                viewBox="0 0 24 24" 
-                fill="none" 
-                stroke="currentColor" 
-                strokeWidth="3" 
-                strokeLinecap="round" 
-                strokeLinejoin="round" 
-                className="transition-transform duration-200 group-hover:translate-x-1"
-              >
-                <path d="M5 12h14" />
-                <path d="m12 5 7 7-7 7" />
-              </svg>
-            </a>
-            <p className="text-[#94a3b8] text-[11px] mt-2 text-center">
-              A cobrança aparecerá na sua fatura como &quot;Digistore24&quot;
-            </p>
-          </div>
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
+            </svg>
+          </a>
+        </div>
       </div>
     </section>
   );

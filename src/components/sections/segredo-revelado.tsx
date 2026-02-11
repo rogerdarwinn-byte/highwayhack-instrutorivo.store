@@ -2,8 +2,24 @@
 
 import React from 'react';
 import { Check, X } from 'lucide-react';
+import { useMetaPixel } from "@adkit.so/meta-pixel-next";
 
+/**
+ * SegredoRevelado Component
+ * 
+ * Clones the "Segredo Revelado" comparison section with pixel-perfect accuracy.
+ * Uses a two-column grid (bullet-card) to compare "Serve para ti se…" and "Não é para ti se…".
+ */
 export default function SegredoRevelado() {
+  const metaPixel = useMetaPixel();
+
+  const handleCTA = () => {
+    metaPixel.track("InitiateCheckout", {
+      content_name: "Highway Hack Method",
+      value: 29.88,
+      currency: "EUR",
+    });
+  };
 
   return (
     <section className="py-[80px] px-5 bg-[#05070a]">
@@ -87,19 +103,16 @@ export default function SegredoRevelado() {
             </div>
           </div>
   
-            {/* CTA Button */}
-            <div className="flex flex-col items-center">
-              <a 
-                href="#pricing"
-
-                className="group btn-primary bg-[#22c55e] text-[#05070a] text-[1rem] font-bold uppercase py-4 px-8 rounded-full flex items-center gap-3 transition-transform duration-200 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(34,197,94,0.4)]"
-              >
-                COMPRAR AGORA
-              </a>
-              <p className="text-[#94a3b8] text-[11px] mt-2 text-center">
-                A cobrança aparecerá na sua fatura como &quot;Digistore24&quot;
-              </p>
-          </div>
+          {/* CTA Button */}
+          <div className="flex justify-center">
+            <a 
+              href="#pricing"
+              onClick={handleCTA}
+              className="group btn-primary bg-[#22c55e] text-[#05070a] text-[1rem] font-bold uppercase py-4 px-8 rounded-full flex items-center gap-3 transition-transform duration-200 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(34,197,94,0.4)]"
+            >
+              QUERO O MEU ACESSO COM DESCONTO
+            </a>
+        </div>
       </div>
     </section>
   );
