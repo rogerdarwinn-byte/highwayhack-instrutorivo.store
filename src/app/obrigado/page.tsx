@@ -78,9 +78,10 @@ function ObrigadoContent() {
             Parabéns! Estás Dentro!
           </h1>
           
-          <p className="text-[#a2a2b8] text-[16px] md:text-[18px] max-w-[600px] mx-auto">
-            O teu acesso ao <span className="text-white font-semibold">Highway Hack</span> foi confirmado. Vamos começar a preparação para passares no IMT de primeira!
-          </p>
+            <p className="text-[#a2a2b8] text-[16px] md:text-[18px] max-w-[600px] mx-auto mb-3">
+              O teu acesso ao <span className="text-white font-semibold">Highway Hack</span> foi confirmado. Vamos começar a preparação para passares no IMT de primeira!
+            </p>
+            <p className="text-[#77778a] text-[12px]">A cobrança aparecerá na sua fatura como &quot;Digistore24&quot;</p>
         </div>
 
         {/* Step 1: Download App */}

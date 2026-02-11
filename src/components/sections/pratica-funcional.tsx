@@ -2,19 +2,8 @@
 
 import React from 'react';
 import { MailOpen, CalendarCheck, ClipboardCheck, ShieldAlert } from 'lucide-react';
-import { useMetaPixel } from "@adkit.so/meta-pixel-next";
 
 export default function PraticaFuncional() {
-  const metaPixel = useMetaPixel();
-
-  const handleCTA = () => {
-    metaPixel.track("InitiateCheckout", {
-      content_name: "Highway Hack Method",
-      value: 29.88,
-      currency: "EUR",
-    });
-  };
-
   const steps = [
     {
       number: "1",
@@ -25,7 +14,7 @@ export default function PraticaFuncional() {
           text: "Pagamento confirmado, o acesso chega em segundos na tua caixa de entrada."
         },
         {
-          icon: <div className="w-5 h-5 flex items-center justify-center">📱</div>, // Using emoji or matching icon for mobile
+          icon: <div className="w-5 h-5 flex items-center justify-center">📱</div>,
           text: "Lê no telemóvel, tablet ou computador, onde for mais prático."
         }
       ]
@@ -97,15 +86,15 @@ export default function PraticaFuncional() {
           ))}
         </div>
 
-        <div className="flex justify-center">
+        <div className="flex flex-col items-center">
           <a
             href="#pricing"
-            onClick={handleCTA}
             className="group relative flex items-center justify-center gap-2 bg-[#22c55e] hover:bg-[#1eb054] text-[#05070a] font-bold text-sm tracking-wide uppercase px-8 py-4 rounded-full transition-all duration-200 hover:scale-[1.02] hover:shadow-[0_0_20px_rgba(34,197,94,0.4)]"
           >
             <ShieldAlert className="w-5 h-5 transition-transform group-hover:scale-110" />
-            <span>QUERO TESTAR AGORA - RISCO ZERO</span>
+            <span>COMPRAR AGORA</span>
           </a>
+          <p className="text-[#77778a] text-[11px] mt-3">A cobrança aparecerá na sua fatura como &quot;Digistore24&quot;</p>
         </div>
       </div>
     </section>

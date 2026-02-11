@@ -1,42 +1,30 @@
 "use client";
 
-import { useEffect, Suspense } from "react";
-import { useMetaPixel } from "@adkit.so/meta-pixel-next";
+import { Suspense } from "react";
 import HeroSection from "@/components/sections/hero";
-import ReviewsCarousel from "@/components/sections/reviews-carousel";
 import SegredoRevelado from "@/components/sections/segredo-revelado";
 import BonusInclusos from "@/components/sections/bonus-inclusos";
 import ProblemasSolucoes from "@/components/sections/problemas-solucoes";
 import PraticaFuncional from "@/components/sections/pratica-funcional";
 import GarantiaSection from "@/components/sections/garantia";
 import PricingTable from "@/components/sections/pricing-table";
-import HistoriasSucesso from "@/components/sections/historias-sucesso";
 import FAQSection from "@/components/sections/faq";
 import Partners from "@/components/sections/partners";
 import Footer from "@/components/sections/footer";
 import SalesNotification from "@/components/sections/sales-notification";
 
 function HomeContent() {
-  const metaPixel = useMetaPixel();
-
-  useEffect(() => {
-    metaPixel.track("ViewContent", {
-      content_name: "Highway Hack Landing Page",
-      content_category: "Course/Method",
-    });
-  }, [metaPixel]);
-
   return (
     <main className="min-h-screen bg-[#05070a]">
       <HeroSection />
-      <ReviewsCarousel />
+      {/* ReviewsCarousel removido temporariamente para aprovacao Digistore */}
       <SegredoRevelado />
       <BonusInclusos />
       <ProblemasSolucoes />
       <PraticaFuncional />
       <GarantiaSection />
       <PricingTable />
-      <HistoriasSucesso />
+      {/* HistoriasSucesso removido temporariamente para aprovacao Digistore */}
       <FAQSection />
       <Partners />
       <Footer />
