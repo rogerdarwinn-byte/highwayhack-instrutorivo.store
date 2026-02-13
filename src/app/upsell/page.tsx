@@ -43,14 +43,7 @@ function UpsellContent() {
       <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] bg-[#22c55e]/5 rounded-full blur-[150px] pointer-events-none" />
       <div className="absolute bottom-[-20%] right-[-10%] w-[50%] h-[50%] bg-[#ef4444]/5 rounded-full blur-[150px] pointer-events-none" />
 
-      {/* Urgent Banner */}
-      <div className="bg-gradient-to-r from-[#ef4444] to-[#dc2626] py-4 px-4 text-center animate-pulse">
-        <p className="text-white font-bold text-[14px] md:text-[16px] flex items-center justify-center gap-2 flex-wrap">
-          <AlertTriangle className="w-5 h-5" />
-          OFERTA ESPECIAL APENAS PARA TI — EXPIRA EM 15 MINUTOS!
-          <Clock className="w-5 h-5" />
-        </p>
-      </div>
+        {/* Urgent Banner removido temporariamente para aprovacao Digistore */}
 
       <div className="max-w-[1000px] mx-auto px-4 py-8 md:py-12 relative z-10">
         
