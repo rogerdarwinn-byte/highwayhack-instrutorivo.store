@@ -37,13 +37,9 @@ const HeroSection = () => {
 
       {/* Pricing Block */}
       <div className="w-full max-w-[463.5px] p-[32px] md:pt-[32px] md:pb-[32px] md:px-[25.6px] bg-[#0c0f16] border border-[#1e293b] rounded-[24px] shadow-[rgba(0,0,0,0.7)_0px_20px_60px_0px] text-center">
-        <p className="text-[#a2a2b8] text-[13.6px] mb-[4.8px]">
-          3x de
-        </p>
-
-        <p className="text-[#ffde7a] text-[33.6px] md:text-[42px] font-extrabold mb-[16px]">
-          9,96€
-        </p>
+          <p className="text-[#ffde7a] text-[33.6px] md:text-[42px] font-extrabold mb-[16px]">
+            29€
+          </p>
 
             <a 
               href="#checkout"

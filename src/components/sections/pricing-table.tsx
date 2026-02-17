@@ -30,12 +30,9 @@ const PricingTable = () => {
         <div className="max-w-[500px] mx-auto bg-[#0c0f16] border border-[#1e293b] rounded-[24px] p-8 shadow-[0_20px_60px_rgba(0,0,0,0.5)]">
           {/* Price Header */}
           <div className="mb-8">
-            <p className="text-[#94a3b8] text-[13.6px] mb-1">
-              3x de
-            </p>
             <p className="text-[#facc15] text-[42px] font-extrabold leading-none mb-2">
-              9,96€
-            </p>
+                29€
+              </p>
           </div>
 
           {/* Feature List */}
