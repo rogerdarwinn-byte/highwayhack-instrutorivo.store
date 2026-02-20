@@ -66,8 +66,13 @@ export default function RootLayout({
           data-debug="true"
           data-custom-data='{"appName": "YourApp", "version": "1.0.0", "greeting": "hi"}'
         />
-        {children}
-        <VisualEditsMessenger />
+          {children}
+          <VisualEditsMessenger />
+          {/* Digistore24 Trusted Badge - Página Principal */}
+          <Script
+            src="https://www.digistore24.com/trusted-badge/44177/aGkuWV0CfTWXwJp"
+            strategy="afterInteractive"
+          />
       </body>
     </html>
   );
