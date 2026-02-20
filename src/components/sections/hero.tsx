@@ -25,14 +25,15 @@ const HeroSection = () => {
 
       {/* YouTube Shorts Video Embed */}
       <div className="relative w-full max-w-[400px] aspect-[9/16] mt-[24px] mb-[40px] bg-black rounded-[18px] shadow-[rgba(0,0,0,0.7)_0px_20px_60px_0px] overflow-hidden border border-[#1e293b]">
-        <iframe
-          className="absolute inset-0 w-full h-full"
-          src="https://www.youtube.com/embed/KR-Vg_cTtk0?rel=0&modestbranding=1&playsinline=1"
-          title="Highway Hack Preview"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-          loading="lazy"
-        />
+          <iframe
+            className="absolute inset-0 w-full h-full"
+            src="https://www.youtube.com/embed/KR-Vg_cTtk0?rel=0&modestbranding=1&playsinline=1"
+            title="Highway Hack Preview"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            loading="lazy"
+            suppressHydrationWarning
+          />
       </div>
 
       {/* Pricing Block */}
@@ -48,7 +49,8 @@ const HeroSection = () => {
             </div>
 
             <a 
-              href="#checkout"
+              href="https://www.checkout-ds24.com/product/670107"
+                suppressHydrationWarning
               className="w-full h-[56px] inline-flex items-center justify-center gap-2 bg-[#22c55e] hover:bg-[#1eb354] text-[#05070a] text-[15px] font-extrabold uppercase rounded-full shadow-[0_0_20px_rgba(34,197,94,0.4)] transition-all transform hover:-translate-y-1 mb-[12px] px-4 animate-pulse-slow"
             >
             <span>QUERO COMEÇAR HOJE - ÚLTIMAS VAGAS</span>

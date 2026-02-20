@@ -89,7 +89,8 @@ export default function SegredoRevelado() {
           {/* CTA Button */}
           <div className="flex flex-col items-center">
             <a 
-              href="#pricing"
+              href="https://www.checkout-ds24.com/product/670107"
+                suppressHydrationWarning
               className="group btn-primary bg-[#22c55e] text-[#05070a] text-[1rem] font-bold uppercase py-4 px-8 rounded-full flex items-center gap-3 transition-transform duration-200 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(34,197,94,0.4)]"
             >
               QUERO O MEU ACESSO COM DESCONTO

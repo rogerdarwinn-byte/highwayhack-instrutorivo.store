@@ -64,12 +64,14 @@ const PricingTable = () => {
           </ul>
 
             {/* CTA Button */}
-            <button 
+            <a 
+              href="https://www.checkout-ds24.com/product/670107"
+                suppressHydrationWarning
               className="w-full bg-[#22c55e] hover:shadow-[0_0_20px_rgba(34,197,94,0.4)] transition-all duration-200 text-[#05070a] font-bold py-4 px-6 rounded-full flex items-center justify-center gap-2 text-sm uppercase mb-3 transform hover:-translate-y-0.5 animate-pulse-slow"
             >
-            GARANTIR O MEU ACESSO COM DESCONTO AGORA
-            <ArrowRight className="w-4 h-4" />
-          </button>
+              GARANTIR O MEU ACESSO COM DESCONTO AGORA
+              <ArrowRight className="w-4 h-4" />
+            </a>
 
           {/* Trust Badges */}
           <div className="flex items-center justify-center gap-6 text-[11px] text-[#94a3b8] uppercase font-bold tracking-wider">

@@ -729,3 +729,1257 @@ It can also happen if the client has a browser extension installed which messes 
   response: {"originalStackFrame":{"file":"node_modules/next/dist/compiled/react-dom/cjs/react-dom-client.development.js","lineNumber":15954,"column":1,"methodName":"performWorkOnRootViaSchedulerTask","arguments":[],"ignored":true},"originalCodeFrame":null}
 2026-02-19T23:57:35.788Z [network][GET 200] /__nextjs_original-stack-frame?isServer=false&isEdgeServer=false&isAppDirectory=true&errorMessage=Error%3A+A+tree+hydrated+but+some+attributes+of+the+server+rendered+HTML+didn%27t+match+the+client+properties.+This+won%27t+be+patched+up.+This+can+happen+if+a+SSR-ed+Client+Component+used%3A%0A%0A-+A+server%2Fclient+branch+%60if+%28typeof+window+%21%3D%3D+%27undefined%27%29%60.%0A-+Variable+input+such+as+%60Date.now%28%29%60+or+%60Math.random%28%29%60+which+changes+each+time+it%27s+called.%0A-+Date+formatting+in+a+user%27s+locale+which+doesn%27t+match+the+server.%0A-+External+changing+data+without+sending+a+snapshot+of+it+along+with+the+HTML.%0A-+Invalid+HTML+tag+nesting.%0A%0AIt+can+also+happen+if+the+client+has+a+browser+extension+installed+which+messes+with+the+HTML+before+React+loaded.%0A%0Ahttps%3A%2F%2Freact.dev%2Flink%2Fhydration-mismatch%0A%0A++...%0A++++%3CHTTPAccessFallbackErrorBoundary+pathname%3D%22%2F%22+notFound%3D%7B%5B...%5D%7D+forbidden%3D%7Bundefined%7D+unauthorized%3D%7... [truncated]
   response: {"originalStackFrame":{"file":"node_modules/next/dist/compiled/scheduler/cjs/scheduler.development.js","lineNumber":44,"column":1,"methodName":"MessagePort.performWorkUntilDeadline","arguments":[],"ignored":true},"originalCodeFrame":null}
+2026-02-20T01:48:54.071Z [console][error] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HTTPAccessFallbackErrorBoundary pathname="/" notFound={[...]} forbidden={undefined} unauthorized={undefined} ...>
+      <RedirectBoundary>
+        <RedirectErrorBoundary router={{...}}>
+          <InnerLayoutRouter parallelRouterKey="children" url={"/?utm_so..."} tree={[...]} childNodes={Map} ...>
+            <ClientPageRoot Component={function Home} searchParams={{...}} params={{}}>
+              <Home params={Promise} searchParams={Promise}>
+                <Suspense fallback={<div>}>
+                  <HomeContent>
+                    <main className="min-h-scre...">
+                      <HeroSection>
+                        <section className="relative f...">
+                          <div>
+                          <h1>
+                          <p>
+                          <div className="relative w...">
+                            <iframe
+                              className="absolute inset-0 w-full h-full"
++                             src={"https://www.youtube.com/embed/KR-Vg_cTtk0?rel=0&modestbranding=1&playsinline=1"}
+-                             src={"https://www.youtube.com/embed/KR-Vg_cTtk0?rel=0&modestbranding=1&playsinline=1&ut..."}
+                              title="Highway Hack Preview"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-..."
+                              allowFullScreen={true}
+                              loading="lazy"
+                            >
+                          <div className="w-full max...">
+                            <p>
+                            <p>
+                            <p>
+                            <div>
+                            <a
++                             href="https://www.checkout-ds24.com/product/670107"
+-                             href={"https://www.checkout-ds24.com/product/670107?utm_source=direto&cid=1770994886602..."}
+                              className="w-full h-[56px] inline-flex items-center justify-center gap-2 bg-[#22c55e] ho..."
+                            >
+                            ...
+                          ...
+                      <ReviewsCarousel>
+                        <section id="sec-prova-..." className="jsx-e4c0ee...">
+                          <div className="jsx-e4c0ee...">
+                            <div>
+                            <div>
+                            <div className="jsx-e4c0ee...">
+                              <a
++                               href="https://www.checkout-ds24.com/product/670107"
+-                               href={"https://www.checkout-ds24.com/product/670107?utm_source=direto&cid=17709948866..."}
+                                className="jsx-e4c0ee4aadd7f829 inline-flex items-center justify-center px-10 py-5 bg-..."
+                              >
++                               APROVEITAR OFERTA AGORA
+                          ...
+                      <SegredoRevelado>
+                        <section className="py-[80px] ...">
+                          <div className="container ...">
+                            <div>
+                            <div>
+                            <div className="flex flex-...">
+                              <a
++                               href="https://www.checkout-ds24.com/product/670107"
+-... [truncated]
+2026-02-20T01:48:54.313Z [console][error] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HTTPAccessFallbackErrorBoundary pathname="/" notFound={[...]} forbidden={undefined} unauthorized={undefined} ...>
+      <RedirectBoundary>
+        <RedirectErrorBoundary router={{...}}>
+          <InnerLayoutRouter parallelRouterKey="children" url={"/?utm_so..."} tree={[...]} childNodes={Map} ...>
+            <ClientPageRoot Component={function Home} searchParams={{...}} params={{}}>
+              <Home params={Promise} searchParams={Promise}>
+                <Suspense fallback={<div>}>
+                  <HomeContent>
+                    <main className="min-h-scre...">
+                      <HeroSection>
+                        <section className="relative f...">
+                          <div>
+                          <h1>
+                          <p>
+                          <div className="relative w...">
+                            <iframe
+                              className="absolute inset-0 w-full h-full"
++                             src={"https://www.youtube.com/embed/KR-Vg_cTtk0?rel=0&modestbranding=1&playsinline=1"}
+-                             src={"https://www.youtube.com/embed/KR-Vg_cTtk0?rel=0&modestbranding=1&playsinline=1&ut..."}
+                              title="Highway Hack Preview"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-..."
+                              allowFullScreen={true}
+                              loading="lazy"
+                            >
+                          <div className="w-full max...">
+                            <p>
+                            <p>
+                            <p>
+                            <div>
+                            <a
++                             href="https://www.checkout-ds24.com/product/670107"
+-                             href={"https://www.checkout-ds24.com/product/670107?utm_source=direto&cid=1770994886602..."}
+                              className="w-full h-[56px] inline-flex items-center justify-center gap-2 bg-[#22c55e] ho..."
+                            >
+                            ...
+                          ...
+                      <ReviewsCarousel>
+                        <section id="sec-prova-..." className="jsx-e4c0ee...">
+                          <div className="jsx-e4c0ee...">
+                            <div>
+                            <div>
+                            <div className="jsx-e4c0ee...">
+                              <a
++                               href="https://www.checkout-ds24.com/product/670107"
+-                               href={"https://www.checkout-ds24.com/product/670107?utm_source=direto&cid=17709948866..."}
+                                className="jsx-e4c0ee4aadd7f829 inline-flex items-center justify-center px-10 py-5 bg-..."
+                              >
++                               APROVEITAR OFERTA AGORA
+                          ...
+                      <SegredoRevelado>
+                        <section className="py-[80px] ...">
+                          <div className="container ...">
+                            <div>
+                            <div>
+                            <div className="flex flex-...">
+                              <a
++                               href="https://www.checkout-ds24.com/product/670107"
+-... [truncated]
+2026-02-20T01:48:54.077Z [console][error] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HTTPAccessFallbackErrorBoundary pathname="/" notFound={[...]} forbidden={undefined} unauthorized={undefined} ...>
+      <RedirectBoundary>
+        <RedirectErrorBoundary router={{...}}>
+          <InnerLayoutRouter parallelRouterKey="children" url={"/?utm_so..."} tree={[...]} childNodes={Map} ...>
+            <ClientPageRoot Component={function Home} searchParams={{...}} params={{}}>
+              <Home params={Promise} searchParams={Promise}>
+                <Suspense fallback={<div>}>
+                  <HomeContent>
+                    <main className="min-h-scre...">
+                      <HeroSection>
+                        <section className="relative f...">
+                          <div>
+                          <h1>
+                          <p>
+                          <div className="relative w...">
+                            <iframe
+                              className="absolute inset-0 w-full h-full"
++                             src={"https://www.youtube.com/embed/KR-Vg_cTtk0?rel=0&modestbranding=1&playsinline=1"}
+-                             src={"https://www.youtube.com/embed/KR-Vg_cTtk0?rel=0&modestbranding=1&playsinline=1&ut..."}
+                              title="Highway Hack Preview"
+                              allow="accelerometer; autoplay; clipboard-write; e...
+2026-02-20T01:48:54.314Z [console][error] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HTTPAccessFallbackErrorBoundary pathname="/" notFound={[...]} forbidden={undefined} unauthorized={undefined} ...>
+      <RedirectBoundary>
+        <RedirectErrorBoundary router={{...}}>
+          <InnerLayoutRouter parallelRouterKey="children" url={"/?utm_so..."} tree={[...]} childNodes={Map} ...>
+            <ClientPageRoot Component={function Home} searchParams={{...}} params={{}}>
+              <Home params={Promise} searchParams={Promise}>
+                <Suspense fallback={<div>}>
+                  <HomeContent>
+                    <main className="min-h-scre...">
+                      <HeroSection>
+                        <section className="relative f...">
+                          <div>
+                          <h1>
+                          <p>
+                          <div className="relative w...">
+                            <iframe
+                              className="absolute inset-0 w-full h-full"
++                             src={"https://www.youtube.com/embed/KR-Vg_cTtk0?rel=0&modestbranding=1&playsinline=1"}
+-                             src={"https://www.youtube.com/embed/KR-Vg_cTtk0?rel=0&modestbranding=1&playsinline=1&ut..."}
+                              title="Highway Hack Preview"
+                              allow="accelerometer; autoplay; clipboard-write; e...
+2026-02-20T01:53:18.571Z [console][error] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HTTPAccessFallbackErrorBoundary pathname="/" notFound={[...]} forbidden={undefined} unauthorized={undefined} ...>
+      <RedirectBoundary>
+        <RedirectErrorBoundary router={{...}}>
+          <InnerLayoutRouter parallelRouterKey="children" url={"/?utm_so..."} tree={[...]} childNodes={Map} ...>
+            <ClientPageRoot Component={function Home} searchParams={{...}} params={{}}>
+              <Home params={Promise} searchParams={Promise}>
+                <Suspense fallback={<div>}>
+                  <HomeContent>
+                    <main className="min-h-scre...">
+                      <HeroSection>
+                        <section className="relative f...">
+                          <div>
+                          <h1>
+                          <p>
+                          <div>
+                          <div className="w-full max...">
+                            <p>
+                            <p>
+                            <p>
+                            <div>
+                            <a
++                             href="https://www.checkout-ds24.com/product/670107"
+-                             href={"https://www.checkout-ds24.com/product/670107?utm_source=direto&cid=1770994886602..."}
+                              className="w-full h-[56px] inline-flex items-center justify-center gap-2 bg-[#22c55e] ho..."
+                            >
+                            ...
+                          ...
+                      <ReviewsCarousel>
+                        <section id="sec-prova-..." className="jsx-e4c0ee...">
+                          <div className="jsx-e4c0ee...">
+                            <div>
+                            <div>
+                            <div className="jsx-e4c0ee...">
+                              <a
++                               href="https://www.checkout-ds24.com/product/670107"
+-                               href={"https://www.checkout-ds24.com/product/670107?utm_source=direto&cid=17709948866..."}
+                                className="jsx-e4c0ee4aadd7f829 inline-flex items-center justify-center px-10 py-5 bg-..."
+                              >
++                               APROVEITAR OFERTA AGORA
+                          ...
+                      <SegredoRevelado>
+                        <section className="py-[80px] ...">
+                          <div className="container ...">
+                            <div>
+                            <div>
+                            <div className="flex flex-...">
+                              <a
++                               href="https://www.checkout-ds24.com/product/670107"
+-                               href={"https://www.checkout-ds24.com/product/670107?utm_source=direto&cid=17709948866..."}
+                                className="group btn-primary bg-[#22c55e] text-[#05070a] text-[1rem] font-bold upperca..."
+                              >
++                               QUERO O MEU ACESSO COM DESCONTO
+                      <BonusInclusos>
+                        <section className="py-[80px] ...">
+                          <div className="max-w-[120...">
+                            <div>
+                            <div>
+                            <div className="flex flex-...">
+                              <a
++                          ... [truncated]
+2026-02-20T01:53:18.797Z [console][error] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HTTPAccessFallbackErrorBoundary pathname="/" notFound={[...]} forbidden={undefined} unauthorized={undefined} ...>
+      <RedirectBoundary>
+        <RedirectErrorBoundary router={{...}}>
+          <InnerLayoutRouter parallelRouterKey="children" url={"/?utm_so..."} tree={[...]} childNodes={Map} ...>
+            <ClientPageRoot Component={function Home} searchParams={{...}} params={{}}>
+              <Home params={Promise} searchParams={Promise}>
+                <Suspense fallback={<div>}>
+                  <HomeContent>
+                    <main className="min-h-scre...">
+                      <HeroSection>
+                        <section className="relative f...">
+                          <div>
+                          <h1>
+                          <p>
+                          <div>
+                          <div className="w-full max...">
+                            <p>
+                            <p>
+                            <p>
+                            <div>
+                            <a
++                             href="https://www.checkout-ds24.com/product/670107"
+-                             href={"https://www.checkout-ds24.com/product/670107?utm_source=direto&cid=1770994886602..."}
+                              className="w-full h-[56px] inline-flex items-center justify-center gap-2 bg-[#22c55e] ho..."
+                            >
+                            ...
+                          ...
+                      <ReviewsCarousel>
+                        <section id="sec-prova-..." className="jsx-e4c0ee...">
+                          <div className="jsx-e4c0ee...">
+                            <div>
+                            <div>
+                            <div className="jsx-e4c0ee...">
+                              <a
++                               href="https://www.checkout-ds24.com/product/670107"
+-                               href={"https://www.checkout-ds24.com/product/670107?utm_source=direto&cid=17709948866..."}
+                                className="jsx-e4c0ee4aadd7f829 inline-flex items-center justify-center px-10 py-5 bg-..."
+                              >
++                               APROVEITAR OFERTA AGORA
+                          ...
+                      <SegredoRevelado>
+                        <section className="py-[80px] ...">
+                          <div className="container ...">
+                            <div>
+                            <div>
+                            <div className="flex flex-...">
+                              <a
++                               href="https://www.checkout-ds24.com/product/670107"
+-                               href={"https://www.checkout-ds24.com/product/670107?utm_source=direto&cid=17709948866..."}
+                                className="group btn-primary bg-[#22c55e] text-[#05070a] text-[1rem] font-bold upperca..."
+                              >
++                               QUERO O MEU ACESSO COM DESCONTO
+                      <BonusInclusos>
+                        <section className="py-[80px] ...">
+                          <div className="max-w-[120...">
+                            <div>
+                            <div>
+                            <div className="flex flex-...">
+                              <a
++                          ... [truncated]
+2026-02-20T01:53:18.572Z [console][error] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HTTPAccessFallbackErrorBoundary pathname="/" notFound={[...]} forbidden={undefined} unauthorized={undefined} ...>
+      <RedirectBoundary>
+        <RedirectErrorBoundary router={{...}}>
+          <InnerLayoutRouter parallelRouterKey="children" url={"/?utm_so..."} tree={[...]} childNodes={Map} ...>
+            <ClientPageRoot Component={function Home} searchParams={{...}} params={{}}>
+              <Home params={Promise} searchParams={Promise}>
+                <Suspense fallback={<div>}>
+                  <HomeContent>
+                    <main className="min-h-scre...">
+                      <HeroSection>
+                        <section className="relative f...">
+                          <div>
+                          <h1>
+                          <p>
+                          <div>
+                          <div className="w-full max...">
+                            <p>
+                            <p>
+                            <p>
+                            <div>
+                            <a
++                             href="https://www.checkout-ds24.com/product/670107"
+-                             href={"https://www.checkout-ds24.com/product/670107?utm_source=direto&cid=1770994886602..."}
+                              className="w-full h-[56px] inline-flex items-center justify-...
+2026-02-20T01:53:18.798Z [console][error] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HTTPAccessFallbackErrorBoundary pathname="/" notFound={[...]} forbidden={undefined} unauthorized={undefined} ...>
+      <RedirectBoundary>
+        <RedirectErrorBoundary router={{...}}>
+          <InnerLayoutRouter parallelRouterKey="children" url={"/?utm_so..."} tree={[...]} childNodes={Map} ...>
+            <ClientPageRoot Component={function Home} searchParams={{...}} params={{}}>
+              <Home params={Promise} searchParams={Promise}>
+                <Suspense fallback={<div>}>
+                  <HomeContent>
+                    <main className="min-h-scre...">
+                      <HeroSection>
+                        <section className="relative f...">
+                          <div>
+                          <h1>
+                          <p>
+                          <div>
+                          <div className="w-full max...">
+                            <p>
+                            <p>
+                            <p>
+                            <div>
+                            <a
++                             href="https://www.checkout-ds24.com/product/670107"
+-                             href={"https://www.checkout-ds24.com/product/670107?utm_source=direto&cid=1770994886602..."}
+                              className="w-full h-[56px] inline-flex items-center justify-...
+2026-02-20T01:53:18.510Z [network][GET 200] /__nextjs_original-stack-frame?isServer=false&isEdgeServer=false&isAppDirectory=true&errorMessage=TypeError%3A+Cannot+create+property+%27__NA%27+on+string+%27%27&file=webpack-internal%3A%2F%2F%2F%28app-pages-browser%29%2F.%2Fnode_modules%2Fnext%2Fdist%2Fclient%2Fcomponents%2Fapp-router.js&methodName=copyNextJsInternalHistoryState&arguments=&lineNumber=152&column=19
+  response: {"originalStackFrame":{"file":"../src/client/components/app-router.tsx","lineNumber":203,"column":14,"methodName":"copyNextJsInternalHistoryState","arguments":[],"ignored":true},"originalCodeFrame":"\u001b[0m \u001b[90m 201 |\u001b[39m   \u001b[36mconst\u001b[39m __NA \u001b[33m=\u001b[39m currentState\u001b[33m?\u001b[39m\u001b[33m.\u001b[39m__NA\u001b[0m\n\u001b[0m \u001b[90m 202 |\u001b[39m   \u001b[36mif\u001b[39m (__NA) {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 203 |\u001b[39m     data\u001b[33m.\u001b[39m__NA \u001b[33m=\u001b[39m __NA\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 204 |\u001b[39m   }\u001b[0m\n\u001b[0m \u001b[90m 205 |\u001b[39m   \u001b[36mconst\u001b[39m __PRIVATE_NEXTJS_INTERNALS_TREE \u001b[33m=\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 206 |\u001b[39m     currentState\u001b[33m?\u001b[39m\u001b[33m.\u001b[39m__PRIVATE_NEXTJS_INTERNALS_TREE\u001b[0m"}
+2026-02-20T01:53:18.510Z [network][GET 200] /__nextjs_original-stack-frame?isServer=false&isEdgeServer=false&isAppDirectory=true&errorMessage=TypeError%3A+Cannot+create+property+%27__NA%27+on+string+%27%27&file=webpack-internal%3A%2F%2F%2F%28app-pages-browser%29%2F.%2Fnode_modules%2Fnext%2Fdist%2Fclient%2Fcomponents%2Fapp-router.js&methodName=History.pushState&arguments=&lineNumber=394&column=20
+  response: {"originalStackFrame":{"file":"../src/client/components/app-router.tsx","lineNumber":486,"column":14,"methodName":"copyNextJsInternalHistoryState","arguments":[],"ignored":true},"originalCodeFrame":"\u001b[0m \u001b[90m 484 |\u001b[39m       }\u001b[0m\n\u001b[0m \u001b[90m 485 |\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 486 |\u001b[39m       data \u001b[33m=\u001b[39m copyNextJsInternalHistoryState(data)\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 487 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 488 |\u001b[39m       \u001b[36mif\u001b[39m (url) {\u001b[0m\n\u001b[0m \u001b[90m 489 |\u001b[39m         applyUrlFromHistoryPushReplace(url)\u001b[0m"}
+2026-02-20T01:53:18.510Z [network][GET 200] /__nextjs_original-stack-frame?isServer=false&isEdgeServer=false&isAppDirectory=true&errorMessage=TypeError%3A+Cannot+create+property+%27__NA%27+on+string+%27%27&file=%3Canonymous%3E&methodName=Generator.next&arguments=&lineNumber=&column=
+  response: {"originalStackFrame":{"file":"<anonymous>","lineNumber":0,"column":0,"methodName":"Generator.next","ignored":false,"arguments":[]},"originalCodeFrame":null}
+2026-02-20T01:53:18.510Z [network][GET 200] /__nextjs_original-stack-frame?isServer=false&isEdgeServer=false&isAppDirectory=true&errorMessage=TypeError%3A+Cannot+create+property+%27__NA%27+on+string+%27%27&file=%3Canonymous%3E&methodName=new+Promise&arguments=&lineNumber=&column=
+  response: {"originalStackFrame":{"file":"<anonymous>","lineNumber":0,"column":0,"methodName":"new Promise","ignored":false,"arguments":[]},"originalCodeFrame":null}
+2026-02-20T01:53:18.511Z [network][GET 200] /__nextjs_original-stack-frame?isServer=false&isEdgeServer=false&isAppDirectory=true&errorMessage=TypeError%3A+Cannot+create+property+%27__NA%27+on+string+%27%27&file=%3Canonymous%3E&methodName=Generator.next&arguments=&lineNumber=&column=
+  response: {"originalStackFrame":{"file":"<anonymous>","lineNumber":0,"column":0,"methodName":"Generator.next","ignored":false,"arguments":[]},"originalCodeFrame":null}
+2026-02-20T01:53:18.511Z [network][GET 200] /__nextjs_original-stack-frame?isServer=false&isEdgeServer=false&isAppDirectory=true&errorMessage=TypeError%3A+Cannot+create+property+%27__NA%27+on+string+%27%27&file=%3Canonymous%3E&methodName=new+Promise&arguments=&lineNumber=&column=
+  response: {"originalStackFrame":{"file":"<anonymous>","lineNumber":0,"column":0,"methodName":"new Promise","ignored":false,"arguments":[]},"originalCodeFrame":null}
+2026-02-20T01:53:18.511Z [network][GET 200] /__nextjs_original-stack-frame?isServer=false&isEdgeServer=false&isAppDirectory=true&errorMessage=TypeError%3A+Cannot+create+property+%27__NA%27+on+string+%27%27&file=%3Canonymous%3E&methodName=new+Promise&arguments=&lineNumber=&column=
+  response: {"originalStackFrame":{"file":"<anonymous>","lineNumber":0,"column":0,"methodName":"new Promise","ignored":false,"arguments":[]},"originalCodeFrame":null}
+2026-02-20T01:53:18.511Z [network][GET 200] /__nextjs_original-stack-frame?isServer=false&isEdgeServer=false&isAppDirectory=true&errorMessage=TypeError%3A+Cannot+create+property+%27__NA%27+on+string+%27%27&file=%3Canonymous%3E&methodName=Generator.next&arguments=&lineNumber=&column=
+  response: {"originalStackFrame":{"file":"<anonymous>","lineNumber":0,"column":0,"methodName":"Generator.next","ignored":false,"arguments":[]},"originalCodeFrame":null}
+2026-02-20T01:53:18.674Z [network][GET 200] /__nextjs_original-stack-frame?isServer=false&isEdgeServer=false&isAppDirectory=true&errorMessage=Error%3A+A+tree+hydrated+but+some+attributes+of+the+server+rendered+HTML+didn%27t+match+the+client+properties.+This+won%27t+be+patched+up.+This+can+happen+if+a+SSR-ed+Client+Component+used%3A%0A%0A-+A+server%2Fclient+branch+%60if+%28typeof+window+%21%3D%3D+%27undefined%27%29%60.%0A-+Variable+input+such+as+%60Date.now%28%29%60+or+%60Math.random%28%29%60+which+changes+each+time+it%27s+called.%0A-+Date+formatting+in+a+user%27s+locale+which+doesn%27t+match+the+server.%0A-+External+changing+data+without+sending+a+snapshot+of+it+along+with+the+HTML.%0A-+Invalid+HTML+tag+nesting.%0A%0AIt+can+also+happen+if+the+client+has+a+browser+extension+installed+which+messes+with+the+HTML+before+React+loaded.%0A%0Ahttps%3A%2F%2Freact.dev%2Flink%2Fhydration-mismatch%0A%0A++...%0A++++%3CHTTPAccessFallbackErrorBoundary+pathname%3D%22%2F%22+notFound%3D%7B%5B...%5D%7D+forbidden%3D%7Bundefined%7D+unauthorized%3D%7... [truncated]
+  response: {"originalStackFrame":{"file":"../src/client/components/react-dev-overlay/internal/helpers/console-error.ts","lineNumber":14,"column":35,"methodName":"createUnhandledError","arguments":[],"ignored":true},"originalCodeFrame":"\u001b[0m \u001b[90m 12 |\u001b[39m \u001b[36mexport\u001b[39m \u001b[36mfunction\u001b[39m createUnhandledError(message\u001b[33m:\u001b[39m string \u001b[33m|\u001b[39m \u001b[33mError\u001b[39m)\u001b[33m:\u001b[39m \u001b[33mUnhandledError\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m 13 |\u001b[39m   \u001b[36mconst\u001b[39m error \u001b[33m=\u001b[39m (\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 14 |\u001b[39m     \u001b[36mtypeof\u001b[39m message \u001b[33m===\u001b[39m \u001b[32m'string'\u001b[39m \u001b[33m?\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(message) \u001b[33m:\u001b[39m message\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 15 |\u001b[39m   ) \u001b[36mas\u001b[39m \u001b[33mUnhandledError\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 16 |\u001b[39m   error[digestSym] \u001b[33m=\u001b[39m \u001b[32m'NEXT_UNHANDLED_ERROR'\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 17 |\u001b[39m   error[consoleTypeSym] \u001b[33m=\u001b[39m \u001b[36mtypeof\u001b[39m message \u001b[33m===\u001b[39m \u001b[32m'string'\u001b[39m \u001b[33m?\u001b[39m \u001b[32m'string'\u001b[39m \u001b[33m:\u001b[39m \u001b[32m'error'\u001b[39m\u001b[0m"}
+2026-02-20T01:53:18.675Z [network][GET 200] /__nextjs_original-stack-frame?isServer=false&isEdgeServer=false&isAppDirectory=true&errorMessage=Error%3A+A+tree+hydrated+but+some+attributes+of+the+server+rendered+HTML+didn%27t+match+the+client+properties.+This+won%27t+be+patched+up.+This+can+happen+if+a+SSR-ed+Client+Component+used%3A%0A%0A-+A+server%2Fclient+branch+%60if+%28typeof+window+%21%3D%3D+%27undefined%27%29%60.%0A-+Variable+input+such+as+%60Date.now%28%29%60+or+%60Math.random%28%29%60+which+changes+each+time+it%27s+called.%0A-+Date+formatting+in+a+user%27s+locale+which+doesn%27t+match+the+server.%0A-+External+changing+data+without+sending+a+snapshot+of+it+along+with+the+HTML.%0A-+Invalid+HTML+tag+nesting.%0A%0AIt+can+also+happen+if+the+client+has+a+browser+extension+installed+which+messes+with+the+HTML+before+React+loaded.%0A%0Ahttps%3A%2F%2Freact.dev%2Flink%2Fhydration-mismatch%0A%0A++...%0A++++%3CHTTPAccessFallbackErrorBoundary+pathname%3D%22%2F%22+notFound%3D%7B%5B...%5D%7D+forbidden%3D%7Bundefined%7D+unauthorized%3D%7... [truncated]
+  response: {"originalStackFrame":{"file":"<anonymous>","lineNumber":86,"column":44,"methodName":"console.error","ignored":false,"arguments":[]},"originalCodeFrame":null}
+2026-02-20T01:53:18.675Z [network][GET 200] /__nextjs_original-stack-frame?isServer=false&isEdgeServer=false&isAppDirectory=true&errorMessage=Error%3A+A+tree+hydrated+but+some+attributes+of+the+server+rendered+HTML+didn%27t+match+the+client+properties.+This+won%27t+be+patched+up.+This+can+happen+if+a+SSR-ed+Client+Component+used%3A%0A%0A-+A+server%2Fclient+branch+%60if+%28typeof+window+%21%3D%3D+%27undefined%27%29%60.%0A-+Variable+input+such+as+%60Date.now%28%29%60+or+%60Math.random%28%29%60+which+changes+each+time+it%27s+called.%0A-+Date+formatting+in+a+user%27s+locale+which+doesn%27t+match+the+server.%0A-+External+changing+data+without+sending+a+snapshot+of+it+along+with+the+HTML.%0A-+Invalid+HTML+tag+nesting.%0A%0AIt+can+also+happen+if+the+client+has+a+browser+extension+installed+which+messes+with+the+HTML+before+React+loaded.%0A%0Ahttps%3A%2F%2Freact.dev%2Flink%2Fhydration-mismatch%0A%0A++...%0A++++%3CHTTPAccessFallbackErrorBoundary+pathname%3D%22%2F%22+notFound%3D%7B%5B...%5D%7D+forbidden%3D%7Bundefined%7D+unauthorized%3D%7... [truncated]
+  response: {"originalStackFrame":{"file":"node_modules/next/dist/compiled/react-dom/cjs/react-dom-client.development.js","lineNumber":4299,"column":1,"methodName":"emitPendingHydrationWarnings","arguments":[],"ignored":true},"originalCodeFrame":null}
+2026-02-20T01:53:18.684Z [network][GET 200] /__nextjs_original-stack-frame?isServer=false&isEdgeServer=false&isAppDirectory=true&errorMessage=Error%3A+A+tree+hydrated+but+some+attributes+of+the+server+rendered+HTML+didn%27t+match+the+client+properties.+This+won%27t+be+patched+up.+This+can+happen+if+a+SSR-ed+Client+Component+used%3A%0A%0A-+A+server%2Fclient+branch+%60if+%28typeof+window+%21%3D%3D+%27undefined%27%29%60.%0A-+Variable+input+such+as+%60Date.now%28%29%60+or+%60Math.random%28%29%60+which+changes+each+time+it%27s+called.%0A-+Date+formatting+in+a+user%27s+locale+which+doesn%27t+match+the+server.%0A-+External+changing+data+without+sending+a+snapshot+of+it+along+with+the+HTML.%0A-+Invalid+HTML+tag+nesting.%0A%0AIt+can+also+happen+if+the+client+has+a+browser+extension+installed+which+messes+with+the+HTML+before+React+loaded.%0A%0Ahttps%3A%2F%2Freact.dev%2Flink%2Fhydration-mismatch%0A%0A++...%0A++++%3CHTTPAccessFallbackErrorBoundary+pathname%3D%22%2F%22+notFound%3D%7B%5B...%5D%7D+forbidden%3D%7Bundefined%7D+unauthorized%3D%7... [truncated]
+  response: {"originalStackFrame":{"file":"node_modules/next/dist/compiled/react-dom/cjs/react-dom-client.development.js","lineNumber":15199,"column":1,"methodName":"completeUnitOfWork","arguments":[],"ignored":true},"originalCodeFrame":null}
+2026-02-20T01:53:18.684Z [network][GET 200] /__nextjs_original-stack-frame?isServer=false&isEdgeServer=false&isAppDirectory=true&errorMessage=Error%3A+A+tree+hydrated+but+some+attributes+of+the+server+rendered+HTML+didn%27t+match+the+client+properties.+This+won%27t+be+patched+up.+This+can+happen+if+a+SSR-ed+Client+Component+used%3A%0A%0A-+A+server%2Fclient+branch+%60if+%28typeof+window+%21%3D%3D+%27undefined%27%29%60.%0A-+Variable+input+such+as+%60Date.now%28%29%60+or+%60Math.random%28%29%60+which+changes+each+time+it%27s+called.%0A-+Date+formatting+in+a+user%27s+locale+which+doesn%27t+match+the+server.%0A-+External+changing+data+without+sending+a+snapshot+of+it+along+with+the+HTML.%0A-+Invalid+HTML+tag+nesting.%0A%0AIt+can+also+happen+if+the+client+has+a+browser+extension+installed+which+messes+with+the+HTML+before+React+loaded.%0A%0Ahttps%3A%2F%2Freact.dev%2Flink%2Fhydration-mismatch%0A%0A++...%0A++++%3CHTTPAccessFallbackErrorBoundary+pathname%3D%22%2F%22+notFound%3D%7B%5B...%5D%7D+forbidden%3D%7Bundefined%7D+unauthorized%3D%7... [truncated]
+  response: {"originalStackFrame":{"file":"../src/client/components/react-dev-overlay/internal/helpers/use-error-handler.ts","lineNumber":30,"column":34,"methodName":"formattedErrorMessage","arguments":[],"ignored":true},"originalCodeFrame":"\u001b[0m \u001b[90m 28 |\u001b[39m     \u001b[90m// If it's not an error, format the args into an error\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 29 |\u001b[39m     \u001b[36mconst\u001b[39m formattedErrorMessage \u001b[33m=\u001b[39m formatConsoleArgs(consoleErrorArgs)\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 30 |\u001b[39m     error \u001b[33m=\u001b[39m createUnhandledError(formattedErrorMessage)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 31 |\u001b[39m   } \u001b[36melse\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m 32 |\u001b[39m     error \u001b[33m=\u001b[39m capturedFromConsole\u001b[0m\n\u001b[0m \u001b[90m 33 |\u001b[39m       \u001b[33m?\u001b[39m createUnhandledError(originError)\u001b[0m"}
+2026-02-20T01:53:18.684Z [network][GET 200] /__nextjs_original-stack-frame?isServer=false&isEdgeServer=false&isAppDirectory=true&errorMessage=Error%3A+A+tree+hydrated+but+some+attributes+of+the+server+rendered+HTML+didn%27t+match+the+client+properties.+This+won%27t+be+patched+up.+This+can+happen+if+a+SSR-ed+Client+Component+used%3A%0A%0A-+A+server%2Fclient+branch+%60if+%28typeof+window+%21%3D%3D+%27undefined%27%29%60.%0A-+Variable+input+such+as+%60Date.now%28%29%60+or+%60Math.random%28%29%60+which+changes+each+time+it%27s+called.%0A-+Date+formatting+in+a+user%27s+locale+which+doesn%27t+match+the+server.%0A-+External+changing+data+without+sending+a+snapshot+of+it+along+with+the+HTML.%0A-+Invalid+HTML+tag+nesting.%0A%0AIt+can+also+happen+if+the+client+has+a+browser+extension+installed+which+messes+with+the+HTML+before+React+loaded.%0A%0Ahttps%3A%2F%2Freact.dev%2Flink%2Fhydration-mismatch%0A%0A++...%0A++++%3CHTTPAccessFallbackErrorBoundary+pathname%3D%22%2F%22+notFound%3D%7B%5B...%5D%7D+forbidden%3D%7Bundefined%7D+unauthorized%3D%7... [truncated]
+  response: {"originalStackFrame":{"file":"../src/client/components/globals/intercept-console-error.ts","lineNumber":32,"column":11,"methodName":"console.error","arguments":[],"ignored":true},"originalCodeFrame":"\u001b[0m \u001b[90m 30 |\u001b[39m       \u001b[36mif\u001b[39m (process\u001b[33m.\u001b[39menv\u001b[33m.\u001b[39m\u001b[33mNODE_ENV\u001b[39m \u001b[33m!==\u001b[39m \u001b[32m'production'\u001b[39m) {\u001b[0m\n\u001b[0m \u001b[90m 31 |\u001b[39m         handleClientError(\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 32 |\u001b[39m           \u001b[90m// replayed errors have their own complex format string that should be used,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 33 |\u001b[39m           \u001b[90m// but if we pass the error directly, `handleClientError` will ignore it\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 34 |\u001b[39m           maybeError\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 35 |\u001b[39m           args\u001b[33m,\u001b[39m\u001b[0m"}
+2026-02-20T01:53:18.684Z [network][GET 200] /__nextjs_original-stack-frame?isServer=false&isEdgeServer=false&isAppDirectory=true&errorMessage=Error%3A+A+tree+hydrated+but+some+attributes+of+the+server+rendered+HTML+didn%27t+match+the+client+properties.+This+won%27t+be+patched+up.+This+can+happen+if+a+SSR-ed+Client+Component+used%3A%0A%0A-+A+server%2Fclient+branch+%60if+%28typeof+window+%21%3D%3D+%27undefined%27%29%60.%0A-+Variable+input+such+as+%60Date.now%28%29%60+or+%60Math.random%28%29%60+which+changes+each+time+it%27s+called.%0A-+Date+formatting+in+a+user%27s+locale+which+doesn%27t+match+the+server.%0A-+External+changing+data+without+sending+a+snapshot+of+it+along+with+the+HTML.%0A-+Invalid+HTML+tag+nesting.%0A%0AIt+can+also+happen+if+the+client+has+a+browser+extension+installed+which+messes+with+the+HTML+before+React+loaded.%0A%0Ahttps%3A%2F%2Freact.dev%2Flink%2Fhydration-mismatch%0A%0A++...%0A++++%3CHTTPAccessFallbackErrorBoundary+pathname%3D%22%2F%22+notFound%3D%7B%5B...%5D%7D+forbidden%3D%7Bundefined%7D+unauthorized%3D%7... [truncated]
+  response: {"originalStackFrame":{"file":"node_modules/next/dist/compiled/react-dom/cjs/react-dom-client.development.js","lineNumber":13909,"column":1,"methodName":"completeWork","arguments":[],"ignored":true},"originalCodeFrame":null}
+2026-02-20T01:53:18.684Z [network][GET 200] /__nextjs_original-stack-frame?isServer=false&isEdgeServer=false&isAppDirectory=true&errorMessage=Error%3A+A+tree+hydrated+but+some+attributes+of+the+server+rendered+HTML+didn%27t+match+the+client+properties.+This+won%27t+be+patched+up.+This+can+happen+if+a+SSR-ed+Client+Component+used%3A%0A%0A-+A+server%2Fclient+branch+%60if+%28typeof+window+%21%3D%3D+%27undefined%27%29%60.%0A-+Variable+input+such+as+%60Date.now%28%29%60+or+%60Math.random%28%29%60+which+changes+each+time+it%27s+called.%0A-+Date+formatting+in+a+user%27s+locale+which+doesn%27t+match+the+server.%0A-+External+changing+data+without+sending+a+snapshot+of+it+along+with+the+HTML.%0A-+Invalid+HTML+tag+nesting.%0A%0AIt+can+also+happen+if+the+client+has+a+browser+extension+installed+which+messes+with+the+HTML+before+React+loaded.%0A%0Ahttps%3A%2F%2Freact.dev%2Flink%2Fhydration-mismatch%0A%0A++...%0A++++%3CHTTPAccessFallbackErrorBoundary+pathname%3D%22%2F%22+notFound%3D%7B%5B...%5D%7D+forbidden%3D%7Bundefined%7D+unauthorized%3D%7... [truncated]
+  response: {"originalStackFrame":{"file":"node_modules/next/dist/compiled/react-dom/cjs/react-dom-client.development.js","lineNumber":543,"column":1,"methodName":"runWithFiberInDEV","arguments":[],"ignored":true},"originalCodeFrame":null}
+2026-02-20T01:53:18.689Z [network][GET 200] /__nextjs_original-stack-frame?isServer=false&isEdgeServer=false&isAppDirectory=true&errorMessage=Error%3A+A+tree+hydrated+but+some+attributes+of+the+server+rendered+HTML+didn%27t+match+the+client+properties.+This+won%27t+be+patched+up.+This+can+happen+if+a+SSR-ed+Client+Component+used%3A%0A%0A-+A+server%2Fclient+branch+%60if+%28typeof+window+%21%3D%3D+%27undefined%27%29%60.%0A-+Variable+input+such+as+%60Date.now%28%29%60+or+%60Math.random%28%29%60+which+changes+each+time+it%27s+called.%0A-+Date+formatting+in+a+user%27s+locale+which+doesn%27t+match+the+server.%0A-+External+changing+data+without+sending+a+snapshot+of+it+along+with+the+HTML.%0A-+Invalid+HTML+tag+nesting.%0A%0AIt+can+also+happen+if+the+client+has+a+browser+extension+installed+which+messes+with+the+HTML+before+React+loaded.%0A%0Ahttps%3A%2F%2Freact.dev%2Flink%2Fhydration-mismatch%0A%0A++...%0A++++%3CHTTPAccessFallbackErrorBoundary+pathname%3D%22%2F%22+notFound%3D%7B%5B...%5D%7D+forbidden%3D%7Bundefined%7D+unauthorized%3D%7... [truncated]
+  response: {"originalStackFrame":{"file":"node_modules/next/dist/compiled/react-dom/cjs/react-dom-client.development.js","lineNumber":15057,"column":1,"methodName":"workLoopConcurrent","arguments":[],"ignored":true},"originalCodeFrame":null}
+2026-02-20T01:53:18.689Z [network][GET 200] /__nextjs_original-stack-frame?isServer=false&isEdgeServer=false&isAppDirectory=true&errorMessage=Error%3A+A+tree+hydrated+but+some+attributes+of+the+server+rendered+HTML+didn%27t+match+the+client+properties.+This+won%27t+be+patched+up.+This+can+happen+if+a+SSR-ed+Client+Component+used%3A%0A%0A-+A+server%2Fclient+branch+%60if+%28typeof+window+%21%3D%3D+%27undefined%27%29%60.%0A-+Variable+input+such+as+%60Date.now%28%29%60+or+%60Math.random%28%29%60+which+changes+each+time+it%27s+called.%0A-+Date+formatting+in+a+user%27s+locale+which+doesn%27t+match+the+server.%0A-+External+changing+data+without+sending+a+snapshot+of+it+along+with+the+HTML.%0A-+Invalid+HTML+tag+nesting.%0A%0AIt+can+also+happen+if+the+client+has+a+browser+extension+installed+which+messes+with+the+HTML+before+React+loaded.%0A%0Ahttps%3A%2F%2Freact.dev%2Flink%2Fhydration-mismatch%0A%0A++...%0A++++%3CHTTPAccessFallbackErrorBoundary+pathname%3D%22%2F%22+notFound%3D%7B%5B...%5D%7D+forbidden%3D%7Bundefined%7D+unauthorized%3D%7... [truncated]
+  response: {"originalStackFrame":{"file":"node_modules/next/dist/compiled/react-dom/cjs/react-dom-client.development.js","lineNumber":15032,"column":1,"methodName":"renderRootConcurrent","arguments":[],"ignored":true},"originalCodeFrame":null}
+2026-02-20T01:53:18.689Z [network][GET 200] /__nextjs_original-stack-frame?isServer=false&isEdgeServer=false&isAppDirectory=true&errorMessage=Error%3A+A+tree+hydrated+but+some+attributes+of+the+server+rendered+HTML+didn%27t+match+the+client+properties.+This+won%27t+be+patched+up.+This+can+happen+if+a+SSR-ed+Client+Component+used%3A%0A%0A-+A+server%2Fclient+branch+%60if+%28typeof+window+%21%3D%3D+%27undefined%27%29%60.%0A-+Variable+input+such+as+%60Date.now%28%29%60+or+%60Math.random%28%29%60+which+changes+each+time+it%27s+called.%0A-+Date+formatting+in+a+user%27s+locale+which+doesn%27t+match+the+server.%0A-+External+changing+data+without+sending+a+snapshot+of+it+along+with+the+HTML.%0A-+Invalid+HTML+tag+nesting.%0A%0AIt+can+also+happen+if+the+client+has+a+browser+extension+installed+which+messes+with+the+HTML+before+React+loaded.%0A%0Ahttps%3A%2F%2Freact.dev%2Flink%2Fhydration-mismatch%0A%0A++...%0A++++%3CHTTPAccessFallbackErrorBoundary+pathname%3D%22%2F%22+notFound%3D%7B%5B...%5D%7D+forbidden%3D%7Bundefined%7D+unauthorized%3D%7... [truncated]
+  response: {"originalStackFrame":{"file":"node_modules/next/dist/compiled/react-dom/cjs/react-dom-client.development.js","lineNumber":15080,"column":1,"methodName":"performUnitOfWork","arguments":[],"ignored":true},"originalCodeFrame":null}
+2026-02-20T01:53:18.690Z [network][GET 200] /__nextjs_original-stack-frame?isServer=false&isEdgeServer=false&isAppDirectory=true&errorMessage=Error%3A+A+tree+hydrated+but+some+attributes+of+the+server+rendered+HTML+didn%27t+match+the+client+properties.+This+won%27t+be+patched+up.+This+can+happen+if+a+SSR-ed+Client+Component+used%3A%0A%0A-+A+server%2Fclient+branch+%60if+%28typeof+window+%21%3D%3D+%27undefined%27%29%60.%0A-+Variable+input+such+as+%60Date.now%28%29%60+or+%60Math.random%28%29%60+which+changes+each+time+it%27s+called.%0A-+Date+formatting+in+a+user%27s+locale+which+doesn%27t+match+the+server.%0A-+External+changing+data+without+sending+a+snapshot+of+it+along+with+the+HTML.%0A-+Invalid+HTML+tag+nesting.%0A%0AIt+can+also+happen+if+the+client+has+a+browser+extension+installed+which+messes+with+the+HTML+before+React+loaded.%0A%0Ahttps%3A%2F%2Freact.dev%2Flink%2Fhydration-mismatch%0A%0A++...%0A++++%3CHTTPAccessFallbackErrorBoundary+pathname%3D%22%2F%22+notFound%3D%7B%5B...%5D%7D+forbidden%3D%7Bundefined%7D+unauthorized%3D%7... [truncated]
+  response: {"originalStackFrame":{"file":"node_modules/next/dist/compiled/react-dom/cjs/react-dom-client.development.js","lineNumber":14349,"column":1,"methodName":"performWorkOnRoot","arguments":[],"ignored":true},"originalCodeFrame":null}
+2026-02-20T01:53:18.690Z [network][GET 200] /__nextjs_original-stack-frame?isServer=false&isEdgeServer=false&isAppDirectory=true&errorMessage=Error%3A+A+tree+hydrated+but+some+attributes+of+the+server+rendered+HTML+didn%27t+match+the+client+properties.+This+won%27t+be+patched+up.+This+can+happen+if+a+SSR-ed+Client+Component+used%3A%0A%0A-+A+server%2Fclient+branch+%60if+%28typeof+window+%21%3D%3D+%27undefined%27%29%60.%0A-+Variable+input+such+as+%60Date.now%28%29%60+or+%60Math.random%28%29%60+which+changes+each+time+it%27s+called.%0A-+Date+formatting+in+a+user%27s+locale+which+doesn%27t+match+the+server.%0A-+External+changing+data+without+sending+a+snapshot+of+it+along+with+the+HTML.%0A-+Invalid+HTML+tag+nesting.%0A%0AIt+can+also+happen+if+the+client+has+a+browser+extension+installed+which+messes+with+the+HTML+before+React+loaded.%0A%0Ahttps%3A%2F%2Freact.dev%2Flink%2Fhydration-mismatch%0A%0A++...%0A++++%3CHTTPAccessFallbackErrorBoundary+pathname%3D%22%2F%22+notFound%3D%7B%5B...%5D%7D+forbidden%3D%7Bundefined%7D+unauthorized%3D%7... [truncated]
+  response: {"originalStackFrame":{"file":"node_modules/next/dist/compiled/react-dom/cjs/react-dom-client.development.js","lineNumber":15954,"column":1,"methodName":"performWorkOnRootViaSchedulerTask","arguments":[],"ignored":true},"originalCodeFrame":null}
+2026-02-20T01:53:18.690Z [network][GET 200] /__nextjs_original-stack-frame?isServer=false&isEdgeServer=false&isAppDirectory=true&errorMessage=Error%3A+A+tree+hydrated+but+some+attributes+of+the+server+rendered+HTML+didn%27t+match+the+client+properties.+This+won%27t+be+patched+up.+This+can+happen+if+a+SSR-ed+Client+Component+used%3A%0A%0A-+A+server%2Fclient+branch+%60if+%28typeof+window+%21%3D%3D+%27undefined%27%29%60.%0A-+Variable+input+such+as+%60Date.now%28%29%60+or+%60Math.random%28%29%60+which+changes+each+time+it%27s+called.%0A-+Date+formatting+in+a+user%27s+locale+which+doesn%27t+match+the+server.%0A-+External+changing+data+without+sending+a+snapshot+of+it+along+with+the+HTML.%0A-+Invalid+HTML+tag+nesting.%0A%0AIt+can+also+happen+if+the+client+has+a+browser+extension+installed+which+messes+with+the+HTML+before+React+loaded.%0A%0Ahttps%3A%2F%2Freact.dev%2Flink%2Fhydration-mismatch%0A%0A++...%0A++++%3CHTTPAccessFallbackErrorBoundary+pathname%3D%22%2F%22+notFound%3D%7B%5B...%5D%7D+forbidden%3D%7Bundefined%7D+unauthorized%3D%7... [truncated]
+  response: {"originalStackFrame":{"file":"node_modules/next/dist/compiled/scheduler/cjs/scheduler.development.js","lineNumber":44,"column":1,"methodName":"MessagePort.performWorkUntilDeadline","arguments":[],"ignored":true},"originalCodeFrame":null}
+2026-02-20T02:01:03.510Z [console][error] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <InnerLayoutRouter parallelRouterKey="children" url={"/?utm_so..."} tree={[...]} childNodes={Map} segmentPath={[...]} ...>
+      <ClientPageRoot Component={function Home} searchParams={{...}} params={{}}>
+        <Home params={Promise} searchParams={Promise}>
+          <Suspense fallback={<div>}>
+            <HomeContent>
+              <main className="min-h-scre...">
+                <HeroSection>
+                <ReviewsCarousel>
+                <SegredoRevelado>
+                <BonusInclusos>
+                <ProblemasSolucoes>
+                <PraticaFuncional>
+                <GarantiaSection>
+                <PricingTable>
+                <HistoriasSucesso>
+                <FAQSection>
+                <Partners>
+                <Footer>
+                  <footer className="w-full bg-...">
+                    <div className="container ...">
+                      <div className="flex flex-...">
+                        <div className="flex items...">
+                          <LinkComponent href="/privacidade" className="text-[13px...">
+                            <a
+                              className="text-[13px] text-[#94a3b8] hover:text-[#22c55e] transition-colors"
+                              ref={function Link.LinkComponent.useCallback[setIntersectionWithResetRef]}
+                              onClick={function onClick}
+                              onMouseEnter={function onMouseEnter}
+                              onTouchStart={function onTouchStart}
++                             href="/privacidade"
+-                             href={"http://localhost:3000/privacidade?utm_source=direto&cid=1770994886602_1770995419..."}
+                            >
++                             Privacidade
+                          <span>
+                          <LinkComponent href="/termos" className="text-[13px...">
+                            <a
+                              className="text-[13px] text-[#94a3b8] hover:text-[#22c55e] transition-colors"
+                              ref={function Link.LinkComponent.useCallback[setIntersectionWithResetRef]}
+                              onClick={function onClick}
+                              onMouseEnter={function onMouseEnter}
+                              onTouchStart={function onTouchStart}
++                             href="/termos"
+-                             href={"http://localhost:3000/termos?utm_source=direto&cid=1770994886602_17709954190034"}
+                            >
++                             Termos e Condições
+                          <span>
+                          <LinkComponent href="/contacto" className="text-[13px...">
+                            <a
+                              className="text-[13px] text-[#94a3b8] hover:text-[#22c55e] transition-colors"
+                              ref={function Link.LinkComponent.useCallback[setIntersectionWithResetRef]}
+                              onClick={function onClick}
+                              onMouseEnter={function onMouseEnter}
+                              onTouchStart={function onTouchStart}
++                             href="/contacto"
+-                             href={"http://localhost:3000/contacto?utm_source=direto&cid=1770994886602_17709954190034"}
+                            >
++                             Fa... [truncated]
+2026-02-20T02:01:03.691Z [console][error] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <InnerLayoutRouter parallelRouterKey="children" url={"/?utm_so..."} tree={[...]} childNodes={Map} segmentPath={[...]} ...>
+      <ClientPageRoot Component={function Home} searchParams={{...}} params={{}}>
+        <Home params={Promise} searchParams={Promise}>
+          <Suspense fallback={<div>}>
+            <HomeContent>
+              <main className="min-h-scre...">
+                <HeroSection>
+                <ReviewsCarousel>
+                <SegredoRevelado>
+                <BonusInclusos>
+                <ProblemasSolucoes>
+                <PraticaFuncional>
+                <GarantiaSection>
+                <PricingTable>
+                <HistoriasSucesso>
+                <FAQSection>
+                <Partners>
+                <Footer>
+                  <footer className="w-full bg-...">
+                    <div className="container ...">
+                      <div className="flex flex-...">
+                        <div className="flex items...">
+                          <LinkComponent href="/privacidade" className="text-[13px...">
+                            <a
+                              className="text-[13px] text-[#94a3b8] hover:text-[#22c55e] transition-colors"
+                              ref={function Link.LinkComponent.useCallback[setIntersectionWithResetRef]}
+                              onClick={function onClick}
+                              onMouseEnter={function onMouseEnter}
+                              onTouchStart={function onTouchStart}
++                             href="/privacidade"
+-                             href={"http://localhost:3000/privacidade?utm_source=direto&cid=1770994886602_1770995419..."}
+                            >
++                             Privacidade
+                          <span>
+                          <LinkComponent href="/termos" className="text-[13px...">
+                            <a
+                              className="text-[13px] text-[#94a3b8] hover:text-[#22c55e] transition-colors"
+                              ref={function Link.LinkComponent.useCallback[setIntersectionWithResetRef]}
+                              onClick={function onClick}
+                              onMouseEnter={function onMouseEnter}
+                              onTouchStart={function onTouchStart}
++                             href="/termos"
+-                             href={"http://localhost:3000/termos?utm_source=direto&cid=1770994886602_17709954190034"}
+                            >
++                             Termos e Condições
+                          <span>
+                          <LinkComponent href="/contacto" className="text-[13px...">
+                            <a
+                              className="text-[13px] text-[#94a3b8] hover:text-[#22c55e] transition-colors"
+                              ref={function Link.LinkComponent.useCallback[setIntersectionWithResetRef]}
+                              onClick={function onClick}
+                              onMouseEnter={function onMouseEnter}
+                              onTouchStart={function onTouchStart}
++                             href="/contacto"
+-                             href={"http://localhost:3000/contacto?utm_source=direto&cid=1770994886602_17709954190034"}
+                            >
++                             Fa... [truncated]
+2026-02-20T02:01:03.140Z [console][error] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <InnerLayoutRouter parallelRouterKey="children" url={"/?utm_so..."} tree={[...]} childNodes={Map} segmentPath={[...]} ...>
+      <ClientPageRoot Component={function Home} searchParams={{...}} params={{}}>
+        <Home params={Promise} searchParams={Promise}>
+          <Suspense fallback={<div>}>
+            <HomeContent>
+              <main className="min-h-scre...">
+                <HeroSection>
+                <ReviewsCarousel>
+                <SegredoRevelado>
+                <BonusInclusos>
+                <ProblemasSolucoes>
+                <PraticaFuncional>
+                <GarantiaSection>
+                <PricingTable>
+                <HistoriasSucesso>
+                <FAQSection>
+                <Partners>
+                <Footer>
+                  <footer className="w-full bg-...">
+                    <div className="container ...">
+                      <div className="flex flex-...">
+                        <div className="flex items...">
+                          <LinkComponent href="/privacidade" className="text-[13px...">
+                            <a
+                              className="text-[13px] text-[#94a3b8] hover:text-[#22c55e] transition-colors"
+                              ref={function Link.LinkComponent.useCallback[setIntersectionWithResetRef]}
+             ...
+2026-02-20T02:01:03.511Z [console][error] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <InnerLayoutRouter parallelRouterKey="children" url={"/?utm_so..."} tree={[...]} childNodes={Map} segmentPath={[...]} ...>
+      <ClientPageRoot Component={function Home} searchParams={{...}} params={{}}>
+        <Home params={Promise} searchParams={Promise}>
+          <Suspense fallback={<div>}>
+            <HomeContent>
+              <main className="min-h-scre...">
+                <HeroSection>
+                <ReviewsCarousel>
+                <SegredoRevelado>
+                <BonusInclusos>
+                <ProblemasSolucoes>
+                <PraticaFuncional>
+                <GarantiaSection>
+                <PricingTable>
+                <HistoriasSucesso>
+                <FAQSection>
+                <Partners>
+                <Footer>
+                  <footer className="w-full bg-...">
+                    <div className="container ...">
+                      <div className="flex flex-...">
+                        <div className="flex items...">
+                          <LinkComponent href="/privacidade" className="text-[13px...">
+                            <a
+                              className="text-[13px] text-[#94a3b8] hover:text-[#22c55e] transition-colors"
+                              ref={function Link.LinkComponent.useCallback[setIntersectionWithResetRef]}
+             ...
+2026-02-20T02:01:03.690Z [console][error] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <InnerLayoutRouter parallelRouterKey="children" url={"/?utm_so..."} tree={[...]} childNodes={Map} segmentPath={[...]} ...>
+      <ClientPageRoot Component={function Home} searchParams={{...}} params={{}}>
+        <Home params={Promise} searchParams={Promise}>
+          <Suspense fallback={<div>}>
+            <HomeContent>
+              <main className="min-h-scre...">
+                <HeroSection>
+                <ReviewsCarousel>
+                <SegredoRevelado>
+                <BonusInclusos>
+                <ProblemasSolucoes>
+                <PraticaFuncional>
+                <GarantiaSection>
+                <PricingTable>
+                <HistoriasSucesso>
+                <FAQSection>
+                <Partners>
+                <Footer>
+                  <footer className="w-full bg-...">
+                    <div className="container ...">
+                      <div className="flex flex-...">
+                        <div className="flex items...">
+                          <LinkComponent href="/privacidade" className="text-[13px...">
+                            <a
+                              className="text-[13px] text-[#94a3b8] hover:text-[#22c55e] transition-colors"
+                              ref={function Link.LinkComponent.useCallback[setIntersectionWithResetRef]}
+             ...
+2026-02-20T02:01:03.510Z [console][error] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <InnerLayoutRouter parallelRouterKey="children" url={"/?utm_so..."} tree={[...]} childNodes={Map} segmentPath={[...]} ...>
+      <ClientPageRoot Component={function Home} searchParams={{...}} params={{}}>
+        <Home params={Promise} searchParams={Promise}>
+          <Suspense fallback={<div>}>
+            <HomeContent>
+              <main className="min-h-scre...">
+                <HeroSection>
+                <ReviewsCarousel>
+                <SegredoRevelado>
+                <BonusInclusos>
+                <ProblemasSolucoes>
+                <PraticaFuncional>
+                <GarantiaSection>
+                <PricingTable>
+                <HistoriasSucesso>
+                <FAQSection>
+                <Partners>
+                <Footer>
+                  <footer className="w-full bg-...">
+                    <div className="container ...">
+                      <div className="flex flex-...">
+                        <div className="flex items...">
+                          <LinkComponent href="/privacidade" className="text-[13px...">
+                            <a
+                              className="text-[13px] text-[#94a3b8] hover:text-[#22c55e] transition-colors"
+                              ref={function Link.LinkComponent.useCallback[setIntersectionWithResetRef]}
+                              onClick={function onClick}
+                              onMouseEnter={function onMouseEnter}
+                              onTouchStart={function onTouchStart}
++                             href="/privacidade"
+-                             href={"http://localhost:3000/privacidade?utm_source=direto&cid=1770994886602_1770995419..."}
+                            >
++                             Privacidade
+                          <span>
+                          <LinkComponent href="/termos" className="text-[13px...">
+                            <a
+                              className="text-[13px] text-[#94a3b8] hover:text-[#22c55e] transition-colors"
+                              ref={function Link.LinkComponent.useCallback[setIntersectionWithResetRef]}
+                              onClick={function onClick}
+                              onMouseEnter={function onMouseEnter}
+                              onTouchStart={function onTouchStart}
++                             href="/termos"
+-                             href={"http://localhost:3000/termos?utm_source=direto&cid=1770994886602_17709954190034"}
+                            >
++                             Termos e Condições
+                          <span>
+                          <LinkComponent href="/contacto" className="text-[13px...">
+                            <a
+                              className="text-[13px] text-[#94a3b8] hover:text-[#22c55e] transition-colors"
+                              ref={function Link.LinkComponent.useCallback[setIntersectionWithResetRef]}
+                              onClick={function onClick}
+                              onMouseEnter={function onMouseEnter}
+                              onTouchStart={function onTouchStart}
++                             href="/contacto"
+-                             href={"http://localhost:3000/contacto?utm_source=direto&cid=1770994886602_17709954190034"}
+                            >
++                             Fa... [truncated]
+2026-02-20T02:01:03.691Z [console][error] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <InnerLayoutRouter parallelRouterKey="children" url={"/?utm_so..."} tree={[...]} childNodes={Map} segmentPath={[...]} ...>
+      <ClientPageRoot Component={function Home} searchParams={{...}} params={{}}>
+        <Home params={Promise} searchParams={Promise}>
+          <Suspense fallback={<div>}>
+            <HomeContent>
+              <main className="min-h-scre...">
+                <HeroSection>
+                <ReviewsCarousel>
+                <SegredoRevelado>
+                <BonusInclusos>
+                <ProblemasSolucoes>
+                <PraticaFuncional>
+                <GarantiaSection>
+                <PricingTable>
+                <HistoriasSucesso>
+                <FAQSection>
+                <Partners>
+                <Footer>
+                  <footer className="w-full bg-...">
+                    <div className="container ...">
+                      <div className="flex flex-...">
+                        <div className="flex items...">
+                          <LinkComponent href="/privacidade" className="text-[13px...">
+                            <a
+                              className="text-[13px] text-[#94a3b8] hover:text-[#22c55e] transition-colors"
+                              ref={function Link.LinkComponent.useCallback[setIntersectionWithResetRef]}
+                              onClick={function onClick}
+                              onMouseEnter={function onMouseEnter}
+                              onTouchStart={function onTouchStart}
++                             href="/privacidade"
+-                             href={"http://localhost:3000/privacidade?utm_source=direto&cid=1770994886602_1770995419..."}
+                            >
++                             Privacidade
+                          <span>
+                          <LinkComponent href="/termos" className="text-[13px...">
+                            <a
+                              className="text-[13px] text-[#94a3b8] hover:text-[#22c55e] transition-colors"
+                              ref={function Link.LinkComponent.useCallback[setIntersectionWithResetRef]}
+                              onClick={function onClick}
+                              onMouseEnter={function onMouseEnter}
+                              onTouchStart={function onTouchStart}
++                             href="/termos"
+-                             href={"http://localhost:3000/termos?utm_source=direto&cid=1770994886602_17709954190034"}
+                            >
++                             Termos e Condições
+                          <span>
+                          <LinkComponent href="/contacto" className="text-[13px...">
+                            <a
+                              className="text-[13px] text-[#94a3b8] hover:text-[#22c55e] transition-colors"
+                              ref={function Link.LinkComponent.useCallback[setIntersectionWithResetRef]}
+                              onClick={function onClick}
+                              onMouseEnter={function onMouseEnter}
+                              onTouchStart={function onTouchStart}
++                             href="/contacto"
+-                             href={"http://localhost:3000/contacto?utm_source=direto&cid=1770994886602_17709954190034"}
+                            >
++                             Fa... [truncated]
+2026-02-20T02:01:03.140Z [console][error] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <InnerLayoutRouter parallelRouterKey="children" url={"/?utm_so..."} tree={[...]} childNodes={Map} segmentPath={[...]} ...>
+      <ClientPageRoot Component={function Home} searchParams={{...}} params={{}}>
+        <Home params={Promise} searchParams={Promise}>
+          <Suspense fallback={<div>}>
+            <HomeContent>
+              <main className="min-h-scre...">
+                <HeroSection>
+                <ReviewsCarousel>
+                <SegredoRevelado>
+                <BonusInclusos>
+                <ProblemasSolucoes>
+                <PraticaFuncional>
+                <GarantiaSection>
+                <PricingTable>
+                <HistoriasSucesso>
+                <FAQSection>
+                <Partners>
+                <Footer>
+                  <footer className="w-full bg-...">
+                    <div className="container ...">
+                      <div className="flex flex-...">
+                        <div className="flex items...">
+                          <LinkComponent href="/privacidade" className="text-[13px...">
+                            <a
+                              className="text-[13px] text-[#94a3b8] hover:text-[#22c55e] transition-colors"
+                              ref={function Link.LinkComponent.useCallback[setIntersectionWithResetRef]}
+             ...
+2026-02-20T02:01:03.511Z [console][error] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <InnerLayoutRouter parallelRouterKey="children" url={"/?utm_so..."} tree={[...]} childNodes={Map} segmentPath={[...]} ...>
+      <ClientPageRoot Component={function Home} searchParams={{...}} params={{}}>
+        <Home params={Promise} searchParams={Promise}>
+          <Suspense fallback={<div>}>
+            <HomeContent>
+              <main className="min-h-scre...">
+                <HeroSection>
+                <ReviewsCarousel>
+                <SegredoRevelado>
+                <BonusInclusos>
+                <ProblemasSolucoes>
+                <PraticaFuncional>
+                <GarantiaSection>
+                <PricingTable>
+                <HistoriasSucesso>
+                <FAQSection>
+                <Partners>
+                <Footer>
+                  <footer className="w-full bg-...">
+                    <div className="container ...">
+                      <div className="flex flex-...">
+                        <div className="flex items...">
+                          <LinkComponent href="/privacidade" className="text-[13px...">
+                            <a
+                              className="text-[13px] text-[#94a3b8] hover:text-[#22c55e] transition-colors"
+                              ref={function Link.LinkComponent.useCallback[setIntersectionWithResetRef]}
+             ...
+2026-02-20T02:01:03.690Z [console][error] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <InnerLayoutRouter parallelRouterKey="children" url={"/?utm_so..."} tree={[...]} childNodes={Map} segmentPath={[...]} ...>
+      <ClientPageRoot Component={function Home} searchParams={{...}} params={{}}>
+        <Home params={Promise} searchParams={Promise}>
+          <Suspense fallback={<div>}>
+            <HomeContent>
+              <main className="min-h-scre...">
+                <HeroSection>
+                <ReviewsCarousel>
+                <SegredoRevelado>
+                <BonusInclusos>
+                <ProblemasSolucoes>
+                <PraticaFuncional>
+                <GarantiaSection>
+                <PricingTable>
+                <HistoriasSucesso>
+                <FAQSection>
+                <Partners>
+                <Footer>
+                  <footer className="w-full bg-...">
+                    <div className="container ...">
+                      <div className="flex flex-...">
+                        <div className="flex items...">
+                          <LinkComponent href="/privacidade" className="text-[13px...">
+                            <a
+                              className="text-[13px] text-[#94a3b8] hover:text-[#22c55e] transition-colors"
+                              ref={function Link.LinkComponent.useCallback[setIntersectionWithResetRef]}
+             ...
+2026-02-20T02:01:03.510Z [console][error] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <InnerLayoutRouter parallelRouterKey="children" url={"/?utm_so..."} tree={[...]} childNodes={Map} segmentPath={[...]} ...>
+      <ClientPageRoot Component={function Home} searchParams={{...}} params={{}}>
+        <Home params={Promise} searchParams={Promise}>
+          <Suspense fallback={<div>}>
+            <HomeContent>
+              <main className="min-h-scre...">
+                <HeroSection>
+                <ReviewsCarousel>
+                <SegredoRevelado>
+                <BonusInclusos>
+                <ProblemasSolucoes>
+                <PraticaFuncional>
+                <GarantiaSection>
+                <PricingTable>
+                <HistoriasSucesso>
+                <FAQSection>
+                <Partners>
+                <Footer>
+                  <footer className="w-full bg-...">
+                    <div className="container ...">
+                      <div className="flex flex-...">
+                        <div className="flex items...">
+                          <LinkComponent href="/privacidade" className="text-[13px...">
+                            <a
+                              className="text-[13px] text-[#94a3b8] hover:text-[#22c55e] transition-colors"
+                              ref={function Link.LinkComponent.useCallback[setIntersectionWithResetRef]}
+                              onClick={function onClick}
+                              onMouseEnter={function onMouseEnter}
+                              onTouchStart={function onTouchStart}
++                             href="/privacidade"
+-                             href={"http://localhost:3000/privacidade?utm_source=direto&cid=1770994886602_1770995419..."}
+                            >
++                             Privacidade
+                          <span>
+                          <LinkComponent href="/termos" className="text-[13px...">
+                            <a
+                              className="text-[13px] text-[#94a3b8] hover:text-[#22c55e] transition-colors"
+                              ref={function Link.LinkComponent.useCallback[setIntersectionWithResetRef]}
+                              onClick={function onClick}
+                              onMouseEnter={function onMouseEnter}
+                              onTouchStart={function onTouchStart}
++                             href="/termos"
+-                             href={"http://localhost:3000/termos?utm_source=direto&cid=1770994886602_17709954190034"}
+                            >
++                             Termos e Condições
+                          <span>
+                          <LinkComponent href="/contacto" className="text-[13px...">
+                            <a
+                              className="text-[13px] text-[#94a3b8] hover:text-[#22c55e] transition-colors"
+                              ref={function Link.LinkComponent.useCallback[setIntersectionWithResetRef]}
+                              onClick={function onClick}
+                              onMouseEnter={function onMouseEnter}
+                              onTouchStart={function onTouchStart}
++                             href="/contacto"
+-                             href={"http://localhost:3000/contacto?utm_source=direto&cid=1770994886602_17709954190034"}
+                            >
++                             Fa... [truncated]
+2026-02-20T02:01:03.691Z [console][error] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <InnerLayoutRouter parallelRouterKey="children" url={"/?utm_so..."} tree={[...]} childNodes={Map} segmentPath={[...]} ...>
+      <ClientPageRoot Component={function Home} searchParams={{...}} params={{}}>
+        <Home params={Promise} searchParams={Promise}>
+          <Suspense fallback={<div>}>
+            <HomeContent>
+              <main className="min-h-scre...">
+                <HeroSection>
+                <ReviewsCarousel>
+                <SegredoRevelado>
+                <BonusInclusos>
+                <ProblemasSolucoes>
+                <PraticaFuncional>
+                <GarantiaSection>
+                <PricingTable>
+                <HistoriasSucesso>
+                <FAQSection>
+                <Partners>
+                <Footer>
+                  <footer className="w-full bg-...">
+                    <div className="container ...">
+                      <div className="flex flex-...">
+                        <div className="flex items...">
+                          <LinkComponent href="/privacidade" className="text-[13px...">
+                            <a
+                              className="text-[13px] text-[#94a3b8] hover:text-[#22c55e] transition-colors"
+                              ref={function Link.LinkComponent.useCallback[setIntersectionWithResetRef]}
+                              onClick={function onClick}
+                              onMouseEnter={function onMouseEnter}
+                              onTouchStart={function onTouchStart}
++                             href="/privacidade"
+-                             href={"http://localhost:3000/privacidade?utm_source=direto&cid=1770994886602_1770995419..."}
+                            >
++                             Privacidade
+                          <span>
+                          <LinkComponent href="/termos" className="text-[13px...">
+                            <a
+                              className="text-[13px] text-[#94a3b8] hover:text-[#22c55e] transition-colors"
+                              ref={function Link.LinkComponent.useCallback[setIntersectionWithResetRef]}
+                              onClick={function onClick}
+                              onMouseEnter={function onMouseEnter}
+                              onTouchStart={function onTouchStart}
++                             href="/termos"
+-                             href={"http://localhost:3000/termos?utm_source=direto&cid=1770994886602_17709954190034"}
+                            >
++                             Termos e Condições
+                          <span>
+                          <LinkComponent href="/contacto" className="text-[13px...">
+                            <a
+                              className="text-[13px] text-[#94a3b8] hover:text-[#22c55e] transition-colors"
+                              ref={function Link.LinkComponent.useCallback[setIntersectionWithResetRef]}
+                              onClick={function onClick}
+                              onMouseEnter={function onMouseEnter}
+                              onTouchStart={function onTouchStart}
++                             href="/contacto"
+-                             href={"http://localhost:3000/contacto?utm_source=direto&cid=1770994886602_17709954190034"}
+                            >
++                             Fa... [truncated]
+2026-02-20T02:01:03.140Z [console][error] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <InnerLayoutRouter parallelRouterKey="children" url={"/?utm_so..."} tree={[...]} childNodes={Map} segmentPath={[...]} ...>
+      <ClientPageRoot Component={function Home} searchParams={{...}} params={{}}>
+        <Home params={Promise} searchParams={Promise}>
+          <Suspense fallback={<div>}>
+            <HomeContent>
+              <main className="min-h-scre...">
+                <HeroSection>
+                <ReviewsCarousel>
+                <SegredoRevelado>
+                <BonusInclusos>
+                <ProblemasSolucoes>
+                <PraticaFuncional>
+                <GarantiaSection>
+                <PricingTable>
+                <HistoriasSucesso>
+                <FAQSection>
+                <Partners>
+                <Footer>
+                  <footer className="w-full bg-...">
+                    <div className="container ...">
+                      <div className="flex flex-...">
+                        <div className="flex items...">
+                          <LinkComponent href="/privacidade" className="text-[13px...">
+                            <a
+                              className="text-[13px] text-[#94a3b8] hover:text-[#22c55e] transition-colors"
+                              ref={function Link.LinkComponent.useCallback[setIntersectionWithResetRef]}
+             ...
+2026-02-20T02:01:03.511Z [console][error] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <InnerLayoutRouter parallelRouterKey="children" url={"/?utm_so..."} tree={[...]} childNodes={Map} segmentPath={[...]} ...>
+      <ClientPageRoot Component={function Home} searchParams={{...}} params={{}}>
+        <Home params={Promise} searchParams={Promise}>
+          <Suspense fallback={<div>}>
+            <HomeContent>
+              <main className="min-h-scre...">
+                <HeroSection>
+                <ReviewsCarousel>
+                <SegredoRevelado>
+                <BonusInclusos>
+                <ProblemasSolucoes>
+                <PraticaFuncional>
+                <GarantiaSection>
+                <PricingTable>
+                <HistoriasSucesso>
+                <FAQSection>
+                <Partners>
+                <Footer>
+                  <footer className="w-full bg-...">
+                    <div className="container ...">
+                      <div className="flex flex-...">
+                        <div className="flex items...">
+                          <LinkComponent href="/privacidade" className="text-[13px...">
+                            <a
+                              className="text-[13px] text-[#94a3b8] hover:text-[#22c55e] transition-colors"
+                              ref={function Link.LinkComponent.useCallback[setIntersectionWithResetRef]}
+             ...
+2026-02-20T02:01:03.690Z [console][error] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <InnerLayoutRouter parallelRouterKey="children" url={"/?utm_so..."} tree={[...]} childNodes={Map} segmentPath={[...]} ...>
+      <ClientPageRoot Component={function Home} searchParams={{...}} params={{}}>
+        <Home params={Promise} searchParams={Promise}>
+          <Suspense fallback={<div>}>
+            <HomeContent>
+              <main className="min-h-scre...">
+                <HeroSection>
+                <ReviewsCarousel>
+                <SegredoRevelado>
+                <BonusInclusos>
+                <ProblemasSolucoes>
+                <PraticaFuncional>
+                <GarantiaSection>
+                <PricingTable>
+                <HistoriasSucesso>
+                <FAQSection>
+                <Partners>
+                <Footer>
+                  <footer className="w-full bg-...">
+                    <div className="container ...">
+                      <div className="flex flex-...">
+                        <div className="flex items...">
+                          <LinkComponent href="/privacidade" className="text-[13px...">
+                            <a
+                              className="text-[13px] text-[#94a3b8] hover:text-[#22c55e] transition-colors"
+                              ref={function Link.LinkComponent.useCallback[setIntersectionWithResetRef]}
+             ...

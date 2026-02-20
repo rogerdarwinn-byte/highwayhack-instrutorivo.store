@@ -244,3 +244,28 @@
 .animate-pulse-slow {
   animation: pulse-slow 2.5s ease-in-out infinite;
 }
+
+/* Esconder banners visuais Digistore24 (script e tracking mantidos) */
+[id^="ds24_badge"],
+[id^="ds24-badge"],
+[id^="digistore"],
+.ds24_trust_badge,
+.digistore_trust_badge,
+#ds24-trust-badge-container,
+.ds24_footer_container,
+#ds24_footer,
+[class*="digistore24-badge"],
+[class*="ds24-trusted"],
+[class*="digistore"],
+iframe[src*="digistore24.com"],
+iframe[src*="trusted-badge"],
+div[style*="position: fixed"][style*="z-index: 99"],
+div[style*="position:fixed"][style*="z-index:99"] {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  opacity: 0 !important;
+  height: 0 !important;
+  width: 0 !important;
+  overflow: hidden !important;
+}

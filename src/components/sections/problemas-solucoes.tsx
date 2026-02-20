@@ -80,8 +80,9 @@ export default function ProblemasSolucoes() {
         {/* Call to Action */}
         <div className="flex justify-center">
           <a
-            href="#pricing"
-            className="group relative inline-flex items-center justify-center gap-2 bg-[#22c55e] hover:bg-[#1eb054] text-[#05070a] font-bold text-sm md:text-base uppercase tracking-wide py-4 px-8 md:px-12 rounded-full transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_20px_rgba(34,197,94,0.4)]"
+              href="https://www.checkout-ds24.com/product/670107"
+                suppressHydrationWarning
+              className="group relative inline-flex items-center justify-center gap-2 bg-[#22c55e] hover:bg-[#1eb054] text-[#05070a] font-bold text-sm md:text-base uppercase tracking-wide py-4 px-8 md:px-12 rounded-full transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_20px_rgba(34,197,94,0.4)]"
           >
             QUERO PASSAR NO EXAME AGORA
           </a>

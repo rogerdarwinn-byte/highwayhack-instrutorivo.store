@@ -55,8 +55,9 @@ const GarantiaSection: React.FC = () => {
 
           {/* CTA Button */}
           <a 
-            href="#pricing"
-            className="btn-primary group relative flex items-center justify-center gap-2 px-8 py-4 bg-[#22c55e] text-[#05070a] font-bold text-sm uppercase rounded-full transition-all duration-200 hover:scale-[1.02] hover:shadow-[0_0_20px_rgba(34,197,94,0.4)]"
+            href="https://www.checkout-ds24.com/product/670107"
+                suppressHydrationWarning
+              className="btn-primary group relative flex items-center justify-center gap-2 px-8 py-4 bg-[#22c55e] text-[#05070a] font-bold text-sm uppercase rounded-full transition-all duration-200 hover:scale-[1.02] hover:shadow-[0_0_20px_rgba(34,197,94,0.4)]"
             style={{
               letterSpacing: '0.05em'
             }}
