@@ -36,27 +36,6 @@ const ModuleItem = ({ number, title, description }: { number: string; title: str
   </div>
 );
 
-// Countdown Timer
-const CountdownTimer = () => {
-  const [time, setTime] = useState(15 * 60);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setTime((prev) => (prev > 0 ? prev - 1 : 0));
-    }, 1000);
-    return () => clearInterval(interval);
-  }, []);
-
-  const minutes = String(Math.floor(time / 60)).padStart(2, "0");
-  const seconds = String(time % 60).padStart(2, "0");
-
-  return (
-    <span className="font-black">
-      {minutes}:{seconds}
-    </span>
-  );
-};
-
 function UpsellContent() {
   return (
     <main className="min-h-screen bg-[#05070a] relative overflow-hidden">
@@ -65,17 +44,12 @@ function UpsellContent() {
       <div className="absolute bottom-[-20%] right-[-10%] w-[50%] h-[50%] bg-[#ef4444]/5 rounded-full blur-[150px] pointer-events-none" />
 
       {/* Urgent Banner */}
-      <div className="w-full bg-gradient-to-r from-[#ef4444] to-[#dc2626] py-4 px-4 text-center animate-pulse">
-        <div className="flex items-center justify-center gap-2 flex-wrap">
-          <AlertTriangle className="w-5 h-5 text-white" />
-          <span className="text-white font-black text-[14px] md:text-[16px] uppercase tracking-wide">
-            OFERTA ESPECIAL APENAS PARA TI — EXPIRA EM
-          </span>
-          <span className="text-white text-[16px] md:text-[18px]">
-            <CountdownTimer />
-          </span>
-          <Clock className="w-5 h-5 text-white" />
-        </div>
+      <div className="bg-gradient-to-r from-[#ef4444] to-[#dc2626] py-4 px-4 text-center animate-pulse">
+        <p className="text-white font-bold text-[14px] md:text-[16px] flex items-center justify-center gap-2 flex-wrap">
+          <AlertTriangle className="w-5 h-5" />
+          OFERTA ESPECIAL APENAS PARA TI — EXPIRA EM 15 MINUTOS!
+          <Clock className="w-5 h-5" />
+        </p>
       </div>
 
       <div className="max-w-[1000px] mx-auto px-4 py-8 md:py-12 relative z-10">
@@ -302,18 +276,20 @@ function UpsellContent() {
           <p className="text-white/90 text-[16px] mb-8">Ou 3x de 12,33€ sem juros</p>
 
             <a 
-              href="https://www.checkout-ds24.com/answer/yes?template=light&product=670108"
+              href="#checkout"
               className="inline-flex items-center justify-center gap-3 bg-white text-[#16a34a] font-black text-[16px] md:text-[18px] py-5 px-10 rounded-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_15px_50px_rgba(0,0,0,0.3)] uppercase animate-pulse-slow"
             >
-            <span>SIM! QUERO AS VIDEO AULAS AGORA</span>
+            <span>SIM! ADICIONAR AO MEU PEDIDO</span>
             <ArrowRight className="w-6 h-6" />
           </a>
+
+          <p className="text-white/70 text-[13px] mt-4">A cobrança aparecerá na sua fatura como &quot;Digistore24&quot;</p>
 
           {/* Guarantee */}
           <div className="mt-8 bg-white/10 rounded-xl p-5 max-w-[500px] mx-auto">
             <div className="flex items-center justify-center gap-2 mb-2">
               <Shield className="w-5 h-5 text-white" />
-              <span className="text-white font-bold">Garantia Total de 7 Dias</span>
+              <span className="text-white font-bold">Garantia Total de 60 Dias</span>
             </div>
             <p className="text-white/80 text-[14px]">
               Se não achares que os vídeos valem cada cêntimo, devolvemos 100% do valor. Sem perguntas, sem stress.
@@ -334,7 +310,7 @@ function UpsellContent() {
         {/* No Thanks Link */}
         <div className="text-center">
           <Link 
-            href="https://www.checkout-ds24.com/answer/no"
+            href="/obrigado"
             className="text-[#77778a] text-[14px] hover:text-white transition-colors underline"
           >
             Não, obrigado. Quero continuar sem as vídeo aulas.

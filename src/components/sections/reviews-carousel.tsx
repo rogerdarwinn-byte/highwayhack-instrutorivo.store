@@ -111,8 +111,7 @@ export default function ReviewsCarousel() {
         {/* CTA Button */}
         <div className="mt-12 flex justify-center">
           <a
-            href="https://www.checkout-ds24.com/product/670107"
-                suppressHydrationWarning
+            href="#pricing"
             className="inline-flex items-center justify-center px-10 py-5 bg-[#22c55e] text-[#05070a] text-[16px] font-bold rounded-full uppercase tracking-wide transition-all duration-200 hover:shadow-[0_0_20px_rgba(34,197,94,0.4)] hover:-translate-y-1 active:scale-95"
           >
             APROVEITAR OFERTA AGORA

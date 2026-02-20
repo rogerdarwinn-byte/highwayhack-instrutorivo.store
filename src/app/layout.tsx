@@ -21,8 +21,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-      <html lang="pt-PT" suppressHydrationWarning>
-        <head>
+    <html lang="pt-BR">
+      <head>
         {/* Preconnect to Google Fonts */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
@@ -32,15 +32,23 @@ export default function RootLayout({
         {/* DNS prefetch as fallback */}
         <link rel="dns-prefetch" href="https://www.youtube.com" />
         <link rel="dns-prefetch" href="https://i.ytimg.com" />
-          {/* Google Tag Manager */}
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s);j.async=true;j.src="https://gtm.highwayhack-instrutorivo.store/7czsumvizcb.js?"+i;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','8=CwdHLiIgWCMkO0w%2BOzUmVRReSEdHSxEdXwsTDh4aFAoKAhkCWwQbABYRDx0ZHxwFDU0JHRkfEA%3D%3D');`,
-            }}
-          />
-
+        {/* Google Tag Manager */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KVQHD2SN');`,
+          }}
+        />
       </head>
-        <body className="antialiased" suppressHydrationWarning>
+      <body className="antialiased">
+        {/* Google Tag Manager (noscript) */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-KVQHD2SN"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          />
+        </noscript>
         <Script
           id="orchids-browser-logs"
           src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/scripts/orchids-browser-logs.js"
@@ -58,42 +66,8 @@ export default function RootLayout({
           data-debug="true"
           data-custom-data='{"appName": "YourApp", "version": "1.0.0", "greeting": "hi"}'
         />
-          {children}
-            <VisualEditsMessenger />
-            {/* Digistore24 scripts - afterInteractive to avoid hydration mismatch */}
-            <Script
-              id="digistore-badge"
-              src="https://www.digistore24.com/trusted-badge/44177/A7xNQekASKS2Aeh/salespage"
-              strategy="afterInteractive"
-            />
-            <Script
-              id="digistore-js"
-              src="https://www.digistore24-scripts.com/service/digistore.js"
-              strategy="afterInteractive"
-            />
-            <Script
-              id="digistore-promocode"
-              strategy="afterInteractive"
-              dangerouslySetInnerHTML={{
-                __html: `window.addEventListener('load', function(){ if(typeof digistorePromocode === 'function'){ digistorePromocode({ "product_id": 670107, "adjust_all_urls": true, "adjust_domain": true }); } });`,
-              }}
-            />
-            {/* Remove Digistore24 visual badge/banner elements */}
-            <Script
-              id="remove-digistore-badges"
-              strategy="afterInteractive"
-              dangerouslySetInnerHTML={{
-                __html: `(function(){
-    function removeBadges(){
-      document.querySelectorAll('[id*="ds24"],[id*="digistore"],[class*="ds24"],[class*="digistore"],iframe[src*="digistore24"],iframe[src*="trusted-badge"]').forEach(function(el){el.remove();});
-    }
-    removeBadges();
-    var obs=new MutationObserver(removeBadges);
-    obs.observe(document.body,{childList:true,subtree:true});
-    window.addEventListener('load',removeBadges);
-  })();`,
-              }}
-            />
+        {children}
+        <VisualEditsMessenger />
       </body>
     </html>
   );

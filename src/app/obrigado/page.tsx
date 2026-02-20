@@ -81,6 +81,7 @@ function ObrigadoContent() {
             <p className="text-[#a2a2b8] text-[16px] md:text-[18px] max-w-[600px] mx-auto mb-3">
               O teu acesso ao <span className="text-white font-semibold">Highway Hack</span> foi confirmado. Vamos começar a preparação para passares no IMT de primeira!
             </p>
+            <p className="text-[#77778a] text-[12px]">A cobrança aparecerá na sua fatura como &quot;Digistore24&quot;</p>
         </div>
 
         {/* Step 1: Download App */}
@@ -266,6 +267,9 @@ function ObrigadoContent() {
             </p>
             <p className="text-[#77778a] text-[13px] mb-2">
               Tens dúvidas? Envia email para: <a href="mailto:suporte@highwayhack.com" className="text-[#22c55e] hover:underline">suporte@highwayhack.com</a>
+            </p>
+            <p className="text-[#77778a] text-[12px]">
+              A cobrança aparecerá na sua fatura como &quot;Digistore24&quot;
             </p>
           </footer>
       </div>

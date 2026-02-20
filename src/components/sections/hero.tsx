@@ -25,37 +25,35 @@ const HeroSection = () => {
 
       {/* YouTube Shorts Video Embed */}
       <div className="relative w-full max-w-[400px] aspect-[9/16] mt-[24px] mb-[40px] bg-black rounded-[18px] shadow-[rgba(0,0,0,0.7)_0px_20px_60px_0px] overflow-hidden border border-[#1e293b]">
-          <iframe
-            className="absolute inset-0 w-full h-full"
-            src="https://www.youtube.com/embed/KR-Vg_cTtk0?rel=0&modestbranding=1&playsinline=1"
-            title="Highway Hack Preview"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            loading="lazy"
-            suppressHydrationWarning
-          />
+        <iframe
+          className="absolute inset-0 w-full h-full"
+          src="https://www.youtube.com/embed/KR-Vg_cTtk0?rel=0&modestbranding=1&playsinline=1"
+          title="Highway Hack Preview"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          loading="lazy"
+        />
       </div>
 
       {/* Pricing Block */}
       <div className="w-full max-w-[463.5px] p-[32px] md:pt-[32px] md:pb-[32px] md:px-[25.6px] bg-[#0c0f16] border border-[#1e293b] rounded-[24px] shadow-[rgba(0,0,0,0.7)_0px_20px_60px_0px] text-center">
-          <p className="text-[#a2a2b8] text-[14px] mb-[4px]">De <span className="line-through">275,00€</span> por apenas</p>
-            <p className="text-[#a2a2b8] text-[13px] mb-[2px]">3x de</p>
-            <p className="text-[#ffde7a] text-[33.6px] md:text-[42px] font-extrabold mb-[8px]">
-              9,96€
-            </p>
-            <div className="flex items-center justify-center gap-2 mb-[16px]">
-              <span className="bg-[#22c55e]/20 text-[#22c55e] text-[11px] font-bold px-2 py-0.5 rounded-full">-89,12%</span>
-              <span className="text-[#a2a2b8] text-[12px]">Poupe 245,10€</span>
-            </div>
+        <p className="text-[#a2a2b8] text-[13.6px] mb-[4.8px]">
+          3x de
+        </p>
+
+        <p className="text-[#ffde7a] text-[33.6px] md:text-[42px] font-extrabold mb-[16px]">
+          9,96€
+        </p>
 
             <a 
-              href="https://www.checkout-ds24.com/product/670107"
-                suppressHydrationWarning
+              href="#checkout"
               className="w-full h-[56px] inline-flex items-center justify-center gap-2 bg-[#22c55e] hover:bg-[#1eb354] text-[#05070a] text-[15px] font-extrabold uppercase rounded-full shadow-[0_0_20px_rgba(34,197,94,0.4)] transition-all transform hover:-translate-y-1 mb-[12px] px-4 animate-pulse-slow"
             >
-            <span>QUERO COMEÇAR HOJE - ÚLTIMAS VAGAS</span>
+            <span>COMPRAR AGORA</span>
             <ArrowRight className="w-5 h-5" />
           </a>
+
+        <p className="text-[#77778a] text-[11px] mb-[16px]">A cobrança aparecerá na sua fatura como &quot;Digistore24&quot;</p>
 
         <ul className="flex items-center justify-center gap-[24px] text-[12px] text-[#a2a2b8]">
           <li className="flex items-center gap-1.5">
