@@ -68,10 +68,23 @@ export default function RootLayout({
         />
           {children}
           <VisualEditsMessenger />
-          {/* Digistore24 Trusted Badge - Página Principal */}
+          {/* Digistore24 Trusted Badge */}
           <Script
-            src="https://www.digistore24.com/trusted-badge/44177/aGkuWV0CfTWXwJp"
+            src="https://www.digistore24.com/trusted-badge/44177/A7xNQekASKS2Aeh/salespage"
             strategy="afterInteractive"
+          />
+          {/* Digistore24 JS */}
+          <Script
+            src="https://www.digistore24-scripts.com/service/digistore.js"
+            strategy="afterInteractive"
+          />
+          {/* Digistore24 Promocode */}
+          <Script
+            id="digistore-promocode"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `digistorePromocode({ "product_id": 670107, "adjust_all_urls": true, "adjust_domain": true });`
+            }}
           />
       </body>
     </html>
