@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR">
+    <html lang="pt-PT">
       <head>
         {/* Preconnect to Google Fonts */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />

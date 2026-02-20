@@ -63,7 +63,7 @@ const BonusInclusos: React.FC = () => {
             href="#pricing"
             className="group relative flex items-center justify-center gap-2 bg-[#22c55e] text-[#05070a] text-[16px] font-bold uppercase tracking-wide py-4 px-10 rounded-full transition-all duration-200 hover:shadow-[0_0_20px_rgba(34,197,94,0.4)] hover:-translate-y-0.5"
           >
-            COMPRAR AGORA
+            GARANTIR A MINHA VAGA AGORA
             <svg 
               xmlns="http://www.w3.org/2000/svg" 
               width="20" 
@@ -80,7 +80,6 @@ const BonusInclusos: React.FC = () => {
               <path d="m12 5 7 7-7 7" />
             </svg>
           </a>
-          <p className="text-[#77778a] text-[11px] mt-3">A cobrança aparecerá na sua fatura como &quot;Digistore24&quot;</p>
         </div>
       </div>
     </section>

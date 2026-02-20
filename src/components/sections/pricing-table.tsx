@@ -10,7 +10,7 @@ const PricingTable = () => {
     { name: 'Armadilhas do IMT (25 armadilhas)', price: '47,00€' },
     { name: 'Checklist "PASSO A PASSO IMT"', price: '27,00€' },
     { name: 'Atualizações gratuitas 2026', price: '37,00€' },
-    { name: 'Garantia incondicional de 60 dias', price: '💰 Grátis', isFree: true },
+      { name: 'Garantia incondicional de 7 dias', price: '💰 Grátis', isFree: true },
   ];
 
   return (
@@ -30,9 +30,14 @@ const PricingTable = () => {
         <div className="max-w-[500px] mx-auto bg-[#0c0f16] border border-[#1e293b] rounded-[24px] p-8 shadow-[0_20px_60px_rgba(0,0,0,0.5)]">
           {/* Price Header */}
           <div className="mb-8">
+            <p className="text-[#94a3b8] text-[14px] mb-1">De <del>275,00€</del> por apenas</p>
             <p className="text-[#facc15] text-[42px] font-extrabold leading-none mb-2">
-                29€
-              </p>
+              29,70€
+            </p>
+            <div className="flex items-center justify-center gap-2">
+              <span className="bg-[#22c55e]/10 text-[#22c55e] text-[11px] font-bold px-2 py-0.5 rounded-full border border-[#22c55e]/30">-89,12%</span>
+              <span className="text-[#94a3b8] text-[12px]">Poupe 245,10€</span>
+            </div>
           </div>
 
           {/* Feature List */}
@@ -62,11 +67,9 @@ const PricingTable = () => {
             <button 
               className="w-full bg-[#22c55e] hover:shadow-[0_0_20px_rgba(34,197,94,0.4)] transition-all duration-200 text-[#05070a] font-bold py-4 px-6 rounded-full flex items-center justify-center gap-2 text-sm uppercase mb-3 transform hover:-translate-y-0.5 animate-pulse-slow"
             >
-            COMPRAR AGORA
+            GARANTIR O MEU ACESSO COM DESCONTO AGORA
             <ArrowRight className="w-4 h-4" />
           </button>
-
-          <p className="text-[#77778a] text-[11px] mb-6">A cobrança aparecerá na sua fatura como &quot;Digistore24&quot;</p>
 
           {/* Trust Badges */}
           <div className="flex items-center justify-center gap-6 text-[11px] text-[#94a3b8] uppercase font-bold tracking-wider">

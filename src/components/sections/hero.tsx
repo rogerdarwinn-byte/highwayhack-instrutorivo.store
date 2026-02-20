@@ -37,19 +37,23 @@ const HeroSection = () => {
 
       {/* Pricing Block */}
       <div className="w-full max-w-[463.5px] p-[32px] md:pt-[32px] md:pb-[32px] md:px-[25.6px] bg-[#0c0f16] border border-[#1e293b] rounded-[24px] shadow-[rgba(0,0,0,0.7)_0px_20px_60px_0px] text-center">
-          <p className="text-[#ffde7a] text-[33.6px] md:text-[42px] font-extrabold mb-[16px]">
-            29€
-          </p>
+          <p className="text-[#a2a2b8] text-[14px] mb-[4px]">De <span className="line-through">275,00€</span> por apenas</p>
+            <p className="text-[#a2a2b8] text-[13px] mb-[2px]">3x de</p>
+            <p className="text-[#ffde7a] text-[33.6px] md:text-[42px] font-extrabold mb-[8px]">
+              9,96€
+            </p>
+            <div className="flex items-center justify-center gap-2 mb-[16px]">
+              <span className="bg-[#22c55e]/20 text-[#22c55e] text-[11px] font-bold px-2 py-0.5 rounded-full">-89,12%</span>
+              <span className="text-[#a2a2b8] text-[12px]">Poupe 245,10€</span>
+            </div>
 
             <a 
               href="#checkout"
               className="w-full h-[56px] inline-flex items-center justify-center gap-2 bg-[#22c55e] hover:bg-[#1eb354] text-[#05070a] text-[15px] font-extrabold uppercase rounded-full shadow-[0_0_20px_rgba(34,197,94,0.4)] transition-all transform hover:-translate-y-1 mb-[12px] px-4 animate-pulse-slow"
             >
-            <span>COMPRAR AGORA</span>
+            <span>QUERO COMEÇAR HOJE - ÚLTIMAS VAGAS</span>
             <ArrowRight className="w-5 h-5" />
           </a>
-
-        <p className="text-[#77778a] text-[11px] mb-[16px]">A cobrança aparecerá na sua fatura como &quot;Digistore24&quot;</p>
 
         <ul className="flex items-center justify-center gap-[24px] text-[12px] text-[#a2a2b8]">
           <li className="flex items-center gap-1.5">
