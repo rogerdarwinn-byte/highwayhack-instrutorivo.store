@@ -494,3 +494,206 @@ It can also happen if the client has a browser extension installed which messes 
                                   className="relative flex flex-col items-center pt-[56px] pb-[56px] px-[20px] md:px-[..."
 - ...
 2026-02-20T13:38:24.251Z [console][error] Uncaught ReferenceError: digistorePromocode is not defined
+2026-02-21T00:48:14.323Z [console][error] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload assetPrefix="">
+      <ReactDevOverlay state={{nextId:1, ...}} dispatcher={{...}}>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <link>
+                  <RootLayout>
+                    <html lang="pt-BR">
+                      <head>
+                        <link>
+                        <link>
+                        <link>
+                        <link>
+                        <link>
+                        <link>
+                        <script>
+                        <script>
+                        <script>
+                        <script
+                          dangerouslySetInnerHTML={{
++                           __html: "window.addEventListener('load', function(){ if(typeof digistorePromocode === 'fun..."
+-                           __html: ""
+                          }}
+-                         src="//www.digistore24.com/webinc/badge/build/v1.0.2/loader.js"
+                        >
+                      ...
+                  ...
+        ...
+
+2026-02-21T00:48:14.330Z [console][log] __ORCHIDS_NAVIGATE__ http://localhost:3000/?utm_source=direto
+2026-02-21T00:48:15.029Z [console][error] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HTTPAccessFallbackErrorBoundary pathname="/" notFound={[...]} forbidden={undefined} unauthorized={undefined} ...>
+      <RedirectBoundary>
+        <RedirectErrorBoundary router={{...}}>
+          <InnerLayoutRouter parallelRouterKey="children" url="/?utm_sour..." tree={[...]} childNodes={Map} ...>
+            <ClientPageRoot Component={function Home} searchParams={{...}} params={{}}>
+              <Home params={Promise} searchParams={Promise}>
+                <Suspense fallback={<div>}>
+                  <HomeContent>
+                    <main className="min-h-scre...">
+                      <HeroSection>
+                        <section className="relative f...">
+                          <div>
+                          <h1>
+                          <p>
+                          <div>
+                          <div className="w-full max...">
+                            <p>
+                            <p>
+                            <a
++                             href="#checkout"
+-                             href={"http://localhost:3000/?&cid=1770994886602_17709954190034&utm_source=direto#checkout"}
+                              className="w-full h-[56px] inline-flex items-center justify-center gap-2 bg-[#22c55e] ho..."
+                            >
+                            ...
+                          ...
+                      <SegredoRevelado>
+                        <section className="py-[80px] ...">
+                          <div className="container ...">
+                            <div>
+                            <div>
+                            <div className="flex flex-...">
+                              <a
++                               href="#pricing"
+-                               href={"http://localhost:3000/?&cid=1770994886602_17709954190034&utm_source=direto#pri..."}
+                                className="group btn-primary bg-[#22c55e] text-[#05070a] text-[1rem] font-bold upperca..."
+                              >
++                               COMPRAR AGORA
+                              ...
+                      <BonusInclusos>
+                        <section className="py-[80px] ...">
+                          <div className="max-w-[120...">
+                            <div>
+                            <div>
+                            <div className="flex flex-...">
+                              <a
++                               href="#pricing"
+-                               href={"http://localhost:3000/?&cid=1770994886602_17709954190034&utm_source=direto#pri..."}
+                                className="group relative flex items-center justify-center gap-2 bg-[#22c55e] text-[#0..."
+                              >
+                              ...
+                      <ProblemasSolucoes>
+                        <section className="py-20 px-5...">
+                          <div className="max-w-[120...">
+                            <div>
+                            <div>
+                            <div className="flex justi...">
+                              <a
++                               href="#pricing"
+-                               href={"http://localhost:3000/?&cid=1770994886602_17709954190034&utm_source=direto#pri..."}
+                                className="group relative inline-flex items-center... [truncated]
+2026-02-21T00:48:14.324Z [console][error] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload assetPrefix="">
+      <ReactDevOverlay state={{nextId:1, ...}} dispatcher={{...}}>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <link>
+                  <RootLayout>
+                    <html lang="pt-BR">
+                      <head>
+                        <link>
+                        <link>
+                        <link>
+                        <link>
+                        <link>
+                        <link>
+                        <script>
+                        <script>
+                        <script>
+                        <script
+                          dangerouslySetInnerHTML={{
++                           __html: "window.addEventListener('load', function(){ if(typeof digistorePromocode === 'fun..."
+-                           __html: ""
+                          }}
+-                         src="//www.digistore24.com/webinc/badge/build/v1.0.2/loader.js"
+                        >
+                      ...
+                  ...
+        ...
+
+2026-02-21T00:48:14.338Z [console][debug] __ORCHIDS_NAVIGATE__ http://localhost:3000/?utm_source=direto
+2026-02-21T00:48:15.022Z [console][error] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HTTPAccessFallbackErrorBoundary pathname="/" notFound={[...]} forbidden={undefined} unauthorized={undefined} ...>
+      <RedirectBoundary>
+        <RedirectErrorBoundary router={{...}}>
+          <InnerLayoutRouter parallelRouterKey="children" url="/?utm_sour..." tree={[...]} childNodes={Map} ...>
+            <ClientPageRoot Component={function Home} searchParams={{...}} params={{}}>
+              <Home params={Promise} searchParams={Promise}>
+                <Suspense fallback={<div>}>
+                  <HomeContent>
+                    <main className="min-h-scre...">
+                      <HeroSection>
+                        <section className="relative f...">
+                          <div>
+                          <h1>
+                          <p>
+                          <div>
+                          <div className="w-full max...">
+                            <p>
+                            <p>
+                            <a
++                             href="#checkout"
+-                             href={"http://localhost:3000/?&cid=1770994886602_17709954190034&utm_source=direto#checkout"}
+                              className="w-full h-[56px] inline-flex items-center justify-center gap-2 bg-[#22c55e] ho..."
+                            >
+                            ...
+      ...
