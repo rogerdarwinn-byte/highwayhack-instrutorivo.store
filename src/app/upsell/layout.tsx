@@ -11,21 +11,16 @@ export default function UpsellLayout({
 }) {
   return (
     <>
-      {/* Digistore24 - Página Upsell */}
-      <script
-        type="text/javascript"
-        src="https://www.digistore24.com/trusted-badge/44177/A7xNQekASKS2Aeh/salespage"
-        async
-      />
-      <script
-        src="https://www.digistore24.com/service/digistore.js"
-        async
-      />
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `window.addEventListener('load', function(){ if(typeof digistoreUpsell === 'function'){ digistoreUpsell(); } });`,
-        }}
-      />
+      <head>
+        {/* Digistore24 - Página Upsell */}
+        <script type="text/javascript" src="https://www.digistore24.com/trusted-badge/44177/A7xNQekASKS2Aeh/salespage" async />
+        <script src="https://www.digistore24.com/service/digistore.js" async />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.addEventListener('load', function(){ if(typeof digistoreUpsell === 'function'){ digistoreUpsell(); } });`,
+          }}
+        />
+      </head>
       {children}
     </>
   );

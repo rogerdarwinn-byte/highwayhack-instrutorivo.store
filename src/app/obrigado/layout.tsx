@@ -11,12 +11,10 @@ export default function ObrigadoLayout({
 }) {
   return (
     <>
-      {/* Digistore24 - Página Obrigado */}
-      <script
-        type="text/javascript"
-        src="https://www.digistore24.com/trusted-badge/44178/aGkuWV0CfTWXwJp/thankyoupage"
-        async
-      />
+      <head>
+        {/* Digistore24 - Página Obrigado */}
+        <script type="text/javascript" src="https://www.digistore24.com/trusted-badge/44178/aGkuWV0CfTWXwJp/thankyoupage" async />
+      </head>
       {children}
     </>
   );
