@@ -68,24 +68,29 @@ export default function RootLayout({
         />
           {children}
           <VisualEditsMessenger />
-          {/* Digistore24 Trusted Badge */}
-          <Script
-            src="https://www.digistore24.com/trusted-badge/44177/A7xNQekASKS2Aeh/salespage"
-            strategy="afterInteractive"
-          />
-          {/* Digistore24 JS */}
-          <Script
-            src="https://www.digistore24-scripts.com/service/digistore.js"
-            strategy="afterInteractive"
-          />
-          {/* Digistore24 Promocode */}
-          <Script
-            id="digistore-promocode"
-            strategy="afterInteractive"
-            dangerouslySetInnerHTML={{
-              __html: `digistorePromocode({ "product_id": 670107, "adjust_all_urls": true, "adjust_domain": true });`
-            }}
-          />
+            {/* Digistore24 */}
+            <Script
+              src="https://www.digistore24.com/trusted-badge/44177/A7xNQekASKS2Aeh/salespage"
+              strategy="afterInteractive"
+            />
+            <Script
+              id="digistore-all"
+              strategy="afterInteractive"
+              dangerouslySetInnerHTML={{
+                __html: `
+                  (function() {
+                    var s = document.createElement('script');
+                    s.src = 'https://www.digistore24-scripts.com/service/digistore.js';
+                    s.onload = function() {
+                      if (typeof digistorePromocode === 'function') {
+                        digistorePromocode({ "product_id": 670107, "adjust_all_urls": true, "adjust_domain": true });
+                      }
+                    };
+                    document.head.appendChild(s);
+                  })();
+                `
+              }}
+            />
       </body>
     </html>
   );
