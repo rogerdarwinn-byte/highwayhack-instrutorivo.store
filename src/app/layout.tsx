@@ -56,42 +56,43 @@ export default function RootLayout({
           data-orchids-project-id="93132b6c-be24-4b47-b845-8fd7f6b9bdc2"
         />
         <ErrorReporter />
-        <Script
-          src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/scripts//route-messenger.js"
-          strategy="afterInteractive"
-          data-target-origin="*"
-          data-message-type="ROUTE_CHANGE"
-          data-include-search-params="true"
-          data-only-in-iframe="true"
-          data-debug="true"
-          data-custom-data='{"appName": "YourApp", "version": "1.0.0", "greeting": "hi"}'
-        />
+          <Script
+            src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/scripts//route-messenger.js"
+            strategy="afterInteractive"
+            data-target-origin="*"
+            data-message-type="ROUTE_CHANGE"
+            data-include-search-params="true"
+            data-only-in-iframe="true"
+            data-debug="true"
+            data-custom-data='{"appName": "YourApp", "version": "1.0.0", "greeting": "hi"}'
+          />
           {children}
           <VisualEditsMessenger />
-            {/* Digistore24 */}
-            <Script
-              src="https://www.digistore24.com/trusted-badge/44177/A7xNQekASKS2Aeh/salespage"
-              strategy="afterInteractive"
-            />
-            <Script
-              id="digistore-all"
-              strategy="afterInteractive"
-              dangerouslySetInnerHTML={{
-                __html: `
-                  (function() {
-                    var s = document.createElement('script');
-                    s.src = 'https://www.digistore24-scripts.com/service/digistore.js';
-                    s.onload = function() {
-                      if (typeof digistorePromocode === 'function') {
-                        digistorePromocode({ "product_id": 670107, "adjust_all_urls": true, "adjust_domain": true });
-                      }
-                    };
-                    document.head.appendChild(s);
-                  })();
-                `
-              }}
-            />
-      </body>
+          {/* Digistore24 Trusted Badge */}
+          <Script
+            src="https://www.digistore24.com/trusted-badge/44177/A7xNQekASKS2Aeh/salespage"
+            strategy="afterInteractive"
+          />
+          {/* Digistore24 Scripts + Promocode */}
+          <Script
+            id="digistore-all"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `
+                (function() {
+                  var s = document.createElement('script');
+                  s.src = 'https://www.digistore24-scripts.com/service/digistore.js';
+                  s.onload = function() {
+                    if (typeof digistorePromocode === 'function') {
+                      digistorePromocode({ "product_id": 670107, "adjust_all_urls": true, "adjust_domain": true });
+                    }
+                  };
+                  document.head.appendChild(s);
+                })();
+              `
+            }}
+          />
+        </body>
     </html>
   );
 }
