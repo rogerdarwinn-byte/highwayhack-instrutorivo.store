@@ -46,7 +46,7 @@ const HeroSection = () => {
         </p>
 
             <a 
-              href="#checkout"
+              href="https://www.checkout-ds24.com/product/670107"
               className="w-full h-[56px] inline-flex items-center justify-center gap-2 bg-[#22c55e] hover:bg-[#1eb354] text-[#05070a] text-[15px] font-extrabold uppercase rounded-full shadow-[0_0_20px_rgba(34,197,94,0.4)] transition-all transform hover:-translate-y-1 mb-[12px] px-4 animate-pulse-slow"
             >
             <span>COMPRAR AGORA</span>

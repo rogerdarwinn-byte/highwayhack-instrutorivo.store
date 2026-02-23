@@ -62,12 +62,13 @@ const PricingTable = () => {
           </ul>
 
             {/* CTA Button */}
-            <button 
-              className="w-full bg-[#22c55e] hover:shadow-[0_0_20px_rgba(34,197,94,0.4)] transition-all duration-200 text-[#05070a] font-bold py-4 px-6 rounded-full flex items-center justify-center gap-2 text-sm uppercase mb-3 transform hover:-translate-y-0.5 animate-pulse-slow"
-            >
-            COMPRAR AGORA
-            <ArrowRight className="w-4 h-4" />
-          </button>
+              <a 
+                href="https://www.checkout-ds24.com/product/670107"
+                className="w-full bg-[#22c55e] hover:shadow-[0_0_20px_rgba(34,197,94,0.4)] transition-all duration-200 text-[#05070a] font-bold py-4 px-6 rounded-full flex items-center justify-center gap-2 text-sm uppercase mb-3 transform hover:-translate-y-0.5 animate-pulse-slow"
+              >
+              COMPRAR AGORA
+              <ArrowRight className="w-4 h-4" />
+            </a>
 
           <p className="text-[#77778a] text-[11px] mb-6">A cobrança aparecerá na sua fatura como &quot;Digistore24&quot;</p>
 
