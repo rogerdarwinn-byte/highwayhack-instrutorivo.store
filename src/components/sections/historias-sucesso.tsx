@@ -104,9 +104,12 @@ const HistoriasSucesso = () => {
         </div>
 
         <div className="flex justify-center">
-          <button className="btn-primary w-full max-w-[400px]">
+          <a 
+            href="https://www.checkout-ds24.com/product/670107"
+            className="btn-primary w-full max-w-[400px] bg-[#22c55e] text-[#05070a] font-bold py-4 px-8 rounded-full flex items-center justify-center transition-all hover:shadow-[0_0_20px_rgba(34,197,94,0.4)] hover:-translate-y-1"
+          >
             APROVEITAR OFERTA AGORA
-          </button>
+          </a>
         </div>
       </div>
     </section>

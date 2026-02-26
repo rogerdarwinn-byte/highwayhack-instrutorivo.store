@@ -116,9 +116,9 @@
     scroll-behavior: smooth;
   }
 
-  body {
-    background-color: var(--background);
-    color: var(--foreground);
+    body {
+      background-color: var(--background);
+      color: var(--foreground);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -243,4 +243,140 @@
 
 .animate-pulse-slow {
   animation: pulse-slow 2.5s ease-in-out infinite;
+}
+
+/* Camuflagem Digistore24 - Tornar banners brancos em pretos para combinar com o site */
+[class*="ds24"], 
+[id*="ds24"], 
+[class*="digistore"], 
+[id*="digistore"],
+[id^="digistore-seal"], 
+[id^="ds-seal"],
+[id^="ds24-badge"],
+[class*="ds24_trusted_badge"],
+[class*="digistore-seal"],
+.ds-seal,
+.ds24-badge,
+.ds24_trusted_badge,
+.digistore-badge,
+#digistore-seal-link,
+#ds24-badge-link,
+.ds24_header,
+.ds24_footer,
+#ds24_header,
+#ds24_footer,
+.ds24_badge_content,
+.ds24_badge_footer,
+.ds24_badge_inner,
+div[style*="position: fixed"][style*="background-color: white"],
+div[style*="position: fixed"][style*="background-color: #ffffff"],
+div[style*="position: fixed"][style*="background-color: rgb(255, 255, 255)"],
+div[style*="position: fixed"][style*="background: white"],
+div[style*="position: fixed"][style*="background: #ffffff"],
+div[style*="position: fixed"][style*="background:rgb(255, 255, 255)"],
+div[style*="position:fixed"][style*="background-color:white"],
+div[style*="position:fixed"][style*="background-color:#ffffff"],
+div[style*="position:fixed"][style*="background-color:rgb(255, 255, 255)"],
+div[style*="background-color: white"][style*="z-index"],
+div[style*="background-color: #ffffff"][style*="z-index"],
+div[style*="background-color: rgb(255, 255, 255)"][style*="z-index"],
+div[style*="background: white"][style*="z-index"],
+div[style*="background: #ffffff"][style*="z-index"],
+div[style*="background:rgb(255, 255, 255)"][style*="z-index"] {
+    background-color: #05070a !important;
+    background: #05070a !important;
+    color: #ffffff !important;
+    border-color: #1e293b !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5) !important;
+}
+
+/* Forçar fundos transparentes em elementos internos e texto branco */
+[class*="ds24"] div, 
+[class*="ds24"] span, 
+[class*="ds24"] p, 
+[class*="ds24"] a,
+[id*="ds24"] div, 
+[id*="ds24"] span, 
+[id*="ds24"] p, 
+[id*="ds24"] a,
+[class*="digistore"] div,
+[id*="digistore"] div {
+    background-color: transparent !important;
+    background: transparent !important;
+    color: #ffffff !important;
+}
+
+/* Esconder elementos específicos que costumam ser brancos no banner da Digistore */
+.ds24_trusted_badge .ds24_badge_content,
+.ds24_trusted_badge .ds24_badge_footer,
+.ds24_badge_content,
+.ds24_badge_footer,
+.ds24_badge_inner {
+    background-color: #05070a !important;
+    background: #05070a !important;
+}
+
+/* Forçar texto e links internos a serem brancos */
+[id^="digistore-seal"] *, 
+[id^="ds24-badge"] *,
+[class*="ds24_trusted_badge"] *,
+.ds24_trusted_badge *,
+[class*="ds24"] *,
+[id*="ds24"] * {
+    color: #ffffff !important;
+    fill: #ffffff !important;
+}
+
+/* Inverter logos pretos para branco se necessário */
+[id^="digistore-seal"] img, 
+[id^="ds24-badge"] img,
+[class*="ds24_trusted_badge"] img,
+[class*="ds24"] img,
+[id*="ds24"] img,
+img[src*="digistore"],
+svg[class*="ds24"] {
+    filter: brightness(0) invert(1) !important;
+}
+
+/* Manter o cadeado com cor se for colorido, senão inverter */
+img[src*="lock"], 
+svg[class*="lock"],
+[class*="lock"],
+[id*="lock"],
+.ds24_lock {
+    display: none !important;
+}
+
+/* Centralizar o logo e nome Digistore no topo */
+[class*="ds24_trusted_badge"],
+.ds24_trusted_badge,
+.ds24_badge_inner,
+[id^="ds24-badge"] {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+}
+
+/* Esconder o texto "encomende com seguranca" */
+.ds24_badge_header,
+.ds24_badge_footer,
+[class*="header"],
+[class*="footer"] {
+    display: none !important;
+}
+
+/* Forçar o logo a ficar centralizado e sem margens estranhas */
+[class*="ds24"] img[src*="digistore"],
+img[src*="digistore"] {
+    margin: 0 auto !important;
+    display: block !important;
+    max-height: 20px !important; /* Ajuste conforme necessário */
+}
+
+/* Esconder bordas brancas e backgrounds de iframes se possível */
+iframe[src*="digistore"] {
+    background: transparent !important;
+    color-scheme: dark !important;
 }
