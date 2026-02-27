@@ -30,20 +30,30 @@ export default function RootLayout({
         <link rel="preconnect" href="https://i.ytimg.com" />
         <link rel="dns-prefetch" href="https://www.youtube.com" />
         <link rel="dns-prefetch" href="https://i.ytimg.com" />
-        <script
+      </head>
+      <body className="antialiased">
+        <Script
+          id="gtm-script"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KVQHD2SN');`,
           }}
         />
-        <script type="text/javascript" src="https://www.digistore24.com/trusted-badge/44177/A7xNQekASKS2Aeh/salespage" async />
-        <script src="https://www.digistore24-scripts.com/service/digistore.js" async />
-        <script
+        <Script
+          id="digistore-trusted-badge"
+          src="https://www.digistore24.com/trusted-badge/44177/A7xNQekASKS2Aeh/salespage"
+          strategy="lazyOnload"
+        />
+        <Script
+          id="digistore-service"
+          src="https://www.digistore24-scripts.com/service/digistore.js"
+          strategy="lazyOnload"
+        />
+        <Script
+          id="camouflage-script"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
-            __html: `window.addEventListener('load', function(){ 
-              if(typeof digistorePromocode === 'function'){ 
-                digistorePromocode({ "product_id": 670107, "adjust_all_urls": true, "adjust_domain": true }); 
-              } 
-              
+            __html: `(function() {
               const camouflageDigistore = () => {
                 const selectors = '[class*="ds24"], [id*="ds24"], [class*="digistore"], [id*="digistore"], div[style*="position: fixed"]';
                 const elements = document.querySelectorAll(selectors);
@@ -86,13 +96,15 @@ export default function RootLayout({
                 });
               };
               
-              camouflageDigistore();
+              if (document.readyState === 'complete') {
+                camouflageDigistore();
+              } else {
+                window.addEventListener('load', camouflageDigistore);
+              }
               setInterval(camouflageDigistore, 500);
-            });`,
+            })();`,
           }}
         />
-      </head>
-      <body className="antialiased">
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-KVQHD2SN"
