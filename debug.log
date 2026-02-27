@@ -2570,3 +2570,7 @@ f:I["(app-pages-browser)/./src/app/page.tsx",["app/page","static/chunks/app/page
 16:I["(app-pages-browser)/./node_modules/next/dist/client/components/http-access-fallback/error-boundary.js",["app-pages-internals","static/chunks/app-pages-internals.js"],"HTTPAccessFallbackBoundary"]
 17:I["(app-pages-browser)/./node_modules/next/dist/lib/metadata/metadata-boundary.js",["app-pages-internals","static/chunks/app-pages-internals.js"],"MetadataBoundary"]
 18:I["(app-pages-browser)/./node_modules/next/dist/lib/metadata/metadata-boundar... [truncated]
+2026-02-27T23:07:58.583Z [console][warn] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+2026-02-27T23:07:58.788Z [console][log] __ORCHIDS_NAVIGATE__ http://localhost:3000/
+2026-02-27T23:07:58.788Z [console][debug] __ORCHIDS_NAVIGATE__ http://localhost:3000/
+2026-02-27T23:10:32.705Z [console][warn] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
