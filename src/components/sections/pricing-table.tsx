@@ -20,7 +20,7 @@ const PricingTable = () => {
         <div className="mb-10">
           <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 px-3 py-1 rounded-full mb-4">
             <span className="text-[#facc15] text-xs font-semibold tracking-wide">
-              🎁 OFERTA ESPECIAL -85,81%
+              🎁 OFERTA ESPECIAL -90,18%
             </span>
           </div>
           <h2 className="text-white text-[32px] font-bold leading-tight mb-4">
@@ -39,10 +39,10 @@ const PricingTable = () => {
               De <del className="text-[#77778a]">275,00€</del> por apenas
             </p>
             <p className="text-[#facc15] text-[42px] font-extrabold leading-none mb-2">
-              39€
+              27€
             </p>
             <p className="text-[#22c55e] text-sm font-semibold flex items-center justify-center gap-1">
-              💰 Poupe 236€
+              💰 Poupe 248€
             </p>
           </div>
 
